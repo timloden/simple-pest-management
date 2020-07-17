@@ -8,16 +8,17 @@
  * @package starter-theme
  */
 
-// require 'plugin-update-checker/plugin-update-checker.php';
-// $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-// 'https://github.com/timloden/starter-theme/',
-// __FILE__,
-// 'starter-theme'
-// );
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+'https://github.com/timloden/simple-pest-management',
+__FILE__,
+'simple-pest'
+);
 // Optional: If you're using a private repository, specify the access token like this:
 // $myUpdateChecker->setAuthentication('your-token-here');
 // Optional: Set the branch that contains the stable release.
 // $myUpdateChecker->setBranch('stable-branch-name');
+
 if ( ! function_exists( 'theme_setup' ) ) :
 
 	function theme_setup() {
