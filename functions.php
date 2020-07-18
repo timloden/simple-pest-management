@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package starter-theme
+ * @package simple-pest
  */
 
 require 'plugin-update-checker/plugin-update-checker.php';
@@ -34,7 +34,9 @@ if ( ! function_exists( 'theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'header-primary' => esc_html__( 'Header Primary', 'starter-theme' ),
+				'header-primary' => esc_html__( 'Header Primary', 'simple-pest' ),
+				'footer-primary' => esc_html__( 'Footer Primary', 'simple-pest' ),
+				'mobile-primary' => esc_html__( 'Mobile Primary', 'simple-pest' ),
 			)
 		);
 

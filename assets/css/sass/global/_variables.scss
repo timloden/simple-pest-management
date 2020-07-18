@@ -31,16 +31,18 @@ $grays: (
 ) !default;
 // fusv-enable
 
-$blue: #005ca9;
+$blue: #0064a5;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
-$green: #28a745 !default;
+$green: #7dc242 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
+
+$light_blue: #f2f6f9;
 
 $colors: (
     'blue': $blue,
@@ -59,7 +61,7 @@ $colors: (
 ) !default;
 
 $primary: $blue !default;
-$secondary: $gray-600 !default;
+$secondary: $green !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -354,7 +356,7 @@ $transition-collapse: height 0.35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-sans-serif: 'Open Sans', sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;

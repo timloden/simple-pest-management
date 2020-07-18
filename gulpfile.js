@@ -106,40 +106,43 @@ function customJS() {
 }
 
 function vendorJS() {
-    return gulp
-        .src(
-            [
-                'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-                './node_modules/tiny-slider/dist/tiny-slider.js',
-                config.jsVendorSRC,
-            ],
-            { since: gulp.lastRun('customJS') }
-        ) // Only run on changed files.
-        .pipe(
-            babel({
-                presets: [
-                    [
-                        '@babel/preset-env', // Preset to compile your modern JS to ES5.
-                        {
-                            targets: { browsers: config.BROWSERS_LIST }, // Target browser list to support.
-                        },
-                    ],
+    return (
+        gulp
+            .src(
+                [
+                    'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+                    'node_modules/tiny-slider/dist/tiny-slider.js',
+                    'node_modules/aos/dist/aos.js',
+                    config.jsVendorSRC,
                 ],
-            })
-        )
-        .pipe(remember(config.jsVendorSRC)) // Bring all files back to stream.
-        .pipe(concat(config.jsVendorFile + '.js'))
-        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-        .pipe(gulp.dest(config.jsVendorDestination))
-        .pipe(
-            rename({
-                basename: config.jsVendorFile,
-                suffix: '.min',
-            })
-        )
-        .pipe(uglify())
-        .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
-        .pipe(gulp.dest(config.jsVendorDestination));
+                { since: gulp.lastRun('vendorJS') }
+            ) // Only run on changed files.
+            // .pipe(
+            //     babel({
+            //         presets: [
+            //             [
+            //                 '@babel/preset-env', // Preset to compile your modern JS to ES5.
+            //                 {
+            //                     targets: { browsers: config.BROWSERS_LIST }, // Target browser list to support.
+            //                 },
+            //             ],
+            //         ],
+            //     })
+            // )
+            .pipe(remember(config.jsVendorSRC)) // Bring all files back to stream.
+            .pipe(concat(config.jsVendorFile + '.js'))
+            .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+            .pipe(gulp.dest(config.jsVendorDestination))
+            .pipe(
+                rename({
+                    basename: config.jsVendorFile,
+                    suffix: '.min',
+                })
+            )
+            .pipe(uglify())
+            .pipe(lineec()) // Consistent Line Endings for non UNIX systems.
+            .pipe(gulp.dest(config.jsVendorDestination))
+    );
 }
 
 // Don't forget to expose the tasks!

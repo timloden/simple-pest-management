@@ -1,11 +1,87 @@
 {
-    "key": "group_5f11b9ef42e6c",
-    "title": "Site Options",
+    "key": "group_5f1276e2ac93e",
+    "title": "Service Pages",
     "fields": [
         {
-            "key": "field_5f11ba2951637",
-            "label": "Logo",
-            "name": "logo",
+            "key": "field_5f1276e9ccc94",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f1276f4ccc95",
+            "label": "Hero Text",
+            "name": "hero_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5f127701ccc96",
+            "label": "Hero Button Text",
+            "name": "hero_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f12770bccc97",
+            "label": "Hero Button Link",
+            "name": "hero_button_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f127712ccc98",
+            "label": "Hero Background Image",
+            "name": "hero_background_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -27,10 +103,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_5f12733c00d21",
-            "label": "Phone Number",
-            "name": "phone_number",
-            "type": "text",
+            "key": "field_5f127720ccc99",
+            "label": "Hero Main Image",
+            "name": "hero_main_image",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -39,95 +115,24 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f12734400d22",
-            "label": "Address",
-            "name": "address",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5f1273e36ecaa",
-            "label": "Client Login Link",
-            "name": "client_login_link",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5f11ba7551638",
-            "label": "Header Embed",
-            "name": "header_embed",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_5f11ba8751639",
-            "label": "Footer Embed",
-            "name": "footer_embed",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "post_type",
                 "operator": "==",
-                "value": "site-options"
+                "value": "services"
             }
         ]
     ],
@@ -139,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1595111895
+    "modified": 1595045706
 }

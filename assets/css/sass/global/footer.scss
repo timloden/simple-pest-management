@@ -1,10 +1,28 @@
 footer {
-    .cc-logos {
-        width: 200px;
+    .guarantee {
+        background-color: $light_blue;
     }
+
+    .address {
+        font-size: 14px;
+        color: $gray-600;
+    }
+
     .copyright {
+        font-size: 12px;
+    }
+
+    #menu-footer {
+        font-size: 14px;
+
+        .nav-link {
+            display: inline-block;
+        }
+    }
+
+    .footer-text {
         p {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }

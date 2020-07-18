@@ -14,22 +14,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 // Bootstrap styles
 @import 'global/_variables';
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 // line-awesome
-$la-font-path: '/wp-content/themes/starter-theme/assets/fonts/line-awesome';
+$la-font-path: '/wp-content/themes/simple-pest-management/assets/fonts/line-awesome';
 @import 'node_modules/line-awesome/dist/line-awesome/scss/line-awesome';
 
 // tiny-slider
 @import 'node_modules/tiny-slider/dist/tiny-slider';
 
+// animate on scroll
+@import 'node_modules/aos/dist/aos';
+
 // animate.css
 @import 'node_modules/animate.css/animate';
 
 // Global
+@import 'global/buttons';
+@import 'global/typography';
+@import 'global/header';
+@import 'global/footer';
 
 // Pages

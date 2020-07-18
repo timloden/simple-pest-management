@@ -29,48 +29,51 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div id="page" class="site">
-        <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+        <header class="header sticky-top pb-2 bg-white shadow-sm">
+            <div class="topbar bg-primary">
+                <div class="container py-2">
+                    <div class="col text-center">
+                        <p class="mb-0 text-white">Already a customer? <a class="text-white"
+                                href="<?php echo esc_url(get_field('client_login_link', 'option')) ?>">Login
+                                to our customer portal <i class="las la-angle-right"></i></a>
+                        </p>
                     </div>
                 </div>
-            </nav>
-        </header>
-    </div>
+            </div>
+            <div class="container pt-2">
+                <nav class="d-flex align-items-center">
+                    <?php if (get_field('logo', 'option')) : 
+                    $logo = get_field('logo', 'option');
+                    ?>
+                    <a class="navbar-brand" href="<?php echo site_url(); ?>"><img
+                            src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>"></a>
+                    <?php else : ?>
+                    <a class="navbar-brand" href="<?php echo site_url(); ?>">Simple Pest Management</a>
+                    <?php endif; ?>
 
-    <div id="content" class="site-content">
+                    <div class="d-flex justify-content-end justify-content-lg-between align-items-center w-100">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-primary', 'container' => '', 'menu_class' => 'nav d-none d-lg-flex', 'add_li_class'  => 'nav-item', 'depth' => 2, 'walker' => new WP_Bootstrap_Navwalker() ) ); ?>
+
+                        <a class="btn btn-primary btn-phone-number d-none d-lg-inline-block" href="tel:6193737378">(619)
+                            373-PEST
+                            (7378)</a>
+
+                        <button class="d-inline-block d-lg-none btn ml-3 p-1" type="button" data-toggle="collapse"
+                            data-target="#mobile-header-menu" aria-controls="mobile-header-menu">
+                            <i class="las la-bars"></i>
+                        </button>
+                    </div>
+
+                </nav>
+                <!-- mobile menu -->
+                <div class="d-flex d-lg-none">
+                    <div class="col px-0">
+                        <?php wp_nav_menu( array( 'theme_location' => 'mobile-primary', 'container' => 'div','container_id' => 'mobile-header-menu', 'container_class' => 'collapse', 'menu_class' => 'nav flex-column', 'add_li_class'  => 'nav-item', 'depth' => 2 ) ); ?>
+                    </div>
+                    <!-- end mobile menu -->
+                </div>
+            </div>
+        </header>
+
+        <div id=" content" class="site-content">

@@ -1,35 +1,11 @@
 {
-    "key": "group_5f11b9ef42e6c",
-    "title": "Site Options",
+    "key": "group_5f12faf764b79",
+    "title": "Home Page",
     "fields": [
         {
-            "key": "field_5f11ba2951637",
-            "label": "Logo",
-            "name": "logo",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5f12733c00d21",
-            "label": "Phone Number",
-            "name": "phone_number",
+            "key": "field_5f12fafbfbc99",
+            "label": "Hero Title",
+            "name": "hero_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -46,10 +22,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5f12734400d22",
-            "label": "Address",
-            "name": "address",
-            "type": "wysiwyg",
+            "key": "field_5f12fb08fbc9a",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,15 +35,15 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
-            "key": "field_5f1273e36ecaa",
-            "label": "Client Login Link",
-            "name": "client_login_link",
+            "key": "field_5f12fb20fbc9b",
+            "label": "Hero Button Text",
+            "name": "hero_button_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -84,10 +60,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5f11ba7551638",
-            "label": "Header Embed",
-            "name": "header_embed",
-            "type": "textarea",
+            "key": "field_5f12fb2cfbc9c",
+            "label": "Hero Button Link",
+            "name": "hero_button_link",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -98,15 +74,15 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_5f11ba8751639",
-            "label": "Footer Embed",
-            "name": "footer_embed",
-            "type": "textarea",
+            "key": "field_5f12fb34fbc9d",
+            "label": "Hero Form ID",
+            "name": "hero_form_id",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -117,17 +93,17 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "post_type",
                 "operator": "==",
-                "value": "site-options"
+                "value": "post"
             }
         ]
     ],
@@ -139,5 +115,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1595111895
+    "modified": 1595088520
 }
