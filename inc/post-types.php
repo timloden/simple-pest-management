@@ -40,7 +40,7 @@ function custom_post_type_services() {
 		'label'                 => __( 'Service', 'simple-pest' ),
 		'description'           => __( 'Simple Pest Management services', 'simple-pest' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail','excerpt' ),
 		//'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,

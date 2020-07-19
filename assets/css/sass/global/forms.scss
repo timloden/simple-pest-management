@@ -34,6 +34,10 @@
     @extend .form-control;
 }
 
+.gform_wrapper label {
+    font-size: 12px;
+}
+
 .gform_wrapper .button {
     @extend .btn;
     @extend .btn-primary;
@@ -63,4 +67,50 @@
 .gform_confirmation_message {
     @extend .alert;
     @extend .alert-success;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
+.estimate-form {
+    .gform_fields {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gfield {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        // email
+        .email {
+            width: 48%;
+            margin-right: 0.5rem;
+        }
+
+        // phone
+        .phone {
+            width: 48%;
+            margin-left: 0.5rem;
+        }
+    }
+
+    // captcha label
+    .captcha {
+        display: none;
+    }
+
+    .gform_footer {
+        text-align: right;
+        .gform_button {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0.5rem 2rem;
+            background-color: #f6961b;
+            border: none;
+        }
+    }
 }

@@ -1,0 +1,38 @@
+.home-hero {
+    .hero-text {
+        @include media-breakpoint-up(lg) {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .hero-form {
+        .hero-form-title {
+            font-size: 1.5rem;
+            color: $gray-600;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .limited-time-container {
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+
+    // .container {
+    //     &:after {
+    //         position: absolute;
+    //         content: ' ';
+    //         display: block;
+    //         left: -5%;
+    //         bottom: -10px;
+    //         transform: rotate(2deg);
+    //         width: 110%;
+    //         height: 50px;
+    //         background-color: $white;
+    //     }
+    // }
+}

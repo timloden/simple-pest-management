@@ -3,6 +3,16 @@ footer {
         background-color: $light_blue;
     }
 
+    .footer-hero {
+        .h1 {
+            font-size: 3.5rem;
+        }
+
+        .h2 {
+            font-size: 2.5rem;
+        }
+    }
+
     .address {
         font-size: 14px;
         color: $gray-600;

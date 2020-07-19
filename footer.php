@@ -13,14 +13,25 @@
 
 </div><!-- #content -->
 
-<footer class="site-footer border-top bg-white mt-5">
-    <div class="guarantee">
+<footer class="site-footer border-top bg-white">
+    <div class="jumbotron jumbotron-fluid footer-hero mb-0 position-relative"
+        style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/footer-form-bg.jpg); background-size: cover; background-position: center;">
         <div class="container">
-            <div class="row border-bottom py-5">
-
-                <div class="col-12 text-center">
-                    <p class="h3">100% Satisfaction Guarantee</p>
-                    <p class="mb-0">With our pest free guarantee, if the bugs come back, so do we, FREE of charge!</p>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left text-center">
+                    <p class="text-white text-center h5 font-weight-normal">Simple Pest Management</p>
+                    <p class="h1 text-white text-center mb-3">100% Satisfaction Guaranteed</p>
+                    <p class="lead text-white text-center mb-0">Call us now</p>
+                    <p class="h2 text-success text-center">(619) 373-PEST (7378)</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="py-3 text-center text-primary">
+                        <p class="mb-0 h4 text-white font-weight-normal">Get a FREE estimate today!</p>
+                    </div>
+                    <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative">
+                        <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
+                        <?php gravity_form( 1, false, false, false, '', true, 12 ); ?>
+                    </div>
                 </div>
             </div>
         </div>
