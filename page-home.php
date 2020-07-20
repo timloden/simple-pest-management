@@ -39,11 +39,13 @@ get_header();
                     <div class="col-12 col-lg-6">
                         <div class="d-flex flex-column">
                             <div class="card mb-lg-4 shadow border-0" data-aos="fade-down" data-aos-delay="100">
-                                <img src="https://source.unsplash.com/random/800x900" class="card-img-top">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-1.jpg"
+                                    class="card-img-top">
                             </div>
                             <div class="card shadow border-0 d-none d-lg-block" data-aos="fade-down" d
                                 ata-aos-delay="200">
-                                <img src="https://source.unsplash.com/random/800x900" class="card-img-top">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-2.jpg"
+                                    class="card-img-top">
                             </div>
                         </div>
                     </div>
@@ -51,11 +53,13 @@ get_header();
                         <div class="d-flex flex-column mt-5">
                             <div class="card mb-4 mt-5 shadow border-0 d-none d-lg-block" data-aos="fade-down"
                                 data-aos-delay="300">
-                                <img src="https://source.unsplash.com/random/800x900" class="card-img-top">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-3.jpg"
+                                    class="card-img-top">
                             </div>
                             <div class="card shadow border-0 d-none d-lg-block" data-aos="fade-down"
                                 data-aos-delay="400">
-                                <img src="https://source.unsplash.com/random/800x900" class="card-img-top">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-4.jpg"
+                                    class="card-img-top">
                             </div>
                         </div>
                     </div>
