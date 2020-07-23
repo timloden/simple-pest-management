@@ -132,7 +132,7 @@ get_header();
         </div>
         <div class="row pt-5">
             <div class="col-12 text-center">
-                <a href="/free-estimate" class="btn btn-primary font-weight-bold btn-lg">Get your FREE ESTIMATE
+                <a href="/free-estimate" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
                     today!</a>
             </div>
         </div>

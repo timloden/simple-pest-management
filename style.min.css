@@ -6,7 +6,7 @@ Theme URI: https://timloden.com/
 Author: Tim Loden
 Author URI: https://timloden.com/
 Description: 
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -2909,7 +2909,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 .animated.faster{-webkit-animation-duration:500ms;animation-duration:500ms}
 .animated.slow{-webkit-animation-duration:2s;animation-duration:2s}
 .animated.slower{-webkit-animation-duration:3s;animation-duration:3s}
-.btn-orange{background-color:#f6961b;border:0}
+.btn-orange{background-color:#f6961b;border:0;color:#fff}
 .btn-yelp{background-color:#c41200;border:0}
 .btn-phone-number{font-weight:600;padding:.375rem 1rem}
 a{text-decoration:none}
