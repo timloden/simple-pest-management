@@ -57,9 +57,7 @@
                         <?php wp_nav_menu( array( 'theme_location' => 'header-primary', 'container' => '', 'menu_class' => 'nav d-none d-lg-flex', 'add_li_class'  => 'nav-item', 'depth' => 2, 'walker' => new WP_Bootstrap_Navwalker() ) ); ?>
 
                         <a class="btn btn-primary btn-orange btn-phone-number d-none d-lg-inline-block"
-                            href="tel:6193737378">(619)
-                            373-PEST
-                            (7378)</a>
+                            href="tel:<?php echo get_field('phone_number', 'option'); ?>"><?php echo get_field('phone_number', 'option'); ?></a>
 
                         <button class="d-inline-block d-lg-none btn ml-3 p-1" type="button" data-toggle="collapse"
                             data-target="#mobile-header-menu" aria-controls="mobile-header-menu">

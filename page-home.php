@@ -19,11 +19,10 @@ get_header();
                 <p class="lead text-white">Protect your family and investment</p>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative"
-                    style="background-color: #f2f6f9; z-index: 9;" data-aos="fade-up">
-                    <p class="mb-0">Limited Time Offer:</p>
-                    <p class="mb-0 h4"><u>30% OFF</u> YOUR INITIAL SERVICE!</p>
-                    <p class="mb-0">Complete the form below and save</p>
+                <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative bg-orange"
+                    style="z-index: 9;" data-aos="fade-up">
+                    <p class="mb-0 text-white">Limited time offer - ct now below:</p>
+                    <p class="mb-0 h4 text-white"><u>30% OFF</u> YOUR INITIAL SERVICE!</p>
                 </div>
                 <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative" style="z-index: 999;">
                     <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
