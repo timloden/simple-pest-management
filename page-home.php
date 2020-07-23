@@ -21,7 +21,7 @@ get_header();
             <div class="col-12 col-lg-6">
                 <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative bg-orange"
                     style="z-index: 9;" data-aos="fade-up">
-                    <p class="mb-0 text-white">Limited time offer - ct now below:</p>
+                    <p class="mb-0 text-white">Limited time offer - act now below:</p>
                     <p class="mb-0 h4 text-white"><u>30% OFF</u> YOUR INITIAL SERVICE!</p>
                 </div>
                 <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative" style="z-index: 999;">
@@ -207,9 +207,9 @@ get_header();
                 </div>
             </div>
         </div>
-        <?php if( have_rows('review_sites') ): ?>
+        <?php if( have_rows('review_sites', 'option') ): ?>
         <div class="row pt-5">
-            <?php while( have_rows('review_sites') ): the_row(); 
+            <?php while( have_rows('review_sites', 'option') ): the_row(); 
             $image = get_sub_field('image');
             ?>
             <div class="col-6 col-lg-3">

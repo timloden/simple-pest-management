@@ -11,6 +11,37 @@
  */
 ?>
 
+<?php if (!is_front_page()) :?>
+<section class="clients border-top">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                <div class="position-sticky" style="top: 200px;">
+                    <h2 class="border-bottom mb-3 pb-3">Hear from some of our clients</h2>
+                    <p>We want you to feel confident in your pest service so please take a look at what some of our
+                        satisfied customers are saying!</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <?php if( have_rows('review_sites', 'option') ): ?>
+                <div class="row">
+                    <?php while( have_rows('review_sites', 'option') ): the_row(); 
+                    $image = get_sub_field('image');
+                    ?>
+                    <div class="col-6 col-lg-3">
+                        <a href="<?php the_sub_field('link'); ?>" target="_blank">
+                            <img src="<?php echo $image['url']; ?>" class="img-fluid px-1">
+                        </a>
+                    </div>
+                    <?php endwhile; ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
 </div><!-- #content -->
 
 <footer class="site-footer border-top bg-white">
