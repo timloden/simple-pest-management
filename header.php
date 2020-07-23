@@ -47,7 +47,8 @@
                     $logo = get_field('logo', 'option');
                     ?>
                     <a class="navbar-brand" href="<?php echo site_url(); ?>"><img
-                            src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>"></a>
+                            src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>"
+                            style="width: 200px;"></a>
                     <?php else : ?>
                     <a class="navbar-brand" href="<?php echo site_url(); ?>">Simple Pest Management</a>
                     <?php endif; ?>

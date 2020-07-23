@@ -14,14 +14,16 @@ get_header();
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left">
-                <h1 class="text-white">Got bugs?<br>Simple. Call us!</h1>
+                <h1 class="text-white">Got bugs?<br><span class="text-success">Simple.</span> Call us!</h1>
+                <p class="h2 text-white pt-3"><?php echo get_field('phone_number', 'option'); ?></p>
                 <p class="lead text-white">Protect your family and investment</p>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative"
                     style="background-color: #f2f6f9; z-index: 9;" data-aos="fade-up">
                     <p class="mb-0">Limited Time Offer:</p>
-                    <p class="mb-0 h4">30% OFF YOUR INITIAL SERVICE!</p>
+                    <p class="mb-0 h4"><u>30% OFF</u> YOUR INITIAL SERVICE!</p>
+                    <p class="mb-0">Complete the form below and save</p>
                 </div>
                 <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative" style="z-index: 999;">
                     <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
@@ -206,8 +208,20 @@ get_header();
                 </div>
             </div>
         </div>
+        <?php if( have_rows('review_sites') ): ?>
+        <div class="row pt-5">
+            <?php while( have_rows('review_sites') ): the_row(); 
+            $image = get_sub_field('image');
+            ?>
+            <div class="col-6 col-lg-3">
+                <a href="<?php the_sub_field('link'); ?>" target="_blank">
+                    <img src="<?php echo $image['url']; ?>" class="img-fluid px-3">
+                </a>
+            </div>
+            <?php endwhile; ?>
+        </div>
+        <?php endif; ?>
     </div>
 </section>
-<script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
 <?php
 get_footer();
