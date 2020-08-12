@@ -8,6 +8,10 @@
  */
 
 get_header();
+
+$discount_amount = get_field('hero_discount_amount');
+$discount_label = get_field('hero_discount_label');
+$discount_subtitle = get_field('hero_discount_subtitle');
 ?>
 <div class="jumbotron jumbotron-fluid home-hero mb-0 position-relative"
     style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-bg.jpg); background-size: cover;">
@@ -21,8 +25,9 @@ get_header();
             <div class="col-12 col-lg-6">
                 <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative bg-orange"
                     style="z-index: 9;" data-aos="fade-up">
-                    <p class="mb-0 text-white">Limited time offer - act now below:</p>
-                    <p class="mb-0 h4 text-white"><u>30% OFF</u> YOUR INITIAL SERVICE!</p>
+                    <p class="mb-0 text-white"><?php echo $discount_subtitle; ?></p>
+                    <p class="mb-0 h4 text-white"><u><?php echo $discount_amount; ?></u> <?php echo $discount_label; ?>
+                    </p>
                 </div>
                 <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative" style="z-index: 999;">
                     <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
