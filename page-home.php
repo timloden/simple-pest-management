@@ -157,59 +157,44 @@ $discount_subtitle = get_field('hero_discount_subtitle');
                 </div>
             </div>
             <div class="col-12 col-lg-8">
+                <?php if( have_rows('review_sites', 'option') ): ?>
                 <div class="row">
+                    <?php while( have_rows('yelp_reviews') ): the_row(); 
+                        $name = get_sub_field('name');
+                        $date = get_sub_field('date');
+                        $link_to_review = get_sub_field('link_to_review');
+                        $quote = get_sub_field('quote');
+                    ?>
                     <div class="col-12 col-lg-6 mb-4">
-                        <span class="yelp-review" data-review-id="_ADvsqEo7S-fUhCcVMWabg"
-                            data-hostname="www.yelp.com">Read <a
-                                href="https://www.yelp.com/user_details?userid=-z4eC--6U3plrUCzwxJ8_w"
-                                rel="nofollow noopener">Teresa P.</a>'s <a
-                                href="https://www.yelp.com/biz/simple-pest-management-santee?hrid=_ADvsqEo7S-fUhCcVMWabg"
-                                rel="nofollow noopener">review</a> of <a
-                                href="https://www.yelp.com/biz/3mw_n5EtKUuIeT0ZnsCtTQ" rel="nofollow noopener">Simple
-                                Pest Management</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-                            </script>
-                        </span>
+                        <div class="card p-2">
+                            <div class="card-header p-0 pb-2 bg-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="font-weight-bold"><a
+                                            href="https://www.yelp.com/biz/simple-pest-management-santee"
+                                            target="_blank">Simple Pest Management</a></span>
+                                    <span><img
+                                            src="https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/28332f3b0739/assets/img/logos/logo_desktop_medium_outline.png"
+                                            alt="yelp logo"></span>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 pt-2">
+                                <p class="mb-1 d-flex justify-content-between">
+                                    <a class="font-weight-bold"
+                                        href="<?php echo $link_to_review; ?>"><?php echo $name; ?></a>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yelp-stars.png">
+                                </p>
+                                <p class="mb-2" style="font-size: 12px; color: #666;"><?php echo $date; ?></p>
+                                <p style="font-size: 14px; line-height: 1.4;">
+                                    <?php echo substr($quote,0,300) . '...'; ?></p>
+                            </div>
+                            <div class="card-footer p-0 pt-2 bg-white text-center">
+                                <a style="font-size: 14px;" href="<?php echo $link_to_review; ?>">Read more on Yelp</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-6 mb-4">
-                        <span class="yelp-review" data-review-id="Ugts2srQ0X8mOXONangnVA"
-                            data-hostname="www.yelp.com">Read <a
-                                href="https://www.yelp.com/user_details?userid=OkAOmBblvSxws5K0yvzROw"
-                                rel="nofollow noopener">Phyllis H.</a>'s <a
-                                href="https://www.yelp.com/biz/simple-pest-management-santee?hrid=Ugts2srQ0X8mOXONangnVA"
-                                rel="nofollow noopener">review</a> of <a
-                                href="https://www.yelp.com/biz/3mw_n5EtKUuIeT0ZnsCtTQ" rel="nofollow noopener">Simple
-                                Pest Management</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-
-                            </script>
-                        </span>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-4">
-                        <span class="yelp-review" data-review-id="Pwor4EcZ7-F2lMiAo2uUQw"
-                            data-hostname="www.yelp.com">Read <a
-                                href="https://www.yelp.com/user_details?userid=cP5LUg-EbWAcUxB2l9v5Og"
-                                rel="nofollow noopener">Laura S.</a>'s <a
-                                href="https://www.yelp.com/biz/simple-pest-management-santee?hrid=Pwor4EcZ7-F2lMiAo2uUQw"
-                                rel="nofollow noopener">review</a> of <a
-                                href="https://www.yelp.com/biz/3mw_n5EtKUuIeT0ZnsCtTQ" rel="nofollow noopener">Simple
-                                Pest Management</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-
-                            </script>
-                        </span>
-                    </div>
-                    <div class="col-12 col-lg-6 mb-4">
-                        <span class="yelp-review" data-review-id="OD4JcbFlQ_xmB4PPq0SyXA"
-                            data-hostname="www.yelp.com">Read <a
-                                href="https://www.yelp.com/user_details?userid=A0Y9R5GfyLjn-iYh-mGDnw"
-                                rel="nofollow noopener">Laura Z.</a>'s <a
-                                href="https://www.yelp.com/biz/simple-pest-management-santee?hrid=OD4JcbFlQ_xmB4PPq0SyXA"
-                                rel="nofollow noopener">review</a> of <a
-                                href="https://www.yelp.com/biz/3mw_n5EtKUuIeT0ZnsCtTQ" rel="nofollow noopener">Simple
-                                Pest Management</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-
-                            </script>
-                        </span>
-                    </div>
+                    <?php endwhile; ?>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
         <?php if( have_rows('review_sites', 'option') ): ?>
