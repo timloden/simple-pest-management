@@ -16,7 +16,7 @@
  ?>
         </a>
         <div class="card-body">
-            <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h5>
+            <h5 class="card-title text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h5>
             <p class="card-text"><?php the_excerpt(); ?></p>
         </div>
     </div>
