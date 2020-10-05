@@ -3,6 +3,25 @@
     "title": "Safety Data Sheets",
     "fields": [
         {
+            "key": "field_5f7b5e40a636d",
+            "label": "Emergency Notice",
+            "name": "emergency_notice",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_5ecc7abd7e277",
             "label": "Data Sheets",
             "name": "data_sheets",
@@ -96,7 +115,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1595523216
+    "modified": 1601920596
 }

@@ -15,7 +15,9 @@ get_header();
             <div class="col-12 col-lg-10">
                 <h1 class="text-center mb-4">Safety Data Sheets</h1>
                 <p class="text-center">If you have any questions, please call us at
-                    <strong><?php echo get_field('phone_number', 'option'); ?></strong></p>
+                    <strong><?php echo get_field('phone_number', 'option'); ?></strong>
+                </p>
+                <p class="text-center"><?php echo get_field('emergency_notice'); ?></p>
                 <?php if( have_rows('data_sheets') ): ?>
                 <table class="table table-striped">
                     <thead>
