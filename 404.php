@@ -9,48 +9,24 @@
 
 get_header();
 ?>
-<div class="container">
+<div class="container py-3 py-lg-5">
 
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
             <section class="error-404 not-found">
-                <header class="page-header pt-3">
-                    <h1 class="page-title">
-                        <?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'underscores' ); ?>
+                <header class="page-header pt-3 text-center">
+                    <h1 class="page-title pb-3">
+                        <?php esc_html_e( 'Oops! It looks like something went wrong!', 'underscores' ); ?>
                     </h1>
+                    <img alt="dead cockroach"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/dead-cockroach-small.png">
+                    <h2>Don't worry we can still help with all your pest control needs!</h2>
                 </header><!-- .page-header -->
 
                 <div class="page-content">
-                    <?php
-			$args = array(
-				'posts_per_page' => 3, // How many items to display
-				'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
-			);
-			$cats = get_terms( array(
-				'taxonomy' => 'category',
-				'hide_empty' => true,
-			) );
 
-			$cats_ids = array();  
-			foreach( $cats as $cat ) {
-
-				$args['category__in'] = $cat;
-				$loop = new WP_Query( $args );
-			
-				if ( $loop->have_posts() ) {
-					echo '<h3 class="py-3">' . $cat->name . '</h3>';
-					echo '<div class="row">';
-					while ( $loop->have_posts() ) : $loop->the_post();
-						get_template_part( 'template-parts/content', get_post_type() );
-					endwhile;
-					echo '</div>';
-					echo '<a href="' . site_url() . '\category/' . $cat->slug . '">Browse all ' . $cat->name . ' articles</a>';
-				}
-				wp_reset_postdata();
-				}
-			?>
                 </div><!-- .page-content -->
             </section><!-- .error-404 -->
 
