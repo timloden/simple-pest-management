@@ -14,6 +14,9 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 __FILE__,
 'simple-pest'
 );
+
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 // Optional: If you're using a private repository, specify the access token like this:
 // $myUpdateChecker->setAuthentication('your-token-here');
 // Optional: Set the branch that contains the stable release.
