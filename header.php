@@ -53,7 +53,12 @@
     <?php 
     wp_head(); 
     $logo = get_field('logo', 'option');
-    
+
+    if(isset($_COOKIE['global-message'])){
+        $cookie = $_COOKIE['global-message'];
+    } else {
+        $cookie = '';
+    }
 ?>
 
 </head>
@@ -107,5 +112,20 @@
                 </div>
             </div>
         </header>
+        <?php if ($cookie != 'closed' && get_field('global_message', 'option')) : ?>
 
+        <div class="alert alert-info mb-0 global-message">
+            <div class="container">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="py-2">
+                    <span class="font-weight-bold mb-1">Attention:</span>
+                    <?php echo esc_attr(get_field('global_message', 'option')); ?>
+                </div>
+            </div>
+
+
+        </div>
+        <?php endif; ?>
         <div id=" content" class="site-content">

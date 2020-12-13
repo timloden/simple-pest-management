@@ -113,6 +113,7 @@ function vendorJS() {
                     'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
                     'node_modules/tiny-slider/dist/tiny-slider.js',
                     'node_modules/aos/dist/aos.js',
+                    'node_modules/js-cookie/src/js.cookie.js',
                     config.jsVendorSRC,
                 ],
                 { since: gulp.lastRun('vendorJS') }
