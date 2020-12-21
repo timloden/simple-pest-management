@@ -31,14 +31,6 @@ $city = get_field('city');
 
     <h2 class="text-center mb-4 text-primary">100% satisfaction Guaranteed</h2>
 
-    <p>As a family-owned local pest control company, our team of skilled technicians at Simple Pest Management
-        believes in getting things done right.</p>
-
-    <p>That’s why our <?php echo $city; ?> pest control comes with a satisfaction guarantee: if your pests return after
-        treatment, just give us a ring and we’ll be back to re-service at no additional charge! With us, you’re
-        getting more than pest control in <?php echo $city; ?>: you’re getting committed service that you can count on.
-    </p>
-
-
+    <?php the_content(); ?>
 
 </div>
