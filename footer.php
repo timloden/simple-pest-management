@@ -61,7 +61,7 @@
                     </div>
                     <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative">
                         <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
-                        <?php gravity_form( 1, false, false, false, '', true, 12 ); ?>
+                        <?php gravity_form( 3, false, false, false, '', true, 12 ); ?>
                     </div>
                 </div>
             </div>
