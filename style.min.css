@@ -2939,6 +2939,7 @@ footer .footer-text p{font-size:14px}
 .gform_wrapper form{margin-bottom:0}
 .gform_wrapper .gfield_required{padding-left:1px;color:#dc3545}
 .gform_wrapper label{font-size:12px}
+.gform_validation_container{display:none}
 .validation_message{display:none}
 .grecaptcha-badge{display:none !important}
 .ginput_counter{display:none}
