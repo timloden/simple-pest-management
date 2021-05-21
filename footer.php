@@ -45,8 +45,9 @@
 </div><!-- #content -->
 
 <footer class="site-footer border-top bg-white">
-    <div class="jumbotron jumbotron-fluid footer-hero mb-0 position-relative"
-        style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/footer-form-bg.jpg); background-size: cover; background-position: center;">
+    <div class="jumbotron jumbotron-fluid footer-hero mb-0 position-relative lazy"
+        data-bg="<?php echo get_template_directory_uri(); ?>/assets/images/footer-form-bg.jpg"
+        style="background-size: cover; background-position: center;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left text-center">
@@ -72,8 +73,8 @@
             <div class="col-12 col-lg-7 mb-3">
                 <div class="d-flex flex-wrap">
                     <div class="col-12 col-lg-5 pl-0">
-                        <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-logo-horizontal-color-expanded.png">
+                        <img class="img-fluid lazy"
+                            data-src="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-logo-horizontal-color-expanded.png">
                         <p class="border-top mt-4 pt-4 mb-2">
                             <?php echo esc_attr(get_field('phone_number', 'option')) ?>
                         </p>

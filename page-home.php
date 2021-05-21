@@ -13,8 +13,8 @@ $discount_amount = get_field('hero_discount_amount');
 $discount_label = get_field('hero_discount_label');
 $discount_subtitle = get_field('hero_discount_subtitle');
 ?>
-<div class="jumbotron jumbotron-fluid home-hero mb-0 position-relative"
-    style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-bg.jpg); background-size: cover;">
+<div class="jumbotron jumbotron-fluid home-hero mb-0 position-relative lazy" style="background-size: cover;"
+    data-bg="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-bg.jpg">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left">
@@ -45,13 +45,13 @@ $discount_subtitle = get_field('hero_discount_subtitle');
                     <div class="col-12 col-lg-6">
                         <div class="d-flex flex-column">
                             <div class="card mb-lg-4 shadow border-0" data-aos="fade-down" data-aos-delay="100">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-1.jpg"
-                                    class="card-img-top">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-1.jpg"
+                                    class="card-img-top lazy">
                             </div>
                             <div class="card shadow border-0 d-none d-lg-block" data-aos="fade-down" d
                                 ata-aos-delay="200">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-2.jpg"
-                                    class="card-img-top">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-2.jpg"
+                                    class="card-img-top lazy">
                             </div>
                         </div>
                     </div>
@@ -59,13 +59,13 @@ $discount_subtitle = get_field('hero_discount_subtitle');
                         <div class="d-flex flex-column mt-5">
                             <div class="card mb-4 mt-5 shadow border-0 d-none d-lg-block" data-aos="fade-down"
                                 data-aos-delay="300">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-3.jpg"
-                                    class="card-img-top">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-3.jpg"
+                                    class="card-img-top lazy">
                             </div>
                             <div class="card shadow border-0 d-none d-lg-block" data-aos="fade-down"
                                 data-aos-delay="400">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-4.jpg"
-                                    class="card-img-top">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-4.jpg"
+                                    class="card-img-top lazy">
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ $discount_subtitle = get_field('hero_discount_subtitle');
             <div class="col-12 col-lg-4 pb-4">
                 <div class="card shadow-sm h-100">
                     <?php if ($featured_img) : ?>
-                    <img src="<?php echo esc_url($featured_img); ?>" class="card-img-top" alt="">
+                    <img data-src="<?php echo esc_url($featured_img); ?>" class="card-img-top lazy" alt="">
                     <?php endif; ?>
                     <div class="card-body">
                         <h5 class="card-title"><a href="<?php echo esc_url($link); ?>"><?php echo $title ?></a></h5>
@@ -173,15 +173,16 @@ $discount_subtitle = get_field('hero_discount_subtitle');
                                             href="https://www.yelp.com/biz/simple-pest-management-santee"
                                             target="_blank">Simple Pest Management</a></span>
                                     <span><img
-                                            src="https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/28332f3b0739/assets/img/logos/logo_desktop_medium_outline.png"
-                                            alt="yelp logo"></span>
+                                            data-src="https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/28332f3b0739/assets/img/logos/logo_desktop_medium_outline.png"
+                                            alt="yelp logo" class="lazy"></span>
                                 </div>
                             </div>
                             <div class="card-body p-0 pt-2">
                                 <p class="mb-1 d-flex justify-content-between">
                                     <a class="font-weight-bold"
                                         href="<?php echo $link_to_review; ?>"><?php echo $name; ?></a>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yelp-stars.png">
+                                    <img class="lazy"
+                                        data-src="<?php echo get_template_directory_uri(); ?>/assets/images/yelp-stars.png">
                                 </p>
                                 <p class="mb-2" style="font-size: 12px; color: #666;"><?php echo $date; ?></p>
                                 <p style="font-size: 14px; line-height: 1.4;">
@@ -204,7 +205,7 @@ $discount_subtitle = get_field('hero_discount_subtitle');
             ?>
             <div class="col-6 col-lg-3">
                 <a href="<?php the_sub_field('link'); ?>" target="_blank">
-                    <img src="<?php echo $image['url']; ?>" class="img-fluid px-3">
+                    <img data-src="<?php echo $image['url']; ?>" class="img-fluid px-3 lazy">
                 </a>
             </div>
             <?php endwhile; ?>

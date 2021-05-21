@@ -31,7 +31,7 @@ $featured_img = get_the_post_thumbnail_url();
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="card shadow border-0">
-                                <img src="<?php echo esc_url($featured_img); ?>" class="card-img-top">
+                                <img data-src="<?php echo esc_url($featured_img); ?>" class="card-img-top lazy">
                             </div>
                         </div>
                     </div>
