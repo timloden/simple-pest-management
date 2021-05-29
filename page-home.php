@@ -87,6 +87,7 @@ $discount_subtitle = get_field('hero_discount_subtitle');
         </div>
     </div>
 </section>
+
 <section class="services bg-light-blue py-5">
     <div class="container py-5">
         <div class="row pb-5">
@@ -95,25 +96,19 @@ $discount_subtitle = get_field('hero_discount_subtitle');
             </div>
         </div>
         <div class="row justify-content-center">
-            <?php
-			$args = array(  
-				'post_type' => 'services',
-				'post_status' => 'publish',
-				'posts_per_page' => -1, 
-				'orderby' => 'title', 
-				'order' => 'ASC',
-				'cat' => 'home',
-			);
-		
-			$loop = new WP_Query( $args ); 
-				
-			while ( $loop->have_posts() ) : $loop->the_post(); 
-				$featured_img = get_the_post_thumbnail_url( $post->ID );
-				$title = get_the_title();
-				$text = get_the_excerpt(); 
-				$link = get_the_permalink();
 
-			?>
+            <?php while( have_rows('services') ): the_row(); 
+                $service_page = get_sub_field('service_page');
+                $title = get_field('hero_title', $service_page->ID);
+
+                if (!$title) {
+                    $title = get_the_title($service_page->ID);
+                }
+
+                $featured_img = get_the_post_thumbnail_url($service_page->ID);
+                $text = get_the_excerpt($service_page->ID); 
+                $link = get_the_permalink($service_page->ID);
+            ?>
 
             <div class="col-12 col-lg-4 pb-4">
                 <div class="card shadow-sm h-100">
@@ -129,10 +124,8 @@ $discount_subtitle = get_field('hero_discount_subtitle');
                 </div>
             </div>
 
-            <?php
-			endwhile;
-			wp_reset_postdata(); 
-			?>
+
+            <?php endwhile; ?>
 
         </div>
         <div class="row pt-5">
@@ -143,6 +136,8 @@ $discount_subtitle = get_field('hero_discount_subtitle');
         </div>
     </div>
 </section>
+
+
 <section class="clients py-5">
     <div class="container py-5">
         <div class="row">

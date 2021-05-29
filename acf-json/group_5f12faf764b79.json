@@ -155,6 +155,49 @@
             "maxlength": ""
         },
         {
+            "key": "field_60b1a875addb1",
+            "label": "Services",
+            "name": "services",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_60b1a881addb2",
+                    "label": "Service Page",
+                    "name": "service_page",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "services"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
+        },
+        {
             "key": "field_5f597995e349a",
             "label": "Yelp Reviews",
             "name": "yelp_reviews",
@@ -269,5 +312,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1599701551
+    "modified": 1622255806
 }
