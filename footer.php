@@ -93,7 +93,7 @@
                     San Diego. We offer excellent customer service and efficient treatments for any problem. Let us
                     customize the ultimate service plan for you.</p>
 
-                <p><strong>We kill bug&hellip; It’s that SIMPLE&hellip; Call us today!</strong></p>
+                <p><strong>We kill bugs&hellip; It’s that SIMPLE&hellip; Call us today!</strong></p>
 
             </div>
         </div>
