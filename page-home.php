@@ -12,15 +12,25 @@ get_header();
 $discount_amount = get_field('hero_discount_amount');
 $discount_label = get_field('hero_discount_label');
 $discount_subtitle = get_field('hero_discount_subtitle');
+$hero_city = get_field('hero_city');
 ?>
 <div class="jumbotron jumbotron-fluid home-hero mb-0 position-relative lazy" style="background-size: cover;"
     data-bg="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-bg.jpg">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left">
-                <h1 class="text-white">Got bugs?<br><span class="text-success">Simple.</span> Call us!</h1>
-                <p class="h2 text-white pt-3"><?php echo get_field('phone_number', 'option'); ?></p>
-                <p class="lead text-white">Protect your family and investment</p>
+                <h1 class="text-white">Got bugs?<br><span
+                        class="text-success">Simple.</span><?php echo ($hero_city) ? '<br>' : '' ?> Call
+                    us<?php echo ($hero_city) ? '<br>in ' . $hero_city : '!' ?></h1>
+                <p class="h2 text-white pt-3">
+                    <?php if (get_field('hero_phone_number')) { 
+                        echo get_field('hero_phone_number');
+                    } else {
+                        echo get_field('phone_number', 'option');
+                    }
+                 ?>
+                </p>
+                <p class="lead text-white"><?php echo esc_attr(get_field('hero_subtitle'));?></p>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative bg-orange"

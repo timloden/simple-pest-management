@@ -41,6 +41,44 @@
             "new_lines": ""
         },
         {
+            "key": "field_61041539a9781",
+            "label": "Hero Phone Number",
+            "name": "hero_phone_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_610416bbbc902",
+            "label": "Hero City",
+            "name": "hero_city",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5f12fb20fbc9b",
             "label": "Hero Button Text",
             "name": "hero_button_text",
@@ -312,5 +350,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1622255806
+    "modified": 1627657936
 }
