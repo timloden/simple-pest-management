@@ -122,6 +122,25 @@
             "new_lines": ""
         },
         {
+            "key": "field_614ceb658475e",
+            "label": "Footer Message",
+            "name": "footer_message",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_5f19a44770588",
             "label": "Review Sites",
             "name": "review_sites",
@@ -222,5 +241,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607818353
+    "modified": 1632430971
 }

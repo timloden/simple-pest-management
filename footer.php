@@ -86,14 +86,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 footer-text">
-                <p>At Simple Pest Management, our customized maintenance programs are designed with you and your family
-                    in mind to provide a protective barrier around your home and yard.</p>
-
-                <p>No matter the type of infestation or problem, Simple Pest Management is your #1 choice in east county
-                    San Diego. We offer excellent customer service and efficient treatments for any problem. Let us
-                    customize the ultimate service plan for you.</p>
-
-                <p><strong>We kill bugs&hellip; It’s that SIMPLE&hellip; Call us today!</strong></p>
+                <?php the_field('footer_message', 'option'); ?>
 
             </div>
         </div>
@@ -104,7 +97,6 @@
             <p class="text-white m-0 p-2 text-center">&copy; Simple Pest Management <?php echo date( 'Y' ); ?> |
                 License, Bonded and Insured</p>
         </div>
-
     </div>
 </footer>
 </div><!-- #page -->
