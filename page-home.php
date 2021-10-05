@@ -13,13 +13,14 @@ $discount_amount = get_field('hero_discount_amount');
 $discount_label = get_field('hero_discount_label');
 $discount_subtitle = get_field('hero_discount_subtitle');
 $hero_city = get_field('hero_city');
+$hero_title = get_field('hero_title');
 ?>
 <div class="jumbotron jumbotron-fluid home-hero mb-0 position-relative lazy" style="background-size: cover;"
     data-bg="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-bg.jpg">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left">
-                <h1 class="text-white">Got bugs?<br><span
+                <h1 class="text-white"><?php echo ($hero_title) ? $hero_title : 'Got bugs?' ?><br><span
                         class="text-success">Simple.</span><?php echo ($hero_city) ? '<br>' : '' ?> Call
                     us<?php echo ($hero_city) ? '<br>in ' . $hero_city : '!' ?></h1>
                 <p class="h2 text-white pt-3">
