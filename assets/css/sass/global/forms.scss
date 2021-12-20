@@ -92,6 +92,19 @@
         margin-bottom: 0.5rem;
     }
 
+    .ginput_container_name {
+        display: flex;
+        .name_first {
+            width: 48%;
+            margin-right: 0.5rem;
+        }
+
+        .name_last {
+            width: 48%;
+            margin-left: 0.5rem;
+        }
+    }
+
     @include media-breakpoint-up(lg) {
         // email
         .email {
@@ -101,6 +114,16 @@
 
         // phone
         .phone {
+            width: 48%;
+            margin-left: 0.5rem;
+        }
+
+        .zip-code {
+            width: 48%;
+            margin-right: 0.5rem;
+        }
+
+        .pest-type {
             width: 48%;
             margin-left: 0.5rem;
         }

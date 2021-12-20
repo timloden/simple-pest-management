@@ -20,11 +20,11 @@ get_header();
 
             <div class="col-12 col-lg-4">
                 <h2>Santee Location</h2>
-                <p>10739 Woodside Ave., Ste A<br>Santee, CA 92071</p>
-                <p><strong>(619) 373-PEST (7378)</strong></p>
-                <p class="mb-1">M-F: 8am – 6pm</p>
-                <p class="mb-1">Sat: 9am – 4pm</p>
-                <p class="mb-0">Sun: Closed</p>
+                <p><?php echo esc_attr(the_field('address', 'option')) ?></p>
+                <p><strong><?php echo esc_attr(get_field('phone_number', 'option')) ?></strong></p>
+                <p class="mb-1">M-F: <?php echo esc_attr(get_field('hours_m-f', 'option')) ?></p>
+                <p class="mb-1">Sat: <?php echo esc_attr(get_field('hours_saturday', 'option')) ?></p>
+                <p class="mb-0">Sun: <?php echo esc_attr(get_field('hours_sunday', 'option')) ?></p>
             </div>
             <div class="col-12 col-lg-8">
                 <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative mb-5"

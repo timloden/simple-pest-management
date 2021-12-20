@@ -122,7 +122,7 @@ function custom_post_type_service_areas() {
 }
 add_action( 'init', 'custom_post_type_service_areas', 0 );
 
-// Services post type
+// Pest post type
 
 function custom_post_type_pests() {
 
@@ -159,7 +159,7 @@ function custom_post_type_pests() {
 		'label'                 => __( 'Pest', 'simple-pest' ),
 		'description'           => __( 'Simple Pest Management pests', 'simple-pest' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
 		//'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,

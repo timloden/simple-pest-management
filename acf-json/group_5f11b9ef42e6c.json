@@ -65,6 +65,63 @@
             "delay": 0
         },
         {
+            "key": "field_61c0b519e843e",
+            "label": "Hours M-F",
+            "name": "hours_m-f",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61c0b530e843f",
+            "label": "Hours Saturday",
+            "name": "hours_saturday",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61c0b53ae8440",
+            "label": "Hours Sunday",
+            "name": "hours_sunday",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5f1273e36ecaa",
             "label": "Client Login Link",
             "name": "client_login_link",
@@ -222,6 +279,44 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_61b7dc1c801a9",
+            "label": "Pest Routes Auth Token",
+            "name": "pest_routes_auth_token",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b7dc33801aa",
+            "label": "Pest Routes Auth Key",
+            "name": "pest_routes_auth_key",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -241,5 +336,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1632430971
+    "show_in_rest": 0,
+    "modified": 1640019349
 }
