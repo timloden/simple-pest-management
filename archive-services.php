@@ -16,7 +16,7 @@ get_header();
 
         <?php if ( have_posts() ) : ?>
         <div class="container">
-            <h1 class="text-center mb-5">Simple Pest Management Service Areas</h1>
+            <h1 class="text-center mb-5">Simple Pest Management Services</h1>
             <div class="row row-cols-1 row-cols-md-3">
                 <?php
 			/* Start the Loop */
