@@ -14,10 +14,6 @@ function create_pestroutes_customer($auth_key, $auth_token, $first_name, $last_n
     $response = wp_remote_post( $create_user_endpoint_url );
     $decoded_response = json_decode(wp_remote_retrieve_body( $response ), true);
 
-    error_log('1. new customer id:');
-    error_log(print_r($decoded_response['result'], true));
-    error_log('------------------------------------');
-
     return $decoded_response['result'];
 }
 
@@ -25,9 +21,6 @@ function create_pestroutes_note($auth_key, $auth_token, $customer_id, $pest_type
     $add_note_endpoint = 'https://simplepest.pestroutes.com/api/note/create?authenticationToken=' . $auth_token . '&authenticationKey=' . $auth_key . '&customerID=' . $customer_id . '&date=' . date("Y-m-d") . '&contactType=28&notes=' . $pest_type . $pest_type_other . '&showOnInvoice=0';
     
     $note_response = wp_remote_post( $add_note_endpoint );
-
-    error_log('2. new note added');
-    error_log('------------------------------------');
 }
 
 function create_pestroutes_subscription($auth_key, $auth_token, $customer_id, $pest_type) {
@@ -58,19 +51,12 @@ function create_pestroutes_subscription($auth_key, $auth_token, $customer_id, $p
     $response = wp_remote_post( $create_sub_endpoint_url );
     $decoded_response = json_decode(wp_remote_retrieve_body( $response ), true);
 
-    error_log('3. new subscription id:');
-    error_log(print_r($decoded_response['result'], true));
-    error_log('------------------------------------');
-
     return $decoded_response['result'];
 }
 
 function update_pestroutes_subscription_to_lead($auth_key, $auth_token, $sub_id) {
     $update_sub_endpoint_url = 'https://simplepest.pestroutes.com/api/subscription/updateLeadStage?authenticationToken=' . $auth_token . '&authenticationKey=' . $auth_key . '&status=0&subscriptionID=' . $sub_id;
     $response = wp_remote_post( $update_sub_endpoint_url );
-
-    error_log('4. subscription updated');
-    error_log('------------------------------------');
 }
 
 add_action( 'gform_after_submission_1', 'submit_estimate_form_to_pestroutes', 10, 2 );
