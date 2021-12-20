@@ -17,7 +17,7 @@ $hero_title = get_field('hero_title');
         <section class="service-hero">
             <div class="jumbotron jumbotron-fluid bg-white mb-0">
 
-                <div class="container py-lg-5">
+                <div class="container">
                     <div class="row">
                         <div class="col-12 mb-5 mb-lg-0">
                             <?php
