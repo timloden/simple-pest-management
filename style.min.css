@@ -2945,6 +2945,9 @@ footer .footer-text p{font-size:14px}
 .ginput_counter{display:none}
 .estimate-form .gform_fields{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .estimate-form .gfield{width:100%;margin-bottom:.5rem}
+.estimate-form .ginput_container_name{display:-webkit-box;display:-ms-flexbox;display:flex}
+.estimate-form .ginput_container_name .name_first{width:48%;margin-right:.5rem}
+.estimate-form .ginput_container_name .name_last{width:48%;margin-left:.5rem}
 .estimate-form .captcha{display:none}
 .estimate-form .gform_footer{text-align:right}
 .estimate-form .gform_footer .gform_button{font-size:18px;font-weight:600;padding:.5rem 2rem;background-color:#f6961b;border:0}
@@ -3648,6 +3651,8 @@ html:not(.no-js) [data-aos=flip-down].aos-animate{-webkit-transform:perspective(
 .text-lg-center{text-align:center !important}
 .estimate-form .email{width:48%;margin-right:.5rem}
 .estimate-form .phone{width:48%;margin-left:.5rem}
+.estimate-form .zip-code{width:48%;margin-right:.5rem}
+.estimate-form .pest-type{width:48%;margin-left:.5rem}
 .home-hero .hero-text h1{font-size:4rem}
 }@media(min-width:1200px){.container{max-width:1140px}
 .container-xl,.container-lg,.container-md,.container-sm,.container{max-width:1140px}
