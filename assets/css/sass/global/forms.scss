@@ -145,3 +145,103 @@
         }
     }
 }
+
+.subscribe-form {
+    .gform_fields {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gfield {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .ginput_container_name {
+        display: flex;
+        .name_first {
+            width: 48%;
+            margin-right: 0.5rem;
+        }
+
+        .name_last {
+            width: 48%;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .gfield_label_before_complex {
+        font-size: 14px;
+    }
+
+    .address {
+        legend {
+            padding: 0.5rem 0;
+        }
+
+        .ginput_container {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .address_line_1,
+            .address_line_2 {
+                width: 100%;
+            }
+
+            .address_city {
+                width: 33%;
+                margin-right: 0.5rem;
+            }
+
+            .address_state {
+                width: 30%;
+                margin-right: 0.5rem;
+            }
+
+            .address_zip {
+                width: 33%;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        // email
+        .email {
+            width: 48%;
+            margin-right: 0.5rem;
+        }
+
+        // phone
+        .phone {
+            width: 48%;
+            margin-left: 0.5rem;
+        }
+
+        .zip-code {
+            width: 48%;
+            margin-right: 0.5rem;
+        }
+
+        .pest-type {
+            width: 48%;
+            margin-left: 0.5rem;
+        }
+    }
+
+    // captcha label
+    .captcha {
+        display: none;
+    }
+
+    .gform_footer {
+        text-align: right;
+        .gform_button {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0.5rem 2rem;
+            background-color: #f6961b;
+            border: none;
+        }
+    }
+}
