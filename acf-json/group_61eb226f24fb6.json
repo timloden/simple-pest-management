@@ -41,6 +41,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_620554c54fdc0",
+                    "label": "Service ID",
+                    "name": "service_id",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "5",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_61eb252a08da1",
                     "label": "Service Price",
                     "name": "service_price",
@@ -148,13 +167,32 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "return_format": "id",
             "allow_null": 0,
             "multiple": 0
+        },
+        {
+            "key": "field_6206b0f61ebd2",
+            "label": "Subscription Disclaimer",
+            "name": "subscription_disclaimer",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -175,5 +213,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643228453
+    "modified": 1644605789
 }

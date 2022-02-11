@@ -28,6 +28,7 @@ get_header();
         <?php
 		while( have_rows('service_packages') ): the_row();
 		$name = get_sub_field('service_title');
+		$service_id = get_sub_field('service_id');
 		$price = get_sub_field('service_price');
 		$billing = get_sub_field('billing_cycle');
 		$featured = get_sub_field('featured') ? 'bg-secondary' : 'bg-primary';
@@ -57,8 +58,7 @@ get_header();
                 </ul>
                 <?php endif;?>
                 <div class="card-body text-center">
-                    <a onclick="openSubscriptionForm('<?php echo str_replace(' ', '-', strtolower($name)); ?>');"
-                        href="javascript:void(0)"
+                    <a onclick="openSubscriptionForm('<?php echo $service_id; ?>');" href="javascript:void(0)"
                         class="btn <?php echo get_sub_field('featured') ? 'btn-secondary' : 'btn-primary'; ?> text-white font-weight-bold">Get
                         Started</a>
                 </div>
@@ -80,6 +80,8 @@ get_header();
             </div>
             <div class="modal-body">
                 <?php gravity_form( get_field('subscribe_form'), false, false, false, '', true, 12 ); ?>
+                <p class="text-black-50 small text-right mb-0 mt-2"><?php echo get_field('subscription_disclaimer'); ?>
+                </p>
             </div>
         </div>
     </div>
