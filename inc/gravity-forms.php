@@ -6,10 +6,10 @@ function change_tabindex( $tabindex, $form ) {
     return false;
 }
 
-function create_pestroutes_customer($auth_key, $auth_token, $first_name, $last_name, $email, $phone, $zip) {
+function create_pestroutes_customer($auth_key, $auth_token, $first_name, $last_name, $email, $phone, $zip, $address = null, $city = null, $state = null ) {
     $create_user_endpoint_url = 'https://simplepest.pestroutes.com/api/customer/create?authenticationToken=' . $auth_token . '&authenticationKey=' . $auth_key;
     
-    $create_user_endpoint_url = $create_user_endpoint_url . '&fname=' . $first_name . '&lname=' . $last_name . '&phone1=' . preg_replace("/[^0-9]+/", "", $phone) . '&email=' . $email . '&zip=' . $zip . '&sourceID=16';
+    $create_user_endpoint_url = $create_user_endpoint_url . '&fname=' . $first_name . '&lname=' . $last_name . '&phone1=' . preg_replace("/[^0-9]+/", "", $phone) . '&email=' . $email . '&zip=' . $zip . '&address=' . $address . '&city=' . $city . '&state=' . $state . '&sourceID=16';
 
     $response = wp_remote_post( $create_user_endpoint_url );
     $decoded_response = json_decode(wp_remote_retrieve_body( $response ), true);
@@ -40,6 +40,9 @@ function create_pestroutes_subscription($auth_key, $auth_token, $customer_id, $p
         'Gophers' => 20,
         'Bed Bugs' => 7,
         'Other' => 9,
+        'web-1' => 30,
+        'web-2' => 31,
+        'web-3' => 32,
     ];
 
     $service_id = $services[$pest_type];
@@ -62,6 +65,9 @@ function update_pestroutes_subscription_to_lead($auth_key, $auth_token, $sub_id)
 add_action( 'gform_after_submission_1', 'submit_estimate_form_to_pestroutes', 10, 2 );
 
 add_action( 'gform_after_submission_3', 'submit_estimate_form_to_pestroutes', 10, 2 );
+
+// subscribe form
+add_action( 'gform_after_submission_4', 'submit_subscribe_form_to_pestroutes', 10, 2 );
 
 function submit_estimate_form_to_pestroutes( $entry, $form ) {
     $auth_key = get_field('pest_routes_auth_key', 'option');
@@ -91,4 +97,42 @@ function submit_estimate_form_to_pestroutes( $entry, $form ) {
     }
     
     
+}
+
+function submit_subscribe_form_to_pestroutes( $entry, $form ) {
+    $auth_key = get_field('pest_routes_auth_key', 'option');
+    $auth_token = get_field('pest_routes_auth_token', 'option');
+    
+    if ($auth_key && $auth_token) {
+                
+        // get form inputs from entry
+        $first_name = rawurlencode(rgar( $entry, '1.3' ));
+        $last_name = rawurlencode(rgar( $entry, '1.6' ));
+        $email = rgar( $entry, '2' );
+        $phone = rgar( $entry, '3' );
+        $address = rgar( $entry, '4.1' );
+        $city = rgar( $entry, '4.3' );
+        $state = rgar( $entry, '4.4' );
+        $zip = rgar( $entry, '4.5' );
+        $service = rgar( $entry, '5' );
+
+        $new_user_id = create_pestroutes_customer($auth_key, $auth_token, $first_name, $last_name, $email, $phone, $zip, $address, $city, $state );
+
+        $new_sub_id = create_pestroutes_subscription($auth_key, $auth_token, $new_user_id, $service);
+
+    
+    } else {
+        error_log('no PR auth');
+    }
+    
+}
+
+add_filter( 'gform_us_states', 'us_states' );
+function us_states( $states ) {
+    $new_states = array();
+    foreach ( $states as $state ) {
+        $new_states[ GF_Fields::get( 'address' )->get_us_state_code( $state ) ] = $state;
+    }
+ 
+    return $new_states;
 }
