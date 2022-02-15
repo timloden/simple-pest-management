@@ -31,11 +31,11 @@ get_header();
 		$service_id = get_sub_field('service_id');
 		$price = get_sub_field('service_price');
 		$billing = get_sub_field('billing_cycle');
-		$featured = get_sub_field('featured') ? 'bg-secondary' : 'bg-primary';
+		$featured = get_sub_field('featured');
 	?>
         <div class="col-12 col-md-4">
-            <div class="card mb-3 mb-md-0">
-                <div class="card-header text-center <?php echo $featured; ?>">
+            <div class="card mb-3 mb-md-0 <?php echo ($featured) ? 'shadow' : '' ?>">
+                <div class="card-header text-center <?php echo ($featured) ? 'bg-secondary' : 'bg-primary' ?>">
                     <h2 class="card-title h3 mb-0 text-white"><?php echo $name; ?></h2>
                 </div>
                 <div class="card-body text-center pt-2 pb-2 border-bottom">
@@ -62,9 +62,19 @@ get_header();
                         class="btn <?php echo get_sub_field('featured') ? 'btn-secondary' : 'btn-primary'; ?> text-white font-weight-bold">Get
                         Started</a>
                 </div>
+                <?php if ($featured) : ?>
+                <div class="card-footer text-muted">
+                    <p class="mb-0 text-center"><strong>MOST POPULAR</strong></p>
+                </div>
+                <?php endif; ?>
             </div>
         </div>
         <?php endwhile; ?>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <?php echo the_field('services_disclaimer'); ?>
+        </div>
     </div>
     <?php endif; ?>
 </div><!-- #primary -->
