@@ -66,6 +66,11 @@ get_header();
         </div>
         <?php endwhile; ?>
     </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <?php echo the_field('services_disclaimer'); ?>
+        </div>
+    </div>
     <?php endif; ?>
 </div><!-- #primary -->
 
