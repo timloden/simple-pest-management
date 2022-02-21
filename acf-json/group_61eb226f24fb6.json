@@ -75,7 +75,7 @@
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
-                    "append": "",
+                    "append": "$",
                     "maxlength": ""
                 },
                 {
@@ -115,6 +115,25 @@
                     "ui": 1,
                     "ui_on_text": "",
                     "ui_off_text": ""
+                },
+                {
+                    "key": "field_620ea1e7d2cb4",
+                    "label": "Disclaimer",
+                    "name": "disclaimer",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_61eb22c808d9d",
@@ -167,7 +186,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -184,7 +203,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "34",
                 "class": "",
                 "id": ""
             },
@@ -195,23 +214,23 @@
             "maxlength": ""
         },
         {
-            "key": "field_620c27ebb8234",
-            "label": "Services Disclaimer",
-            "name": "services_disclaimer",
-            "type": "wysiwyg",
+            "key": "field_6213f91647f10",
+            "label": "Featured Subscription Subtitle",
+            "name": "featured_subscription_subtitle",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -232,5 +251,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644964258
+    "modified": 1645476154
 }

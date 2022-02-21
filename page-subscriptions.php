@@ -32,11 +32,29 @@ get_header();
 		$price = get_sub_field('service_price');
 		$billing = get_sub_field('billing_cycle');
 		$featured = get_sub_field('featured');
+
+		$header_color = 'bg-light';
+		$button_color = 'btn-light';
+		$header_text_color = '';
+
+		if ($featured) {
+			$button_color = 'btn-secondary';
+			$header_color = 'bg-secondary';
+			$header_text_color = 'text-white';
+		} elseif ($name == 'Professional') {
+			$button_color = 'btn-primary';
+			$header_color = 'bg-primary';
+			$header_text_color = 'text-white';
+		}
 	?>
         <div class="col-12 col-md-4">
-            <div class="card mb-3 mb-md-0 <?php echo ($featured) ? 'shadow' : '' ?>">
-                <div class="card-header text-center <?php echo ($featured) ? 'bg-secondary' : 'bg-primary' ?>">
-                    <h2 class="card-title h3 mb-0 text-white"><?php echo $name; ?></h2>
+            <div
+                <?php echo ($featured) ? 'class="card mb-3 mb-md-0 shadow-lg border-secondary mt-3 mt-md-0" style="border-width: 5px;"' : 'class="card mb-3 mb-md-0" style="margin-top: 27px;"' ?>>
+                <div
+                    <?php echo ($featured) ? 'class="card-header text-center ' . $header_color . '" style="border-radius: 0;"' : 'class="card-header text-center ' . $header_color . '"' ?>>
+                    <h2 class="card-title h3 mb-0 <?php echo $header_text_color;?>"><?php echo $name; ?>
+                    </h2>
+                    <?php echo ($featured) ? '<p class="text-white mb-0 text-center">' . get_field('featured_subscription_subtitle') . '</p>' : '';?>
                 </div>
                 <div class="card-body text-center pt-2 pb-2 border-bottom">
                     <p class="mb-0 font-weight-bold" style="font-size: 30px;">$<?php echo $price; ?> <span
@@ -45,13 +63,13 @@ get_header();
                     <p class="mb-0 text-black-50" style="font-size: 12px;">*Initial Fee Applies</p>
                 </div>
                 <?php 
-		// start list of services
-		if( have_rows('services_included') ): ?>
+				// start list of services
+				if( have_rows('services_included') ): ?>
                 <ul class="list-group list-group-flush">
                     <?php
-			while( have_rows('services_included') ) : the_row();
-				$service_name = get_sub_field('service_name');
-		?>
+					while( have_rows('services_included') ) : the_row();
+						$service_name = get_sub_field('service_name');
+				?>
                     <li class="list-group-item text-center"><?php echo $service_name; ?></li>
 
                     <?php endwhile; ?>
@@ -59,21 +77,23 @@ get_header();
                 <?php endif;?>
                 <div class="card-body text-center">
                     <a onclick="openSubscriptionForm('<?php echo $service_id; ?>');" href="javascript:void(0)"
-                        class="btn <?php echo get_sub_field('featured') ? 'btn-secondary' : 'btn-primary'; ?> text-white font-weight-bold">Get
-                        Started</a>
+                        class="btn <?php echo ($featured) ? 'btn-lg ' . $button_color . ' text-white font-weight-bold' : 'border ' . $button_color . ' font-weight-bold'; ?>">Get
+                        Started <?php echo ($featured) ? 'Today!' : ''; ?></a>
                 </div>
                 <?php if ($featured) : ?>
-                <div class="card-footer text-muted">
+                <div class="card-footer">
                     <p class="mb-0 text-center"><strong>MOST POPULAR</strong></p>
                 </div>
                 <?php endif; ?>
             </div>
+            <p class="text-center mt-3 text-black-50" style="font-size: 12px;">
+                <?php echo get_sub_field('disclaimer'); ?></p>
         </div>
         <?php endwhile; ?>
     </div>
     <div class="row mt-5">
         <div class="col-12">
-            <?php echo the_field('services_disclaimer'); ?>
+
         </div>
     </div>
     <?php endif; ?>
