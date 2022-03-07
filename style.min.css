@@ -6,7 +6,7 @@ Theme URI: https://timloden.com/
 Author: Tim Loden
 Author URI: https://timloden.com/
 Description: 
-Version: 1.8.2
+Version: 1.8.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -2943,6 +2943,7 @@ footer .footer-text p{font-size:14px}
 .validation_message{display:none}
 .grecaptcha-badge{display:none !important}
 .ginput_counter{display:none}
+h2.gform_submission_error{font-size:1rem}
 .estimate-form .gform_fields{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .estimate-form .gfield{width:100%;margin-bottom:.5rem}
 .estimate-form .ginput_container_name{display:-webkit-box;display:-ms-flexbox;display:flex}
