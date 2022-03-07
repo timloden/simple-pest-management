@@ -136,3 +136,28 @@ function us_states( $states ) {
  
     return $new_states;
 }
+
+add_filter( 'gform_field_validation', function ( $result, $value, $form, $field ) {
+    if ( 'name' === $field->type && $field->isRequired ) {
+        error_log('Running.' );
+        // Input values.
+        $prefix = rgar( $value, $field->id . '.2' );
+        $first  = rgar( $value, $field->id . '.3' );
+        $middle = rgar( $value, $field->id . '.4' );
+        $last   = rgar( $value, $field->id . '.6' );
+        $suffix = rgar( $value, $field->id . '.8' );
+ 
+        $name_field = array( '2' => $prefix, '3' => $first, '4' => $middle, '6' => $last, '8' => $suffix );
+ 
+        foreach ( $name_field as $input_number => $input_value ) {
+            if ( strlen($input_value) > 20 ) {
+                $field->set_input_validation_state( $input_number, false ); // Only for Gravity Forms 2.5.10 or higher.
+                $result['is_valid'] = false;
+                $result['message']  = empty( $field->errorMessage ) ? __( 'Too many characters', 'gravityforms' ) : $field->errorMessage;
+                error_log('Too many characters in: ' . $field->id . ' ' . $input_number );
+            }
+        }
+    }
+    error_log('Returning validation result.' );
+    return $result;
+}, 10, 4 );
