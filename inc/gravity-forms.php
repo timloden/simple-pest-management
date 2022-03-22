@@ -139,7 +139,6 @@ function us_states( $states ) {
 
 add_filter( 'gform_field_validation', function ( $result, $value, $form, $field ) {
     if ( 'name' === $field->type && $field->isRequired ) {
-        error_log('Running.' );
         // Input values.
         $prefix = rgar( $value, $field->id . '.2' );
         $first  = rgar( $value, $field->id . '.3' );
@@ -158,6 +157,24 @@ add_filter( 'gform_field_validation', function ( $result, $value, $form, $field 
             }
         }
     }
-    error_log('Returning validation result.' );
     return $result;
 }, 10, 4 );
+
+add_filter( 'gform_field_validation_1_8', 'zip_code_validation', 10, 4 );
+add_filter( 'gform_field_validation_3_9', 'zip_code_validation', 10, 4 );
+
+function zip_code_validation( $result, $value, $form, $field ) {
+    
+    $first_two = substr($value, 0, 2);
+    $zip_status = 0;
+
+    if ($first_two == 91 || $first_two == 92) {
+        $zip_status = 1;
+    }
+    
+    if ( $result['is_valid'] && $zip_status != 1 ) {
+        $result['is_valid'] = false;
+        $result['message'] = 'Please contact customer support at' . get_field('phone_number', 'option');
+    }
+    return $result;
+}
