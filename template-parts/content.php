@@ -19,7 +19,7 @@
         </div>
         <div class="col-12 col-lg-8">
 
-            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h5>
+            <h2 class="h5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h2>
             <p><?php the_excerpt(); ?></p>
             <p class="mb-0 text-right"><a href="<?php the_permalink(); ?>">Continue reading <i
                         class="las la-angle-right"></i></a></p>
