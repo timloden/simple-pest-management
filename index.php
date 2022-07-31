@@ -16,14 +16,13 @@
 
 get_header();
 ?>
-<div class="">
-    <div class="container py-3">
-        <div class="row align-items-center">
-            <div class="col-12">
-                <header class="page-header">
-                    <h1 class="page-title text-center my-3 my-lg-4">Simple Pest Management Resources</h1>
-                </header>
-            </div>
+
+<div class="container py-3">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <header class="page-header">
+                <h1 class="page-title text-center mt-3 mb-4 mt-lg-4 mb-lg-5">Simple Pest Management Resources</h1>
+            </header>
         </div>
     </div>
 </div>
