@@ -9,28 +9,24 @@
 
 get_header();
 ?>
-
-
-<div id="primary" class="content-area">
-    <main id="main" class="site-main">
-
-        <?php if ( have_posts() ) : ?>
-
-        <div class="bg-light border-bottom mb-3">
-            <div class="container py-3">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <header class="page-header">
-                            <h1 class="page-title text-center"><?php single_term_title(); ?></h1>
-                            <?php the_archive_description( '<div class="archive-description text-center">', '</div>' ); ?>
-                        </header><!-- .page-header -->
-                    </div>
-                </div>
-            </div>
+<div class="container py-3">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <header class="page-header">
+                <h1 class="page-title text-center mt-3 mb-4 mt-lg-4 mb-lg-5"><?php single_term_title(); ?></h1>
+                <?php the_archive_description( '<div class="archive-description text-center">', '</div>' ); ?>
+            </header>
         </div>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3">
-                <?php
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+
+            <?php
+			if ( have_posts() ) :
+				echo '<div class="row justify-content-center pb-3">';
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -44,17 +40,19 @@ get_header();
 
 			endwhile;
 
+			echo '</div>';
+			bootstrap_pagination();
+
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
         ?>
-            </div>
-        </div>
 
-    </main><!-- #main -->
-</div><!-- #primary -->
+        </main><!-- #main -->
+    </div><!-- #primary -->
+</div>
 
 <?php
 get_footer();

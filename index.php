@@ -16,26 +16,24 @@
 
 get_header();
 ?>
-<div class="">
-    <div class="container py-3">
-        <div class="row align-items-center">
-            <div class="col-12">
-                <header class="page-header">
-                    <h1 class="page-title text-center">Blog</h1>
-                    <div class="archive-description text-center"></div>
-                </header><!-- .page-header -->
-            </div>
+
+<div class="container py-3">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <header class="page-header">
+                <h1 class="page-title text-center mt-3 mb-4 mt-lg-4 mb-lg-5">Simple Pest Management Resources</h1>
+            </header>
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container mb-5">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
             <?php
 			if ( have_posts() ) :
-				echo '<div class="row row-cols-1 row-cols-md-3 pb-3">';
+				echo '<div class="row justify-content-center pb-3">';
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
