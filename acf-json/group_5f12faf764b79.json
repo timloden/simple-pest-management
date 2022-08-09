@@ -19,7 +19,12 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "show_column": 1,
+            "show_column_sortable": 1,
+            "show_column_weight": 1000,
+            "allow_quickedit": 1,
+            "allow_bulkedit": 1
         },
         {
             "key": "field_5f12fb08fbc9a",
@@ -193,6 +198,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_62f2f2c958a93",
+            "label": "Guarantee Text",
+            "name": "guarantee_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_60b1a875addb1",
             "label": "Services",
             "name": "services",
@@ -331,6 +355,30 @@
                     "new_lines": ""
                 }
             ]
+        },
+        {
+            "key": "field_62f2f31058a94",
+            "label": "Guarantee Image",
+            "name": "guarantee_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -339,6 +387,11 @@
                 "param": "post_template",
                 "operator": "==",
                 "value": "page-home.php"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
             }
         ]
     ],
@@ -350,5 +403,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627657936
+    "show_in_rest": 0,
+    "modified": 1660089121
 }
