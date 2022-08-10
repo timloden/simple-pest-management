@@ -93,6 +93,8 @@ $hero_title = get_field('hero_title');
                         within our community, create a positive workplace for our staff and provide pest solutions for
                         families so they can focus on what really matters… their family.</p>
                     <p class="h5">We kill bugs! It&apos;s that SIMPLE.</p>
+                    <p class="mt-4 pt-4 border-top"><?php the_field('guarantee_text'); ?></p>
+                    <p class="h5">100% Satisfaction Guaranteed</p>
                 </div>
             </div>
         </div>
@@ -154,12 +156,18 @@ $hero_title = get_field('hero_title');
         <div class="row">
             <div class="col-12 col-lg-4 mb-5 mb-lg-0">
                 <div class="position-sticky" style="top: 200px;">
+                    <?php $guarantee_image = get_field('guarantee_image'); ?>
                     <h2 class="border-bottom mb-3 pb-3">Hear from some of our clients</h2>
                     <p>We want you to feel confident in your pest service so please take a look at what some of our
                         satisfied customers are saying!</p>
                     <a href="https://www.yelp.com/biz/simple-pest-management-santee" target="_blank"
                         class="btn btn-primary btn-yelp font-weight-bold">View more on Yelp <i
                             class="lab la-yelp"></i></a>
+                    <?php if ($guarantee_image) : ?>
+                    <div class="text-center">
+                        <img class="mt-3 mt-lg-5 img-fluid lazy" src="<?php echo $guarantee_image['url']; ?>">
+                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="col-12 col-lg-8">
@@ -217,6 +225,33 @@ $hero_title = get_field('hero_title');
             <?php endwhile; ?>
         </div>
         <?php endif; ?>
+    </div>
+</section>
+<section class="service-areas py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2 class="border-bottom mb-3 pb-3">Areas we service</h2>
+                <p><?php the_field('areas_we_service_text'); ?></p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <?php 
+            $args = array(
+                'post_type' => 'service-areas'
+            );
+            $service_areas_query = new WP_Query( $args ); 
+
+            if( $service_areas_query->have_posts() ): ?>
+                <div class="row mt-3 mt-lg-5">
+                    <?php while( $service_areas_query->have_posts() ): $service_areas_query->the_post(); ?>
+                    <div class="col-6 mb-3">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </div>
+                    <?php endwhile; ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
 </section>
 <?php
