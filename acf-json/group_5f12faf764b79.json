@@ -201,7 +201,7 @@
             "key": "field_62f2f2c958a93",
             "label": "Guarantee Text",
             "name": "guarantee_text",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -211,10 +211,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
         },
         {
             "key": "field_60b1a875addb1",
@@ -423,5 +423,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660089992
+    "modified": 1660090590
 }

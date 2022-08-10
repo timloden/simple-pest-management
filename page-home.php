@@ -93,6 +93,8 @@ $hero_title = get_field('hero_title');
                         within our community, create a positive workplace for our staff and provide pest solutions for
                         families so they can focus on what really matters… their family.</p>
                     <p class="h5">We kill bugs! It&apos;s that SIMPLE.</p>
+                    <p class="mt-4 pt-4 border-top"><?php the_field('guarantee_text'); ?></p>
+                    <p class="h5">100% Satisfaction Guaranteed</p>
                 </div>
             </div>
         </div>
