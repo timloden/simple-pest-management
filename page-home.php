@@ -141,6 +141,33 @@ $hero_title = get_field('hero_title');
             <?php endwhile; ?>
 
         </div>
+
+
+        <div class="row pt-5">
+            <div class="col-12 col-lg-6">
+                <h2 class="border-bottom mb-3 pb-3">Areas we service</h2>
+                <p><?php the_field('areas_we_service_text'); ?></p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <?php 
+            $args = array(
+                'post_type' => 'service-areas'
+            );
+            $service_areas_query = new WP_Query( $args ); 
+
+            if( $service_areas_query->have_posts() ): ?>
+                <div class="row mt-3 mt-lg-5">
+                    <?php while( $service_areas_query->have_posts() ): $service_areas_query->the_post(); ?>
+                    <div class="col-6 mb-3">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+
         <div class="row pt-5">
             <div class="col-12 text-center">
                 <a href="/free-estimate" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
@@ -149,7 +176,6 @@ $hero_title = get_field('hero_title');
         </div>
     </div>
 </section>
-
 
 <section class="clients py-5">
     <div class="container py-5">
@@ -227,32 +253,6 @@ $hero_title = get_field('hero_title');
         <?php endif; ?>
     </div>
 </section>
-<section class="service-areas py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <h2 class="border-bottom mb-3 pb-3">Areas we service</h2>
-                <p><?php the_field('areas_we_service_text'); ?></p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <?php 
-            $args = array(
-                'post_type' => 'service-areas'
-            );
-            $service_areas_query = new WP_Query( $args ); 
 
-            if( $service_areas_query->have_posts() ): ?>
-                <div class="row mt-3 mt-lg-5">
-                    <?php while( $service_areas_query->have_posts() ): $service_areas_query->the_post(); ?>
-                    <div class="col-6 mb-3">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </div>
-                    <?php endwhile; ?>
-                </div>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-</section>
 <?php
 get_footer();
