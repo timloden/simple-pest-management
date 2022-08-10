@@ -144,21 +144,22 @@ $hero_title = get_field('hero_title');
 
 
         <div class="row pt-5">
-            <div class="col-12 col-lg-6">
-                <h2 class="border-bottom mb-3 pb-3">Areas we service</h2>
+            <div class="col-12">
+                <h2 class="border-bottom mb-3 pb-3 text-center">Areas we service</h2>
                 <p><?php the_field('areas_we_service_text'); ?></p>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12">
                 <?php 
             $args = array(
-                'post_type' => 'service-areas'
+                'post_type' => 'service-areas',
+                'posts_per_page' => -1
             );
             $service_areas_query = new WP_Query( $args ); 
 
             if( $service_areas_query->have_posts() ): ?>
                 <div class="row mt-3 mt-lg-5">
                     <?php while( $service_areas_query->have_posts() ): $service_areas_query->the_post(); ?>
-                    <div class="col-6 mb-3">
+                    <div class="col-6 col-lg-3 mb-3">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </div>
                     <?php endwhile; ?>
