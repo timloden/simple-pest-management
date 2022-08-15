@@ -84,15 +84,8 @@ $hero_title = get_field('hero_title');
             </div>
             <div class="col-12 col-lg-6 order-0 order-lg-1">
                 <div class="pl-0 pl-lg-5 position-sticky" style="top: 300px;">
-                    <h2 class="mb-4 pb-4 border-bottom">Our Mission is SIMPLE</h2>
-                    <p>We have developed the philosophy that no family should have to deal with underlying pest issues
-                        within the comfort of their home. Our overriding goal is delivering excellent customer service
-                        and
-                        efficient pest treatments to provide a pest free home and yard.</p>
-                    <p>Our mission is to create bonds
-                        within our community, create a positive workplace for our staff and provide pest solutions for
-                        families so they can focus on what really matters… their family.</p>
-                    <p class="h5">We kill bugs! It&apos;s that SIMPLE.</p>
+                    <h2 class="mb-4 pb-4 border-bottom"><?php the_field('mission_title'); ?></h2>
+                    <?php the_field('mission_text'); ?>
                     <p class="mt-4 pt-4 border-top"><?php the_field('guarantee_text'); ?></p>
                     <p class="h5">100% Satisfaction Guaranteed</p>
                 </div>
