@@ -198,6 +198,44 @@
             "maxlength": ""
         },
         {
+            "key": "field_62f9b0b11c37b",
+            "label": "Mission Title",
+            "name": "mission_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62f9b0c91c37c",
+            "label": "Mission Text",
+            "name": "mission_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_62f2f2c958a93",
             "label": "Guarantee Text",
             "name": "guarantee_text",
@@ -423,5 +461,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660090590
+    "modified": 1660530909
 }
