@@ -180,9 +180,6 @@ $hero_title = get_field('hero_title');
                     <h2 class="border-bottom mb-3 pb-3">Hear from some of our clients</h2>
                     <p>We want you to feel confident in your pest service so please take a look at what some of our
                         satisfied customers are saying!</p>
-                    <a href="https://www.yelp.com/biz/simple-pest-management-santee" target="_blank"
-                        class="btn btn-primary btn-yelp font-weight-bold">View more on Yelp <i
-                            class="lab la-yelp"></i></a>
                     <?php if ($guarantee_image) : ?>
                     <div class="text-center">
                         <img class="mt-3 mt-lg-5 img-fluid lazy" src="<?php echo $guarantee_image['url']; ?>">
