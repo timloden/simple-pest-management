@@ -192,11 +192,11 @@ $hero_title = get_field('hero_title');
             </div>
             <div class="col-12 col-lg-8">
                 <?php 
-                    //$embed_social_shortcode = get_field('embed_social_shortcode');
+                    $embed_social_shortcode = get_field('embed_social_shortcode');
 
-                    // if ($embed_social_shortcode) {
-                    //     echo do_shortcode($embed_social_shortcode); 
-                    // }
+                    if ($embed_social_shortcode) {
+                        echo do_shortcode($embed_social_shortcode); 
+                    }
                 ?>
 
             </div>
