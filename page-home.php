@@ -191,45 +191,14 @@ $hero_title = get_field('hero_title');
                 </div>
             </div>
             <div class="col-12 col-lg-8">
-                <?php if( have_rows('review_sites', 'option') ): ?>
-                <div class="row">
-                    <?php while( have_rows('yelp_reviews') ): the_row(); 
-                        $name = get_sub_field('name');
-                        $date = get_sub_field('date');
-                        $link_to_review = get_sub_field('link_to_review');
-                        $quote = get_sub_field('quote');
-                    ?>
-                    <div class="col-12 col-lg-6 mb-4">
-                        <div class="card p-2">
-                            <div class="card-header p-0 pb-2 bg-white">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="font-weight-bold"><a
-                                            href="https://www.yelp.com/biz/simple-pest-management-santee"
-                                            target="_blank">Simple Pest Management</a></span>
-                                    <span><img
-                                            data-src="https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/28332f3b0739/assets/img/logos/logo_desktop_medium_outline.png"
-                                            alt="yelp logo" class="lazy"></span>
-                                </div>
-                            </div>
-                            <div class="card-body p-0 pt-2">
-                                <p class="mb-1 d-flex justify-content-between">
-                                    <a class="font-weight-bold"
-                                        href="<?php echo $link_to_review; ?>"><?php echo $name; ?></a>
-                                    <img class="lazy"
-                                        data-src="<?php echo get_template_directory_uri(); ?>/assets/images/yelp-stars.png">
-                                </p>
-                                <p class="mb-2" style="font-size: 12px; color: #666;"><?php echo $date; ?></p>
-                                <p style="font-size: 14px; line-height: 1.4;">
-                                    <?php echo substr($quote,0,300) . '...'; ?></p>
-                            </div>
-                            <div class="card-footer p-0 pt-2 bg-white text-center">
-                                <a style="font-size: 14px;" href="<?php echo $link_to_review; ?>">Read more on Yelp</a>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endwhile; ?>
-                </div>
-                <?php endif; ?>
+                <?php 
+                    //$embed_social_shortcode = get_field('embed_social_shortcode');
+
+                    // if ($embed_social_shortcode) {
+                    //     echo do_shortcode($embed_social_shortcode); 
+                    // }
+                ?>
+
             </div>
         </div>
         <?php if( have_rows('review_sites', 'option') ): ?>

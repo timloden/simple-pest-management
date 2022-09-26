@@ -198,63 +198,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_62f9b0b11c37b",
-            "label": "Mission Title",
-            "name": "mission_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_62f9b0c91c37c",
-            "label": "Mission Text",
-            "name": "mission_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_62f2f2c958a93",
-            "label": "Guarantee Text",
-            "name": "guarantee_text",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "new_lines": "",
-            "maxlength": "",
-            "placeholder": "",
-            "rows": ""
-        },
-        {
             "key": "field_60b1a875addb1",
             "label": "Services",
             "name": "services",
@@ -271,7 +214,7 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_60b1a881addb2",
@@ -293,9 +236,11 @@
                     "allow_null": 0,
                     "multiple": 0,
                     "return_format": "object",
-                    "ui": 1
+                    "ui": 1,
+                    "parent_repeater": "field_60b1a875addb1"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_5f597995e349a",
@@ -314,7 +259,7 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5f5979b1e349b",
@@ -333,7 +278,8 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5f597995e349a"
                 },
                 {
                     "key": "field_5f5979d7e349c",
@@ -352,7 +298,8 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5f597995e349a"
                 },
                 {
                     "key": "field_5f597a18e349d",
@@ -371,7 +318,8 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5f597995e349a"
                 },
                 {
                     "key": "field_5f597a5de349e",
@@ -390,15 +338,17 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": ""
+                    "new_lines": "",
+                    "parent_repeater": "field_5f597995e349a"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
-            "key": "field_62f2f31058a94",
-            "label": "Guarantee Image",
-            "name": "guarantee_image",
-            "type": "image",
+            "key": "field_63322034d4574",
+            "label": "Embed Social Shortcode",
+            "name": "embed_social_shortcode",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -407,35 +357,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_62f2f672097b9",
-            "label": "Areas we service text",
-            "name": "areas_we_service_text",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
+            "default_value": "[embedsocial_hashtag id=\"1610355dcc968f9c5774b6fee0fe8956600d5550\"]",
             "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -461,5 +387,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660530909
+    "modified": 1664229472
 }
