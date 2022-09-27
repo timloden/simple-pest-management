@@ -45,6 +45,14 @@ function location_taxonomy() {
 }
 add_action( 'init', 'location_taxonomy', 0 );
 
+add_action( 'pre_get_posts', function ( $query ) {
+    if ( !is_admin() && $query->is_main_query() && $query->is_tax('location') ) {
+    	$query->set( 'posts_per_page', '-1'   );
+       $query->set( 'orderby', 'title' );
+	   $query->set( 'order', 'ASC' );
+    }
+});
+
 // function ymm_init()
 // {
 //     register_taxonomy(
