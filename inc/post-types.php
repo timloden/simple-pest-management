@@ -101,7 +101,7 @@ function custom_post_type_service_areas() {
 		'description'           => __( 'Simple Pest Management service areas', 'simple-pest' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
-		//'taxonomies'            => array( 'category', 'post_tag' ),
+		'taxonomies'            => array( 'locations' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

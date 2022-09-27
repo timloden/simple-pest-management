@@ -75,9 +75,7 @@
                     <div class="col-12 col-lg-5 pl-0">
                         <img class="img-fluid lazy"
                             data-src="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-logo-horizontal-color-expanded.png">
-                        <p class="border-top mt-4 pt-4 mb-2">
-                            <?php echo esc_attr(get_field('phone_number', 'option')) ?>
-                        </p>
+
                         <?php echo esc_attr(the_field('address', 'option')) ?>
                     </div>
                     <div class="col-12 col-lg-7 px-0">

@@ -142,32 +142,54 @@ $hero_title = get_field('hero_title');
                 <p><?php the_field('areas_we_service_text'); ?></p>
             </div>
             <div class="col-12">
-                <?php 
-            $args = array(
-                'post_type' => 'service-areas',
-                'posts_per_page' => -1
-            );
-            $service_areas_query = new WP_Query( $args ); 
+                <?php
+                
+                $terms = get_terms( array( 
+                    'taxonomy' => 'location',
+                    'hide_empty' => true,
+                ) );
 
-            if( $service_areas_query->have_posts() ): ?>
-                <div class="row mt-3 mt-lg-5">
-                    <?php while( $service_areas_query->have_posts() ): $service_areas_query->the_post(); ?>
-                    <div class="col-6 col-lg-3 mb-3">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                if ($terms) {
+                    echo '<div class="row mt-3 mt-lg-5 justify-content-center">';
+                    
+                    foreach ($terms as $term){
+
+                        $term_link = get_term_link( $term );
+                        $term_id = 'term_' . $term->term_id;
+                        $location_image = get_field('location_image', $term);
+                        ?>
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 location">
+                        <a href="<?php echo $term_link; ?>">
+                            <?php if ($location_image) : ?>
+                            <img src="<?php echo $location_image['url']; ?>" class="card-img-top"
+                                alt="<?php echo $term->name; ?> location">
+                            <?php endif; ?>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a
+                                    href="<?php echo $term_link; ?>"><?php echo $term->name; ?> Pest
+                                    Control</a>
+                            </h5>
+
+                        </div>
                     </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
                 </div>
-                <?php endif; ?>
+                <?php
+                    }
+                
+                }
+                ?>
             </div>
         </div>
+    </div>
 
-        <div class="row pt-5">
-            <div class="col-12 text-center">
-                <a href="/free-estimate" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
-                    today!</a>
-            </div>
+    <div class="row pt-5">
+        <div class="col-12 text-center">
+            <a href="/free-estimate" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
+                today!</a>
         </div>
+    </div>
     </div>
 </section>
 
@@ -180,9 +202,6 @@ $hero_title = get_field('hero_title');
                     <h2 class="border-bottom mb-3 pb-3">Hear from some of our clients</h2>
                     <p>We want you to feel confident in your pest service so please take a look at what some of our
                         satisfied customers are saying!</p>
-                    <a href="https://www.yelp.com/biz/simple-pest-management-santee" target="_blank"
-                        class="btn btn-primary btn-yelp font-weight-bold">View more on Yelp <i
-                            class="lab la-yelp"></i></a>
                     <?php if ($guarantee_image) : ?>
                     <div class="text-center">
                         <img class="mt-3 mt-lg-5 img-fluid lazy" src="<?php echo $guarantee_image['url']; ?>">
