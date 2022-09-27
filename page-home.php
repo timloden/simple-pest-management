@@ -146,11 +146,11 @@ $hero_title = get_field('hero_title');
                 
                 $terms = get_terms( array( 
                     'taxonomy' => 'location',
-                    'hide_empty' => false,
+                    'hide_empty' => true,
                 ) );
 
                 if ($terms) {
-                    echo '<div class="row mt-3 mt-lg-5">';
+                    echo '<div class="row mt-3 mt-lg-5 justify-content-center">';
                     
                     foreach ($terms as $term){
 
