@@ -198,7 +198,6 @@ $hero_title = get_field('hero_title');
         <div class="row">
             <div class="col-12 mb-lg-0 text-center">
 
-                <?php $guarantee_image = get_field('guarantee_image'); ?>
                 <h2 class="mb-3">Hear from some of our clients</h2>
                 <p>We want you to feel confident in your pest service so please take a look at what some of our
                     satisfied customers are saying!</p>
