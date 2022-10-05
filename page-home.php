@@ -194,22 +194,17 @@ $hero_title = get_field('hero_title');
 </section>
 
 <section class="clients py-5">
-    <div class="container py-5">
+    <div class="container pt-5">
         <div class="row">
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
-                <div class="position-sticky" style="top: 200px;">
-                    <?php $guarantee_image = get_field('guarantee_image'); ?>
-                    <h2 class="border-bottom mb-3 pb-3">Hear from some of our clients</h2>
-                    <p>We want you to feel confident in your pest service so please take a look at what some of our
-                        satisfied customers are saying!</p>
-                    <?php if ($guarantee_image) : ?>
-                    <div class="text-center">
-                        <img class="mt-3 mt-lg-5 img-fluid lazy" src="<?php echo $guarantee_image['url']; ?>">
-                    </div>
-                    <?php endif; ?>
-                </div>
+            <div class="col-12 mb-lg-0 text-center">
+
+                <?php $guarantee_image = get_field('guarantee_image'); ?>
+                <h2 class="mb-3">Hear from some of our clients</h2>
+                <p>We want you to feel confident in your pest service so please take a look at what some of our
+                    satisfied customers are saying!</p>
+
             </div>
-            <div class="col-12 col-lg-8">
+            <div class="col-12">
                 <?php 
                     $embed_social_shortcode = get_field('embed_social_shortcode');
 
@@ -221,7 +216,7 @@ $hero_title = get_field('hero_title');
             </div>
         </div>
         <?php if( have_rows('review_sites', 'option') ): ?>
-        <div class="row pt-5">
+        <div class="row">
             <?php while( have_rows('review_sites', 'option') ): the_row(); 
             $image = get_sub_field('image');
             ?>
@@ -233,6 +228,17 @@ $hero_title = get_field('hero_title');
             <?php endwhile; ?>
         </div>
         <?php endif; ?>
+        <div class="row">
+            <div class="col-12">
+                <?php 
+                    $google_embed_social_shortcode = get_field('google_reviews_shortcode');
+
+                    if ($google_embed_social_shortcode) {
+                        echo do_shortcode($google_embed_social_shortcode); 
+                    }
+                ?>
+            </div>
+        </div>
     </div>
 </section>
 
