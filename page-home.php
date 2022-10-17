@@ -228,9 +228,11 @@ $hero_title = get_field('hero_title');
             <?php 
             $video = get_field('video_file');
             if ($video) : ?>
-            <video controls>
-                <source src="<?php echo $video['url']; ?>" type="video/mp4">
-            </video>
+            <div class="embed-responsive embed-responsive-16by9">
+                <video controls>
+                    <source src="<?php echo $video['url']; ?>" type="video/mp4">
+                </video>
+            </div>
             <?php endif; ?>
         </div>
     </div>
