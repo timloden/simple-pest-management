@@ -36,7 +36,7 @@ $discount_subtitle = get_field('hero_discount_subtitle', $home_page_id);
                                 class="text-success">Simple.</span> Call
                             us!</h1>
                         <p class="h2 text-white pt-3">
-                            <?php echo esc_attr($phone_number); ?>
+                            <?php echo esc_attr($phone_number); ?> (PEST)
                         </p>
                         <p class="lead text-white">Protect Your Family and Investment.</p>
                     </div>
