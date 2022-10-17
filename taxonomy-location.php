@@ -35,11 +35,10 @@ $discount_subtitle = get_field('hero_discount_subtitle', $home_page_id);
                         <h1 class="text-white"><?php echo ($hero_title) ? $hero_title : 'Got bugs?' ?><br><span
                                 class="text-success">Simple.</span> Call
                             us!</h1>
-                        <p class="lead text-white mb-2"><?php echo single_cat_title('', false); ?> Location:</p>
-                        <p class="h2 text-white">
+                        <p class="h2 text-white pt-3">
                             <?php echo esc_attr($phone_number); ?>
                         </p>
-                        <p class="lead text-white"><?php echo esc_attr(get_field('hero_subtitle'));?></p>
+                        <p class="lead text-white">Protect Your Family and Investment.</p>
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="mx-4 px-2 py-3 text-center text-primary limited-time-container position-relative bg-orange"
