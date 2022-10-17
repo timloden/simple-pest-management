@@ -54,7 +54,9 @@
                     <p class="text-white text-center h5 font-weight-normal">Simple Pest Management</p>
                     <p class="h1 text-white text-center mb-3">100% Satisfaction Guaranteed</p>
                     <p class="lead text-white text-center mb-0">Call us now</p>
-                    <p class="h2 text-success text-center">(619) 373-PEST (7378)</p>
+                    <p class="h2 text-success text-center">
+                        <?php echo (get_field('phone_number', 'option') ? get_field('phone_number', 'option') : ''); ?>
+                    </p>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="py-3 text-center text-primary">

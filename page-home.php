@@ -158,7 +158,7 @@ $hero_title = get_field('hero_title');
                         $term_id = 'term_' . $term->term_id;
                         $location_image = get_field('location_image', $term);
                         ?>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <div class="card h-100 location">
                         <a href="<?php echo $term_link; ?>">
                             <?php if ($location_image) : ?>
@@ -184,12 +184,55 @@ $hero_title = get_field('hero_title');
         </div>
     </div>
 
-    <div class="row pt-5">
+    <div class="row py-5">
         <div class="col-12 text-center">
             <a href="/free-estimate" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
                 today!</a>
         </div>
     </div>
+
+    <div class="row pt-5">
+        <div class="col-12 col-md-6">
+            <h4 class="mb-4"><?php echo get_field('video_section_title') ? get_field('video_section_title') : ''; ?>
+            </h4>
+            <div class="accordion pr-md-5" id="accordionExample">
+
+                <?php while( have_rows('video_accordion') ): the_row(); 
+                $accordion_title = get_sub_field('title');
+                $accordion_desc = get_sub_field('description');
+            ?>
+
+                <div class="accordion-item mb-4">
+                    <h4 class="mb-0">
+                        <button
+                            class="btn btn-link d-flex w-100 align-items-center justify-content-between text-left px-0"
+                            type="button" data-toggle="collapse" data-target="#collapse-<?php echo get_row_index(); ?>"
+                            aria-expanded="false" aria-controls="collapse-<?php echo get_row_index(); ?>">
+                            <span><i class="las la-check-square pr-2"></i>
+                                <?php echo esc_attr($accordion_title); ?></span>
+                            <i class="las la-chevron-left"></i>
+                        </button>
+                    </h4>
+                    <div id="collapse-<?php echo get_row_index(); ?>" class="collapse"
+                        aria-labelledby="heading-<?php echo get_row_index(); ?>" data-parent="#accordionExample">
+
+                        <?php echo esc_attr($accordion_desc); ?>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <?php 
+            $video = get_field('video_file');
+            if ($video) : ?>
+            <video controls>
+                <source src="<?php echo $video['url']; ?>" type="video/mp4">
+            </video>
+            <?php endif; ?>
+        </div>
     </div>
 </section>
 
