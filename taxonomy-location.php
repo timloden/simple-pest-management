@@ -59,6 +59,52 @@ $discount_subtitle = get_field('hero_discount_subtitle', $home_page_id);
             </div>
         </div>
 
+        <section class="mission py-5 ">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-1 order-lg-0 mt-5 mt-lg-0">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column">
+                                    <div class="card mb-lg-4 shadow border-0" data-aos="fade-down" data-aos-delay="100">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-1.jpg"
+                                            class="card-img-top lazy">
+                                    </div>
+                                    <div class="card shadow border-0 d-none d-lg-block" data-aos="fade-down" d
+                                        ata-aos-delay="200">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-2.jpg"
+                                            class="card-img-top lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="d-flex flex-column mt-5">
+                                    <div class="card mb-4 mt-5 shadow border-0 d-none d-lg-block" data-aos="fade-down"
+                                        data-aos-delay="300">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-3.jpg"
+                                            class="card-img-top lazy">
+                                    </div>
+                                    <div class="card shadow border-0 d-none d-lg-block" data-aos="fade-down"
+                                        data-aos-delay="400">
+                                        <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mission-4.jpg"
+                                            class="card-img-top lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-0 order-lg-1">
+                        <div class="pl-0 pl-lg-5 position-sticky" style="top: 300px;">
+                            <h2 class="mb-4 pb-4 border-bottom"><?php the_field('mission_title', $home_page_id); ?></h2>
+                            <?php the_field('mission_text', $home_page_id); ?>
+                            <p class="mt-4 pt-4 border-top"><?php the_field('guarantee_text', $home_page_id); ?></p>
+                            <p class="h5">100% Satisfaction Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container">
             <h1 class="text-center mb-3"><?php echo single_cat_title('', false); ?> Service Locations</h1>
             <?php the_archive_description( '<div class="archive-description text-center mb-3">', '</div>' ); ?>
