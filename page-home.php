@@ -147,6 +147,8 @@ $hero_title = get_field('hero_title');
                 $terms = get_terms( array( 
                     'taxonomy' => 'location',
                     'hide_empty' => true,
+                    'orderby' => 'name',
+                    'order' => 'ASC' 
                 ) );
 
                 if ($terms) {
