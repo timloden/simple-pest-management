@@ -128,6 +128,7 @@ function submit_subscribe_form_to_pestroutes( $entry, $form ) {
 }
 
 add_filter( 'gform_us_states', 'us_states' );
+
 function us_states( $states ) {
     $new_states = array();
     foreach ( $states as $state ) {
@@ -160,8 +161,8 @@ add_filter( 'gform_field_validation', function ( $result, $value, $form, $field 
     return $result;
 }, 10, 4 );
 
-add_filter( 'gform_field_validation_1_8', 'zip_code_validation', 10, 4 );
-add_filter( 'gform_field_validation_3_9', 'zip_code_validation', 10, 4 );
+//add_filter( 'gform_field_validation_1_8', 'zip_code_validation', 10, 4 );
+//add_filter( 'gform_field_validation_3_9', 'zip_code_validation', 10, 4 );
 
 function zip_code_validation( $result, $value, $form, $field ) {
     
