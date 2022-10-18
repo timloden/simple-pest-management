@@ -160,7 +160,7 @@ $hero_title = get_field('hero_title');
                         $term_id = 'term_' . $term->term_id;
                         $location_image = get_field('location_image', $term);
                         ?>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100 location">
                         <a href="<?php echo $term_link; ?>">
                             <?php if ($location_image) : ?>

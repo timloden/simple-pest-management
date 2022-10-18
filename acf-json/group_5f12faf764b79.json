@@ -198,6 +198,44 @@
             "maxlength": ""
         },
         {
+            "key": "field_634e3a52103c0",
+            "label": "Mission Title",
+            "name": "mission_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_634e3a3a103bf",
+            "label": "Mission Text",
+            "name": "mission_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "delay": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
             "key": "field_60b1a875addb1",
             "label": "Services",
             "name": "services",
@@ -362,6 +400,25 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_634e3a5b103c1",
+            "label": "Guarantee Text",
+            "name": "guarantee_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_63322340a268e",
@@ -531,5 +588,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665787174
+    "modified": 1666071268
 }
