@@ -25,7 +25,7 @@ $hero_title = get_field('hero_title');
                     us<?php echo ($hero_city) ? '<br>in ' . $hero_city : '!' ?></h1>
                 <p class="h2 text-white pt-3">
                     <?php if (get_field('hero_phone_number')) { 
-                        echo get_field('hero_phone_number');
+                        echo '<a class="text-white" href="tel:' . preg_replace('/[^0-9]/', '', get_field('hero_phone_number')) . '">' . get_field('hero_phone_number') . '</a>';
                     } else {
                         echo get_field('phone_number', 'option');
                     }
