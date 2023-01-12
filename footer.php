@@ -95,7 +95,7 @@
     <div class="copyright bg-primary">
         <div class="container">
             <p class="text-white m-0 p-2 text-center">&copy; Simple Pest Management <?php echo date( 'Y' ); ?> |
-                License, Bonded and Insured</p>
+                License, Bonded and Insured | PR 8436</p>
         </div>
     </div>
 </footer>
