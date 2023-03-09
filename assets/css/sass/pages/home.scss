@@ -1,5 +1,10 @@
 .home-hero {
     .hero-text {
+        p {
+            a {
+                color: $white;
+            }
+        }
         @include media-breakpoint-up(lg) {
             h1 {
                 font-size: 4rem;

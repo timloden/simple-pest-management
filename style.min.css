@@ -2971,6 +2971,7 @@ h2.gform_submission_error{font-size:1rem}
 .bg-orange{background-color:#f6961b}
 .article-single .jumbotron .container{position:relative;z-index:999}
 .hero-overlay{position:absolute;top:0;left:0;height:100%;width:100%;background-color:rgba(0,0,0,.5)}
+.home-hero .hero-text p a{color:#fff}
 .home-hero .hero-form .hero-form-title{font-size:1.5rem;color:#6c757d}
 .home-hero .hero-form h1{font-size:4rem}
 .home-hero .limited-time-container{border-radius:.25rem .25rem 0 0}
