@@ -252,14 +252,14 @@ $hero_title = get_field('hero_title');
             </div>
             <div class="col-12">
                 <?php 
-                    $embed_social_shortcode = get_field('embed_social_shortcode');
+                    $google_embed_social_shortcode = get_field('google_reviews_shortcode');
 
-                    if ($embed_social_shortcode) {
-                        echo do_shortcode($embed_social_shortcode); 
+                    if ($google_embed_social_shortcode) {
+                        echo do_shortcode($google_embed_social_shortcode); 
                     }
                 ?>
-
             </div>
+
         </div>
         <?php if( have_rows('review_sites', 'option') ): ?>
         <div class="row">
@@ -277,12 +277,13 @@ $hero_title = get_field('hero_title');
         <div class="row">
             <div class="col-12">
                 <?php 
-                    $google_embed_social_shortcode = get_field('google_reviews_shortcode');
+                    $embed_social_shortcode = get_field('embed_social_shortcode');
 
-                    if ($google_embed_social_shortcode) {
-                        echo do_shortcode($google_embed_social_shortcode); 
+                    if ($embed_social_shortcode) {
+                        echo do_shortcode($embed_social_shortcode); 
                     }
                 ?>
+
             </div>
         </div>
     </div>
