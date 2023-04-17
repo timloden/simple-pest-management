@@ -54,8 +54,9 @@
                     <p class="text-white text-center h5 font-weight-normal">Simple Pest Management</p>
                     <p class="h1 text-white text-center mb-3">100% Satisfaction Guaranteed</p>
                     <p class="lead text-white text-center mb-0">Call us now</p>
-                    <p class="h2 text-success text-center">
-                        <?php echo (get_field('phone_number', 'option') ? get_field('phone_number', 'option') : ''); ?>
+                    <p class="h2 text-success text-center footer-phone-number">
+                        <a
+                            href="tel:<?php echo preg_replace('/[^0-9]/', '', get_field('phone_number', 'option')); ?>"><?php echo get_field('phone_number', 'option'); ?></a>
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">

@@ -56,17 +56,19 @@ $city = get_field('city');
             </div>
         </div>
 
-        <section class="service-area-cta bg-secondary">
+        <section class="service-area-cta bg-primary py-5 my-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-8 text-center text-lg-start">
-                        <p class="h2">100% Satisfaction Guaranteed</p>
-                        <p class="mb-0">This is the difference with our company. We understand that technology
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8 text-center text-lg-left">
+                        <p class="h2 text-white">100% Satisfaction Guaranteed</p>
+                        <p class="mb-0 text-white">This is the difference with our company. We understand that
+                            technology
                             won&apos;t always solve the problem if you don&apos;t have skilled technicians in control.
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
-                        <a class="btn btn-primary" href="tel:">(833) 887-7378 (PEST)</a>
+                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold" href="tel:">(833) 887-7378
+                            (PEST)</a>
                     </div>
                 </div>
             </div>
@@ -111,18 +113,20 @@ $city = get_field('city');
             </div>
         </div>
 
-        <section class="service-area-cta bg-secondary">
+        <section class="service-area-cta bg-primary py-5 my-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-8 text-center text-lg-start">
-                        <p class="h2">Do you need pest control in <?php echo $city; ?>?</p>
-                        <p class="mb-0">Our team of pest experts is ready to take your call. We offer advice on pest
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8 text-center text-lg-left">
+                        <p class="h2 text-white">Do you need pest control in <?php echo $city; ?>?</p>
+                        <p class="mb-0 text-white">Our team of pest experts is ready to take your call. We offer advice
+                            on pest
                             control and a range of services to eliminate pests from your property. Don&apos;t let the
                             pests gain control of your property. Call Simple Pest Management
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
-                        <a class="btn btn-primary" href="tel:">(833) 887-7378 (PEST)</a>
+                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold" href="tel:">(833) 887-7378
+                            (PEST)</a>
                     </div>
                 </div>
             </div>
@@ -188,71 +192,214 @@ $city = get_field('city');
                 </div>
                 <div class="row">
                     <div class="col-12">
-
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Rodent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cockroach</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Flea, Tick, and Mite</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ant</a>
+                            </li>
+                        </ul>
 
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 mb-5 mb-lg-0">
-                    <?php
-                            while ( have_posts() ) :
-                                the_post();
-                               ?>
-
-                    <div class="service-area-content">
-
-                        <h1 class="mb-5 text-center">Your local and best pest control service in
-                            <br><?php echo $city; ?>, California
-                        </h1>
-
-                        <p>Simple Pest Management provides the <?php echo $city; ?> area with reliable & effective
-                            elimination of insects
-                            and rodents. We
-                            have pest control programs for all different types of residences including single family
-                            homes, condos, and
-                            apartment buildings. We also service commercial properties including food processing
-                            facilities,
-                            restaurants, schools, office buildings and many other types of locations. At Simple Pest
-                            Management, we go
-                            out of our way to tailor service to our customer’s specific needs; whether they are
-                            looking for year-round
-                            protection or a one-time service.</p>
-
-                        <p>Simple Pest Management strives to exceed our client’s expectations, from the moment our
-                            technicians arrive.
-                            All of our technicians are uniformed; are licensed, bonded and insured. But beyond these
-                            basics, you will
-                            find that they are professionals and will treat your home as they would that if their
-                            own family. We use the
-                            latest technology available in the pest control industry and have the experience to
-                            understand how and when
-                            to use the advanced tools and when to use basic, old fashioned hard work.</p>
-
-                        <p>This is the difference with our company. We understand that technology won’t always solve
-                            the problem if you
-                            don’t have skilled technicians in control.</p>
-
-                        <h2 class="text-center mb-4 text-primary">100% satisfaction Guaranteed</h2>
-
-                        <?php the_content(); ?>
-
+        <section class="why-use-simple-pest">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Why Choose Us for <?php echo $city; ?> Pest Control?</h2>
+                        <p class="mb-0">When you contact Simple Pest Management to handle your pest situation, you the
+                            following in your service level agreement with us.<br>Contact our team at (619) 373-7378 for
+                            immediate assistance.</p>
                     </div>
-                    <?php
+                </div>
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Proven Pest Control Processes</h3>
+                                <p>Simple Pest Control developed our pest control strategies over decades of experience
+                                    in the field. We have knowledge of the local area and how it affects pest behavior.
+                                    You can rely on our team to deliver you a pest-free property.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Eco-Friendly Pest Control Systems</h3>
+                                <p>We use pest control products that meet 'Green Pro Certification,' suitable for use in
+                                    San Diego County and California state. Our teams are trained to handle and use these
+                                    products safely and effectively. We care about the environment and ensure we don't
+                                    harm the Santee ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Licensed, Bonded, and Insured Pest Control</h3>
+                                <p>Our business is established, licensed, and insured. We remove the risk of hiring
+                                    people to work on your property. If anything happens while we're on-site, it's our
+                                    problem, not yours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Fast, Effective, Pest Elimination with Lasting Results</h3>
+                                <p>Simple Pest Control developed our pest control strategies over decades of experience
+                                    in the field. We have knowledge of the local area and how it affects pest behavior.
+                                    You can rely on our team to deliver you a pest-free property.</p>
+                            </div>
+                        </div>
+                    </div>
 
-                            endwhile; // End of the loop.
-                            ?>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">100% Satisfaction Guarantee</h3>
+                                <p>We use pest control products that meet 'Green Pro Certification,' suitable for use in
+                                    San Diego County and California state. Our teams are trained to handle and use these
+                                    products safely and effectively. We care about the environment and ensure we don't
+                                    harm the Santee ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Licensed, Bonded, and Insured Pest Control</h3>
+                                <p>Our business is established, licensed, and insured. We remove the risk of hiring
+                                    people to work on your property. If anything happens while we're on-site, it's our
+                                    problem, not yours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6 service-area-image-bg left">
+                        <img class="img-fluid"
+                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <h2><?php echo $city; ?> Pest Control Near Me</h2>
+                        <p>Simple Pest Management offers effective, affordable pest control services in Santee. We're
+                            available for residences and business premises across the area.</p>
+                        <p>Contact us for assistance anywhere around Big Rock Park, Padre Dam Park, or Northcote Park.
+                            We service al communities in the area, including Mission View Estates, Venture Business
+                            Park, and Sky Ranch.</p>
+                        <p>Simple Pest Management is available for businesses and residences along Mast Boulevard,
+                            Cuyamaca Street, and Magnolia Avenue. Contact us for service along the San Diego River and
+                            Carlton Oaks Country Club. We service suburbs around the Santee Lakes Recreation Preserve
+                            and Town Center Community Park.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-area-cta bg-primary py-5 my-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8 text-center text-lg-left">
+                        <p class="h2 text-white">Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest
+                            Control</p>
+                        <p class="mb-0 text-white">We offer pest inspections at properties across Santee. Our team has
+                            years of
+                            experience identifying pest infestations on properties throughout San Diego. We know what to
+                            look for and how to stop it from spreading.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center text-lg-end">
+                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold" href="tel:">(619) 373-7378</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mb-5 pb-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2><?php echo $city; ?> Pest Control FAQ</h2>
+                    <p>When you contract Simple Pest Management to handle your pest situation, you get the following in
+                        your service level agreement with Contact our team at (619) 373-7378 for immediate assistance.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Collapsible Group Item #1
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Some placeholder content for the first accordion panel. This panel is shown by
+                                    default, thanks to the <code>.show</code> class.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Collapsible Group Item #2
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Some placeholder content for the second accordion panel. This panel is hidden by
+                                    default.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Collapsible Group Item #3
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    And lastly, the placeholder content for the third and final accordion panel. This
+                                    panel is hidden by default.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
 
     </main><!-- #main -->
 </div><!-- #primary -->

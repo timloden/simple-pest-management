@@ -2929,6 +2929,7 @@ header #menu-mobile li ul.sub-menu{list-style:none;padding-left:0}
 header #menu-mobile li ul.sub-menu li a{border-bottom:1px solid #f8f9fa;padding-left:2rem}
 header button.btn,header .restricted-page #loginform p button.button,.restricted-page #loginform p header button.button,header .gform_wrapper button.button,.gform_wrapper header button.button{font-size:30px;line-height:1;border:1px solid #dee2e6}
 footer .guarantee{background-color:#f2f6f9}
+footer .footer-phone-number a{color:#7dc242}
 footer .footer-hero .h1{font-size:3.5rem}
 footer .footer-hero .h2{font-size:2.5rem}
 footer .address{font-size:14px;color:#6c757d}
