@@ -2981,6 +2981,12 @@ h2.gform_submission_error{font-size:1rem}
 .accordion .accordion-item button i.la-check-square{color:#000;font-size:1.5rem}
 .accordion .accordion-item button[aria-expanded=true] i.la-chevron-left{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 .accordion .accordion-item button:hover,.accordion .accordion-item button:active,.accordion .accordion-item button:focus{text-decoration:none}
+.services-single .service-hero{background-size:cover;padding:6rem 0;background-position:center center}
+.services-single .kicker{text-transform:uppercase}
+.services-single .service-area-image-bg{background-repeat:no-repeat;padding:2rem}
+.services-single .service-area-image-bg.right{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#fff),color-stop(50%,#7dc242));background:linear-gradient(90deg,#fff 50%,#7dc242 50%)}
+.services-single .service-area-image-bg.left{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#7dc242),color-stop(50%,#fff));background:linear-gradient(90deg,#7dc242 50%,#fff 50%)}
+.services-single .range-of-services{background:-webkit-gradient(linear,left bottom,left top,from(white),color-stop(50%,#e3f4ff),to(white));background:linear-gradient(0,white 0,#e3f4ff 50%,white 100%)}
 @media(prefers-reduced-motion:reduce){.form-control,.restricted-page #loginform p .input,.gform_wrapper input[type=email],.gform_wrapper input[type=date],.gform_wrapper input[type=datetime],.gform_wrapper input[type=datetime-local],.gform_wrapper input[type=month],.gform_wrapper input[type=number],.gform_wrapper input[type=password],.gform_wrapper input[type=search],.gform_wrapper input[type=tel],.gform_wrapper input[type=text],.gform_wrapper input[type=time],.gform_wrapper input[type=week],.gform_wrapper input[type=url],.gform_wrapper select,.gform_wrapper textarea{-webkit-transition:none;transition:none}
 .btn,.restricted-page #loginform p .button,.gform_wrapper .button{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}

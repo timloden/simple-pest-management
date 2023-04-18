@@ -18,7 +18,7 @@ $city = get_field('city');
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h1 class="text-white">Your local and best pest control service in <?php echo $city; ?>,
+                        <h1 class="text-white mb-3">Your local and best pest control service in <?php echo $city; ?>,
                             California</h1>
                         <p class="text-white">Simple Pest Management provides the <?php echo $city; ?> area with
                             reliable & effective
@@ -29,19 +29,20 @@ $city = get_field('city');
             </div>
         </section>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center py-5">
                 <div class="col-12 col-lg-10">
-                    <p class="mb-0">We also service commercial properties including food processing facilities,
+                    <p class="mb-0 text-center">We also service commercial properties including food processing
+                        facilities,
                         restaurants, schools, office buildings and many other types of locations. At Simple Pest
                         Management, we go out of our way to tailor service to our customer&apos;s specific needs;
                         whether they are looking for year-round protection or a one-time service.</p>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row py-5 align-items-center">
                 <div class="col-12 col-lg-6">
-                    <p class="kicker">Latest Technology</p>
-                    <h2>Simple Pest Management strives to exceed our client&apos;s expectations</h2>
+                    <p class="kicker text-primary font-weight-bold">Latest Technology</p>
+                    <h2 class="mb-4">Simple Pest Management strives to exceed our client&apos;s expectations</h2>
                     <p>from the moment our technicians arrive. All of our technicians are uniformed are licensed, bonded
                         and insured. But beyond these basics, you will find that they are professionals and will treat
                         your home as they would that if their own family. We use the latest technology available in the
@@ -49,9 +50,12 @@ $city = get_field('city');
                         tools and when to use basic, old fashioned hard work.</p>
                 </div>
 
-                <div class="col-12 col-lg-6 service-area-image-bg right">
-                    <img class="img-fluid"
-                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                <div class="col-12 col-lg-6">
+                    <div class="service-area-image-bg right">
+                        <img class="img-fluid"
+                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -75,14 +79,16 @@ $city = get_field('city');
         </section>
 
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 service-area-image-bg left">
-                    <img class="img-fluid"
-                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+            <div class="row align-items-center py-5">
+                <div class="col-12 col-lg-6">
+                    <div class="service-area-image-bg left">
+                        <img class="img-fluid"
+                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                    </div>
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <p class="kicker">Reliable &amp; Effective Elimination</p>
+                    <p class="kicker text-primary font-weight-bold">Reliable &amp; Effective Elimination</p>
                     <h2>Simple Pest Management provides the <?php echo $city; ?> are with reliable</h2>
                     <p>effective elimination of pests, bugs, insects and rodents. We have pest control programs for all
                         different types of residences including single family homes, condos, and apartment buildings.
@@ -93,9 +99,9 @@ $city = get_field('city');
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row align-items-center py-5">
                 <div class="col-12 col-lg-6">
-                    <p class="kicker">Experience to Understand</p>
+                    <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
                     <h2>Simple Pest Management strives to exceed our client&apos;s expectations</h2>
                     <p>from the moment our technicians arrive. All our technicians are uniformed, professional and
                         licensed with the state. The company is licensed, bonded, and insured.</p>
@@ -106,9 +112,11 @@ $city = get_field('city');
                         work.</p>
                 </div>
 
-                <div class="col-12 col-lg-6 service-area-image-bg right">
-                    <img class="img-fluid"
-                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                <div class="col-12 col-lg-6">
+                    <div class="service-area-image-bg right">
+                        <img class="img-fluid"
+                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,10 +141,12 @@ $city = get_field('city');
         </section>
 
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 service-area-image-bg left">
-                    <img class="img-fluid"
-                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+            <div class="row align-items-center py-5">
+                <div class="col-12 col-lg-6">
+                    <div class="service-area-image-bg left">
+                        <img class="img-fluid"
+                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                    </div>
                 </div>
 
                 <div class="col-12 col-lg-6">
@@ -145,45 +155,48 @@ $city = get_field('city');
                         team works with property managers, landlords, homeowners, and tenants. We offer pest inspections
                         and estimates for any of the following properties.</p>
                     <ul class="mb-0">
-                        <li>Apartment Pest Control in Santee.</li>
-                        <li>Duplex Pest Control in Santee.</li>
-                        <li>Single Family Home Pest Control in Santee.</li>
-                        <li>Condo Pest Control in Santee.</li>
+                        <li class="font-weight-bold mb-1">Apartment Pest Control in Santee.</li>
+                        <li class="font-weight-bold mb-1">Duplex Pest Control in Santee.</li>
+                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in Santee.</li>
+                        <li class="font-weight-bold">Condo Pest Control in Santee.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row align-items-center py-5">
                 <div class="col-12 col-lg-6">
-                    <p class="kicker">Experience to Understand</p>
+                    <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
                     <h2>Commercial Pest Control <?php echo $city; ?></h2>
                     <p>If you own a business or commercial building, call simple Pest Management for effective pest
                         control services in Santee. We work with building managers, business owners, and employees.
                         Contact our pest control team for immediate assistance.</p>
                     <ul class="mb-0">
-                        <li>Pest Control Santee for Offices.</li>
-                        <li>Pest Control Santee for Retail.</li>
-                        <li>Pest Control Santee for Medical Centers.</li>
-                        <li>Pest Control Santee for Restaurants.</li>
-                        <li>Pest Control Santee for Schools.</li>
-                        <li>Pest Control Santee for Warehouses.</li>
-                        <li></li>Pest Control Santee for Supermarkets.</li>
+                        <li class="font-weight-bold mb-1">Pest Control Santee for Offices.</li>
+                        <li class="font-weight-bold mb-1">Pest Control Santee for Retail.</li>
+                        <li class="font-weight-bold mb-1">Pest Control Santee for Medical Centers.</li>
+                        <li class="font-weight-bold mb-1">Pest Control Santee for Restaurants.</li>
+                        <li class="font-weight-bold mb-1">Pest Control Santee for Schools.</li>
+                        <li class="font-weight-bold mb-1">Pest Control Santee for Warehouses.</li>
+                        <li class="font-weight-bold">Pest Control Santee for Supermarkets.</li>
                     </ul>
                 </div>
 
-                <div class="col-12 col-lg-6 service-area-image-bg right">
-                    <img class="img-fluid"
-                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                <div class="col-12 col-lg-6">
+                    <div class="service-area-image-bg right">
+                        <img class="img-fluid"
+                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <section class="range-of-services">
+        <section class="range-of-services py-5">
             <div class="container">
-                <div class="row">
+                <div class="row pb-4">
                     <div class="col-12 text-center">
-                        <h2>Our Range of <?php echo $city; ?> Pest Control Services</h2>
-                        <p>If you have a pest problem in Santee, contact Simple Pest Management at (619) 373-7378. We
+                        <h2 class="mb-0">Our Range of <?php echo $city; ?> Pest Control Services</h2>
+                        <p class="mb-0 py-4">If you have a pest problem in Santee, contact Simple Pest Management at
+                            (619) 373-7378. We
                             have the team, skills, and products to eliminate pests from your property. We have decades
                             of experience working with homeowners and businesses in San Diego. We're confident we have
                             the right pest control strategy for your property. Call our pest control team for a free
@@ -192,18 +205,18 @@ $city = get_field('city');
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <ul class="nav nav-pills nav-justified">
+                        <ul class="nav nav-pills nav-justified border rounded">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Rodent</a>
+                                <a class="nav-link font-weight-bold active" href="#">Rodent</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cockroach</a>
+                                <a class="nav-link font-weight-bold" href="#">Cockroach</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Flea, Tick, and Mite</a>
+                                <a class="nav-link font-weight-bold" href="#">Flea, Tick, and Mite</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Ant</a>
+                                <a class="nav-link font-weight-bold" href="#">Ant</a>
                             </li>
                         </ul>
 
@@ -212,21 +225,22 @@ $city = get_field('city');
             </div>
         </section>
 
-        <section class="why-use-simple-pest">
+        <section class="why-use-simple-pest py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2>Why Choose Us for <?php echo $city; ?> Pest Control?</h2>
-                        <p class="mb-0">When you contact Simple Pest Management to handle your pest situation, you the
+                        <h2 class="mb-0">Why Choose Us for <?php echo $city; ?> Pest Control?</h2>
+                        <p class="mb-0 py-4">When you contact Simple Pest Management to handle your pest situation, you
+                            the
                             following in your service level agreement with us.<br>Contact our team at (619) 373-7378 for
                             immediate assistance.</p>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3">
+                <div class="row row-cols-1 row-cols-md-3 pb-5">
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">Proven Pest Control Processes</h3>
+                                <h3 class="card-title h6">Proven Pest Control Processes</h3>
                                 <p>Simple Pest Control developed our pest control strategies over decades of experience
                                     in the field. We have knowledge of the local area and how it affects pest behavior.
                                     You can rely on our team to deliver you a pest-free property.</p>
@@ -236,7 +250,7 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">Eco-Friendly Pest Control Systems</h3>
+                                <h3 class="card-title h6">Eco-Friendly Pest Control Systems</h3>
                                 <p>We use pest control products that meet 'Green Pro Certification,' suitable for use in
                                     San Diego County and California state. Our teams are trained to handle and use these
                                     products safely and effectively. We care about the environment and ensure we don't
@@ -247,7 +261,7 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">Licensed, Bonded, and Insured Pest Control</h3>
+                                <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
                                 <p>Our business is established, licensed, and insured. We remove the risk of hiring
                                     people to work on your property. If anything happens while we're on-site, it's our
                                     problem, not yours.</p>
@@ -257,7 +271,7 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">Fast, Effective, Pest Elimination with Lasting Results</h3>
+                                <h3 class="card-title h6">Fast, Effective, Pest Elimination with Lasting Results</h3>
                                 <p>Simple Pest Control developed our pest control strategies over decades of experience
                                     in the field. We have knowledge of the local area and how it affects pest behavior.
                                     You can rely on our team to deliver you a pest-free property.</p>
@@ -268,7 +282,7 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">100% Satisfaction Guarantee</h3>
+                                <h3 class="card-title h6">100% Satisfaction Guarantee</h3>
                                 <p>We use pest control products that meet 'Green Pro Certification,' suitable for use in
                                     San Diego County and California state. Our teams are trained to handle and use these
                                     products safely and effectively. We care about the environment and ensure we don't
@@ -279,7 +293,7 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">Licensed, Bonded, and Insured Pest Control</h3>
+                                <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
                                 <p>Our business is established, licensed, and insured. We remove the risk of hiring
                                     people to work on your property. If anything happens while we're on-site, it's our
                                     problem, not yours.</p>
@@ -288,10 +302,12 @@ $city = get_field('city');
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 col-lg-6 service-area-image-bg left">
-                        <img class="img-fluid"
-                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="service-area-image-bg left">
+                            <img class="img-fluid"
+                                src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                        </div>
                     </div>
 
                     <div class="col-12 col-lg-6">
@@ -332,8 +348,10 @@ $city = get_field('city');
         <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2><?php echo $city; ?> Pest Control FAQ</h2>
-                    <p>When you contract Simple Pest Management to handle your pest situation, you get the following in
+                    <h2 class="mb-0"><?php echo $city; ?> Pest Control FAQ</h2>
+                    <p class="mb-0 pt-4 pb-5">When you contract Simple Pest Management to handle your pest situation,
+                        you get
+                        the following in
                         your service level agreement with Contact our team at (619) 373-7378 for immediate assistance.
                     </p>
                 </div>

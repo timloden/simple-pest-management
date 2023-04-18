@@ -1,0 +1,28 @@
+.services-single {
+    .service-hero {
+        background-size: cover;
+        padding: 6rem 0;
+        background-position: center center;
+    }
+
+    .kicker {
+        text-transform: uppercase;
+    }
+
+    .service-area-image-bg {
+        background-repeat: no-repeat;
+        padding: 2rem;
+
+        &.right {
+            background: linear-gradient(90deg, $white 50%, $success 50%);
+        }
+
+        &.left {
+            background: linear-gradient(90deg, $success 50%, $white 50%); 
+        }
+    }
+
+    .range-of-services {
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(227,244,255,1) 50%, rgba(255,255,255,1) 100%);
+    }
+}
