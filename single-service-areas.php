@@ -9,6 +9,14 @@
 
 get_header();
 $city = get_field('city');
+$location = get_field('location');
+
+if ($location) {
+    $term = get_term( $location[0], 'location' );
+    $phone_number = get_field('location_phone_number', 'term_' . $term->term_id  );
+} else {
+    $phone_number = '(866) 887-7378';
+}
 ?>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
@@ -222,6 +230,28 @@ $city = get_field('city');
 
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-12" id="rodent-info">
+                        <div class="row align-items-center py-5">
+                            <div class="col-12 col-lg-6">
+                                <h2>Rodent Removal <?php echo $city; ?></h2>
+                                <p class="mb-0">from the moment our technicians arrive. All our technicians are
+                                    uniformed,
+                                    professional and
+                                    licensed with the state. The company is licensed, bonded, and insured.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -232,7 +262,8 @@ $city = get_field('city');
                         <h2 class="mb-0">Why Choose Us for <?php echo $city; ?> Pest Control?</h2>
                         <p class="mb-0 py-4">When you contact Simple Pest Management to handle your pest situation, you
                             the
-                            following in your service level agreement with us.<br>Contact our team at (619) 373-7378 for
+                            following in your service level agreement with us.<br>Contact our team at
+                            <?php echo $phone_number; ?> for
                             immediate assistance.</p>
                     </div>
                 </div>
@@ -240,8 +271,12 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/authentication.svg"
+                                    alt="Proven process pest control icon">
                                 <h3 class="card-title h6">Proven Pest Control Processes</h3>
-                                <p>Simple Pest Control developed our pest control strategies over decades of experience
+                                <p class="mb-0">Simple Pest Control developed our pest control strategies over decades
+                                    of experience
                                     in the field. We have knowledge of the local area and how it affects pest behavior.
                                     You can rely on our team to deliver you a pest-free property.</p>
                             </div>
@@ -250,9 +285,13 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/eco-friendly.svg"
+                                    alt="Eco friendly pest control icon">
                                 <h3 class="card-title h6">Eco-Friendly Pest Control Systems</h3>
-                                <p>We use pest control products that meet 'Green Pro Certification,' suitable for use in
-                                    San Diego County and California state. Our teams are trained to handle and use these
+                                <p class="mb-0">We use pest control products that meet 'Green Pro Certification,'
+                                    suitable for use in
+                                    California. Our teams are trained to handle and use these
                                     products safely and effectively. We care about the environment and ensure we don't
                                     harm the Santee ecosystem.</p>
                             </div>
@@ -261,8 +300,12 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/licensed.svg"
+                                    alt="Licensed pest control icon">
                                 <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
-                                <p>Our business is established, licensed, and insured. We remove the risk of hiring
+                                <p class="mb-0">Our business is established, licensed, and insured. We remove the risk
+                                    of hiring
                                     people to work on your property. If anything happens while we're on-site, it's our
                                     problem, not yours.</p>
                             </div>
@@ -271,10 +314,15 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/effective.svg"
+                                    alt="Effective pest control icon">
                                 <h3 class="card-title h6">Fast, Effective, Pest Elimination with Lasting Results</h3>
-                                <p>Simple Pest Control developed our pest control strategies over decades of experience
-                                    in the field. We have knowledge of the local area and how it affects pest behavior.
-                                    You can rely on our team to deliver you a pest-free property.</p>
+                                <p class="mb-0">Our pest control systems yield fast, effective, and consistent results
+                                    for our clients. We&apos;re confident we&apos;ll take care of your pest problem with
+                                    lasting
+                                    results for your property. Simple Pest Management offers you elite pest control
+                                    services in <?php echo $city; ?>.</p>
                             </div>
                         </div>
                     </div>
@@ -282,21 +330,29 @@ $city = get_field('city');
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/satisfaction.svg"
+                                    alt="Satisfaction pest control icon">
                                 <h3 class="card-title h6">100% Satisfaction Guarantee</h3>
-                                <p>We use pest control products that meet 'Green Pro Certification,' suitable for use in
-                                    San Diego County and California state. Our teams are trained to handle and use these
-                                    products safely and effectively. We care about the environment and ensure we don't
-                                    harm the Santee ecosystem.</p>
+                                <p class="mb-0">We include a 100% satisfaction guarantee with every job. We value our
+                                    reputation in the <?php echo $city; ?> community as the leading pest control
+                                    specialist in San
+                                    Diego.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
-                                <p>Our business is established, licensed, and insured. We remove the risk of hiring
-                                    people to work on your property. If anything happens while we're on-site, it's our
-                                    problem, not yours.</p>
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/savings.svg"
+                                    alt="Savings pest control icon">
+                                <h3 class="card-title h6">Affordable, Competitive Rates</h3>
+                                <p class="mb-0">Simple Pest Management offers pest inspections and estimates and
+                                    affordable prices on
+                                    pest control services. When you hire us, you leverage our experienced pest team and
+                                    knowledge, giving you lasting results for your property. Our transparent invoicing
+                                    includes no hidden charges.</p>
                             </div>
                         </div>
                     </div>
@@ -359,13 +415,14 @@ $city = get_field('city');
             <div class="row">
                 <div class="col-12">
                     <div class="accordion" id="accordionExample">
-                        <div class="card">
+                        <div class="card mb-3 border rounded">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        Collapsible Group Item #1
+                                    <button class="btn btn-link btn-block text-left text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Does Simple Pest Management offer eco-friendly pest control in
+                                        <?php echo $city; ?>
                                     </button>
                                 </h2>
                             </div>
@@ -373,44 +430,116 @@ $city = get_field('city');
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Some placeholder content for the first accordion panel. This panel is shown by
-                                    default, thanks to the <code>.show</code> class.
+                                    Simple Pest Management works with pest control products complying with &apos;Green
+                                    Pro
+                                    Certification.&apos; Our products break down into harmless compounds, leaving no
+                                    impact
+                                    on the local groundwater or run-off. Our pest control systems are safe for soil and
+                                    the local environment - they are safe for your family and pets.
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card mb-3 border rounded">
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        Collapsible Group Item #2
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Does your rodent eradication program harm pets or the local wildlife?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Some placeholder content for the second accordion panel. This panel is hidden by
-                                    default.
+                                    <p>Simple Pest Management stops rodents from destroying your property and spreading
+                                        disease in the community. Rats carry parasites like fleas, lice, and ticks and
+                                        diseases like the Hantavirus; seeing rodents scuttling around your property is a
+                                        problem.</p>
+                                    <p class="mb-0">Contact Simple Pest Management for effective rat eradication with
+                                        safe pest
+                                        control systems designed to eliminate the rats, not your pets or the local
+                                        wildlife. We care for the community of <?php echo $city; ?>. Our pest control
+                                        systems are
+                                        ethical and efficient, with no harmful effects on the ecosystem. </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card mb-3 border rounded">
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Collapsible Group Item #3
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Does Simple Pest Management offer pest inspections in <?php echo $city; ?>?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    And lastly, the placeholder content for the third and final accordion panel. This
-                                    panel is hidden by default.
+                                    <p>Call Simple Pest Management and we&apos;ll send a pest control team to your
+                                        premises for a pest inspection. Our pest control experts know where pests like
+                                        to hide on your property.</p>
+                                    <p class="mb-0">We&apos;ll find the source of the infestation and eradicate it with
+                                        lasting results. We offer our clients free estimates for pest control. Contact
+                                        our team and book your inspection today. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border rounded">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        How often should I do preventative pest control in <?php echo $city; ?>?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>We recommend homeowners and business owners in <?php echo $city; ?> implement a
+                                        preventative
+                                        pest control strategy for their property. By taking action and stopping the
+                                        problem before it starts, you keep your property pest free for the future. </p>
+                                    <p class="mb-0">The pest control requirements of properties depend on their size and
+                                        nature. Single-family homes may require a monthly or bi-monthly approach, while
+                                        apartments may need a bi-weekly or monthly pest control strategy.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border rounded">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        Should I try to eliminate the pests in my home using DIY pest control
+                                        strategies?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>DIY pest control usually involves leaving out bait packs or granules for ants,
+                                        rodents and cockroaches. While these systems provide temporary results, they
+                                        don&apos;t stop your pest problem. DIY pest control makes a dent in the pest
+                                        population on your property, but it rebounds shortly after that. </p>
+                                    <p class="mb-0">With Simple Pest Management, you get a team with decades of
+                                        experience handling all types of pest infestations in <?php echo $city; ?>. We
+                                        know where
+                                        to look to find the nest and eradicate the pests. Our services provide lasting
+                                        results, and a preventative pest control program keeps them away.
+                                    </p>
                                 </div>
                             </div>
                         </div>
