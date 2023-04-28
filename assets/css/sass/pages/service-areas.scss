@@ -15,6 +15,10 @@
 
         &.right {
             background: linear-gradient(90deg, $white 50%, $success 50%);
+
+            &.pest-type {
+                background: linear-gradient(90deg, transparent 50%, $success 50%);
+            }
         }
 
         &.left {

@@ -48,7 +48,7 @@ if ($location) {
             </div>
 
             <div class="row py-5 align-items-center">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Latest Technology</p>
                     <h2 class="mb-4">Simple Pest Management strives to exceed our client&apos;s expectations</h2>
                     <p>from the moment our technicians arrive. All of our technicians are uniformed are licensed, bonded
@@ -87,8 +87,8 @@ if ($location) {
         </section>
 
         <div class="container">
-            <div class="row align-items-center py-5">
-                <div class="col-12 col-lg-6">
+            <div class="row align-items-center  py-3 py-lg-5">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
                             src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
@@ -107,8 +107,8 @@ if ($location) {
                 </div>
             </div>
 
-            <div class="row align-items-center py-5">
-                <div class="col-12 col-lg-6">
+            <div class="row align-items-center py-3 py-lg-5">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
                     <h2>Simple Pest Management strives to exceed our client&apos;s expectations</h2>
                     <p>from the moment our technicians arrive. All our technicians are uniformed, professional and
@@ -149,8 +149,8 @@ if ($location) {
         </section>
 
         <div class="container">
-            <div class="row align-items-center py-5">
-                <div class="col-12 col-lg-6">
+            <div class="row align-items-center py-3 py-lg-5">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
                             src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
@@ -172,7 +172,7 @@ if ($location) {
             </div>
 
             <div class="row align-items-center py-5">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
                     <h2>Commercial Pest Control <?php echo $city; ?></h2>
                     <p>If you own a business or commercial building, call simple Pest Management for effective pest
@@ -198,7 +198,7 @@ if ($location) {
             </div>
         </div>
 
-        <section class="range-of-services py-5">
+        <section class="range-of-services py-3 py-lg-5">
             <div class="container">
                 <div class="row pb-4">
                     <div class="col-12 text-center">
@@ -213,18 +213,21 @@ if ($location) {
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <ul class="nav nav-pills nav-justified border rounded">
+                        <ul class="nav nav-pills nav-justified flex-column flex-md-row border rounded">
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold active" href="#">Rodent</a>
+                                <a class="nav-link font-weight-bold active pest-type-button" id="rodent"
+                                    href="#">Rodent</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="#">Cockroach</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="cockroach"
+                                    href="#">Cockroach</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="#">Flea, Tick, and Mite</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="flea" href="#">Flea,
+                                    Tick, and Mites</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="#">Ant</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="ant" href="#">Ants</a>
                             </li>
                         </ul>
 
@@ -232,30 +235,84 @@ if ($location) {
                 </div>
 
                 <div class="row">
-                    <div class="col-12" id="rodent-info">
-                        <div class="row align-items-center py-5">
-                            <div class="col-12 col-lg-6">
+                    <div class="col-12 pest-type-content" id="rodent-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>Rodent Removal <?php echo $city; ?></h2>
-                                <p class="mb-0">from the moment our technicians arrive. All our technicians are
-                                    uniformed,
-                                    professional and
-                                    licensed with the state. The company is licensed, bonded, and insured.</p>
+                                <p class="mb-0">Rats are an issue for homeowners, businesses, and commercial property
+                                    managers. Rats chew wiring and create fire hazards. They also carry parasites and
+                                    diseases, spreading them through communities. Our rat eradication program ensures we
+                                    eliminate these pests from your property.</p>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid"
-                                        src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-rodents.jpg">
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-12 pest-type-content d-none" id="cockroach-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>Cockroach Removal <?php echo $city; ?></h2>
+                                <p class="mb-0">Roaches like to breed in the warm weather around San Diego. From
+                                    kitchens to production factories and storage areas, roaches are prevalent wherever
+                                    dark, damp conditions exist. Simple Pest Management uses effective control
+                                    strategies to eliminate cockroaches from any property.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/cockroach-program.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="flea-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>Flea, Tick and Mite Removal <?php echo $city; ?></h2>
+                                <p class="mb-0">Wildlife drops ticks on people&apos;s properties, and mites and fleas
+                                    usually
+                                    arrive on the backs of rats or pets. Simple Pest Management will eliminate these
+                                    microscopic pests from your home or business premises. Contact us for a pest
+                                    inspection of your property.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-crawling.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="ant-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>Ant Removal <?php echo $city; ?></h2>
+                                <p class="mb-0">Don&apos;t let the ants dig up your patio or driveway or destroy your
+                                    brickwork. Call Simple Pest Management, and we&apos;ll eliminate the queen and her
+                                    colony from your property.</p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-ants.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </section>
 
-        <section class="why-use-simple-pest py-5">
+        <section class="why-use-simple-pest py-3 py-lg-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -382,7 +439,7 @@ if ($location) {
             </div>
         </section>
 
-        <section class="service-area-cta bg-primary py-5 my-5">
+        <section class="service-area-cta bg-primary py-3 py-lg-5 my-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 text-center text-lg-left">
