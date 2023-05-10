@@ -27,6 +27,7 @@ if ($location) {
     <main id="main" class="site-main">
 
         <section class="service-hero" style="background-image: url(<?php echo esc_url($hero_image); ?>)">
+            <div class="hero-overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">

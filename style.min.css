@@ -2982,6 +2982,7 @@ h2.gform_submission_error{font-size:1rem}
 .accordion .accordion-item button[aria-expanded=true] i.la-chevron-left{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 .accordion .accordion-item button:hover,.accordion .accordion-item button:active,.accordion .accordion-item button:focus{text-decoration:none}
 .services-single .service-hero{background-size:cover;padding:6rem 0;background-position:center center}
+.services-single .service-hero .hero-overlay{position:absolute;left:0;top:0;height:100%;width:75%;background:-webkit-gradient(linear,left top,right top,from(black),to(rgba(0,0,0,0)));background:linear-gradient(90deg,black 0,rgba(0,0,0,0) 100%)}
 .services-single .kicker{text-transform:uppercase}
 .services-single .service-area-image-bg{background-repeat:no-repeat;padding:2rem}
 .services-single .service-area-image-bg.right{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#fff),color-stop(50%,#7dc242));background:linear-gradient(90deg,#fff 50%,#7dc242 50%)}
