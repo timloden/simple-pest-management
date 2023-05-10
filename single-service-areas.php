@@ -61,7 +61,7 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/2-simple-pest-management-truck.jpg">
                     </div>
 
                 </div>
@@ -91,7 +91,7 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg">
                     </div>
                 </div>
 
@@ -123,7 +123,7 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/4-simple-pest-management-customer.jpg">
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg">
                     </div>
                 </div>
 
@@ -192,7 +192,7 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg">
                     </div>
                 </div>
             </div>
@@ -419,7 +419,7 @@ if ($location) {
                     <div class="col-12 col-lg-6">
                         <div class="service-area-image-bg left">
                             <img class="img-fluid"
-                                src="https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/7-pest-control-near-you.jpg">
                         </div>
                     </div>
 

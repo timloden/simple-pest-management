@@ -1,8 +1,5 @@
 "use strict";
 
-console.log('custom js');
-"use strict";
-
 // When document is ready replaces the need for onload
 jQuery(function ($) {
   // Grab your button (based on your posted html)
