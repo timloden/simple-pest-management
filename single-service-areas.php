@@ -11,6 +11,10 @@ get_header();
 $city = get_field('city');
 $location = get_field('location');
 $hero_image = get_field('hero_image') ? get_field('hero_image') : get_template_directory_uri() . '/assets/images/1-featured-image.jpg';
+$rodent_page = get_field('rodent_page');
+$cockroach_page = get_field('cockroach_page');
+$fleas_page = get_field('flea_ticks_and_mites_page');
+$ants_page = get_field('ants_page');
 
 if ($location) {
     $term = get_term( $location[0], 'location' );
@@ -238,7 +242,11 @@ if ($location) {
                     <div class="col-12 pest-type-content" id="rodent-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>Rodent Removal <?php echo $city; ?></h2>
+                                <h2><?php if ($rodent_page) : ?><a href="<?php echo $rodent_page; ?>"><?php endif; ?>
+
+                                        Rodent Removal <?php echo $city; ?>
+                                        <?php if ($rodent_page) : ?></a><?php endif; ?>
+                                </h2>
                                 <p class="mb-0">Rats are an issue for homeowners, businesses, and commercial property
                                     managers. Rats chew wiring and create fire hazards. They also carry parasites and
                                     diseases, spreading them through communities. Our rat eradication program ensures we
@@ -256,7 +264,12 @@ if ($location) {
                     <div class="col-12 pest-type-content d-none" id="cockroach-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>Cockroach Removal <?php echo $city; ?></h2>
+                                <h2>
+                                    <?php if ($cockroach_page) : ?><a
+                                        href="<?php echo $cockroach_page; ?>"><?php endif; ?>
+                                        Cockroach Removal <?php echo $city; ?>
+                                        <?php if ($cockroach_page) : ?></a><?php endif; ?>
+                                </h2>
                                 <p class="mb-0">Roaches like to breed in the warm weather around San Diego. From
                                     kitchens to production factories and storage areas, roaches are prevalent wherever
                                     dark, damp conditions exist. Simple Pest Management uses effective control
@@ -274,7 +287,11 @@ if ($location) {
                     <div class="col-12 pest-type-content d-none" id="flea-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>Flea, Tick and Mite Removal <?php echo $city; ?></h2>
+                                <h2>
+                                    <?php if ($fleas_page) : ?><a href="<?php echo $fleas_page; ?>"><?php endif; ?>
+                                        Flea, Tick and Mite Removal <?php echo $city; ?>
+                                        <?php if ($fleas_page) : ?></a><?php endif; ?>
+                                </h2>
                                 <p class="mb-0">Wildlife drops ticks on people&apos;s properties, and mites and fleas
                                     usually
                                     arrive on the backs of rats or pets. Simple Pest Management will eliminate these
@@ -293,7 +310,11 @@ if ($location) {
                     <div class="col-12 pest-type-content d-none" id="ant-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>Ant Removal <?php echo $city; ?></h2>
+                                <h2>
+                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
+                                        Ant Removal <?php echo $city; ?>
+                                        <?php if ($ants_page) : ?></a><?php endif; ?>
+                                </h2>
                                 <p class="mb-0">Don&apos;t let the ants dig up your patio or driveway or destroy your
                                     brickwork. Call Simple Pest Management, and we&apos;ll eliminate the queen and her
                                     colony from your property.</p>
