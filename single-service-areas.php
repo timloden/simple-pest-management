@@ -26,7 +26,8 @@ if ($location) {
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
 
-        <section class="service-hero" style="background-image: url(<?php echo esc_url($hero_image); ?>)">
+        <section class="service-hero position-relative"
+            style="background-image: url(<?php echo esc_url($hero_image); ?>)">
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="row">
@@ -84,8 +85,8 @@ if ($location) {
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
-                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold" href="tel:">(833) 887-7378
-                            (PEST)</a>
+                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold"
+                            href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
                     </div>
                 </div>
             </div>
@@ -146,8 +147,8 @@ if ($location) {
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
-                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold" href="tel:">(833) 887-7378
-                            (PEST)</a>
+                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold"
+                            href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
                     </div>
                 </div>
             </div>
@@ -474,7 +475,8 @@ if ($location) {
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
-                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold" href="tel:">(619) 373-7378</a>
+                        <a class="btn btn-primary btn-orange btn-lg font-weight-bold"
+                            href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
                     </div>
                 </div>
             </div>
