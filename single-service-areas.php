@@ -10,6 +10,7 @@
 get_header();
 $city = get_field('city');
 $location = get_field('location');
+$hero_image = get_field('hero_image') ? get_field('hero_image') : get_template_directory_uri() . '/assets/images/1-featured-image.jpg';
 
 if ($location) {
     $term = get_term( $location[0], 'location' );
@@ -21,8 +22,7 @@ if ($location) {
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
 
-        <section class="service-hero"
-            style="background-image: url(https://www.simplepestmanagement.local/wp-content/uploads/2022/07/simple-pest-management-dangers-of-diy-pest-control.jpg)">
+        <section class="service-hero" style="background-image: url(<?php echo esc_url($hero_image); ?>)">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
