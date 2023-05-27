@@ -6,7 +6,7 @@ Theme URI: https://timloden.com/
 Author: Tim Loden
 Author URI: https://timloden.com/
 Description: 
-Version: 1.11.12
+Version: 1.12.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -2929,6 +2929,7 @@ header #menu-mobile li ul.sub-menu{list-style:none;padding-left:0}
 header #menu-mobile li ul.sub-menu li a{border-bottom:1px solid #f8f9fa;padding-left:2rem}
 header button.btn,header .restricted-page #loginform p button.button,.restricted-page #loginform p header button.button,header .gform_wrapper button.button,.gform_wrapper header button.button{font-size:30px;line-height:1;border:1px solid #dee2e6}
 footer .guarantee{background-color:#f2f6f9}
+footer .footer-phone-number a{color:#7dc242}
 footer .footer-hero .h1{font-size:3.5rem}
 footer .footer-hero .h2{font-size:2.5rem}
 footer .address{font-size:14px;color:#6c757d}
@@ -2980,6 +2981,14 @@ h2.gform_submission_error{font-size:1rem}
 .accordion .accordion-item button i.la-check-square{color:#000;font-size:1.5rem}
 .accordion .accordion-item button[aria-expanded=true] i.la-chevron-left{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 .accordion .accordion-item button:hover,.accordion .accordion-item button:active,.accordion .accordion-item button:focus{text-decoration:none}
+.services-single .service-hero{background-size:cover;padding:6rem 0;background-position:center center}
+.services-single .service-hero .hero-overlay{position:absolute;left:0;top:0;height:100%;width:75%;background:-webkit-gradient(linear,left top,right top,from(black),to(rgba(0,0,0,0)));background:linear-gradient(90deg,black 0,rgba(0,0,0,0) 100%)}
+.services-single .kicker{text-transform:uppercase}
+.services-single .service-area-image-bg{background-repeat:no-repeat;padding:2rem}
+.services-single .service-area-image-bg.right{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#fff),color-stop(50%,#7dc242));background:linear-gradient(90deg,#fff 50%,#7dc242 50%)}
+.services-single .service-area-image-bg.right.pest-type{background:-webkit-gradient(linear,left top,right top,color-stop(50%,transparent),color-stop(50%,#7dc242));background:linear-gradient(90deg,transparent 50%,#7dc242 50%)}
+.services-single .service-area-image-bg.left{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#7dc242),color-stop(50%,#fff));background:linear-gradient(90deg,#7dc242 50%,#fff 50%)}
+.services-single .range-of-services{background:-webkit-gradient(linear,left bottom,left top,from(white),color-stop(50%,#e3f4ff),to(white));background:linear-gradient(0,white 0,#e3f4ff 50%,white 100%)}
 @media(prefers-reduced-motion:reduce){.form-control,.restricted-page #loginform p .input,.gform_wrapper input[type=email],.gform_wrapper input[type=date],.gform_wrapper input[type=datetime],.gform_wrapper input[type=datetime-local],.gform_wrapper input[type=month],.gform_wrapper input[type=number],.gform_wrapper input[type=password],.gform_wrapper input[type=search],.gform_wrapper input[type=tel],.gform_wrapper input[type=text],.gform_wrapper input[type=time],.gform_wrapper input[type=week],.gform_wrapper input[type=url],.gform_wrapper select,.gform_wrapper textarea{-webkit-transition:none;transition:none}
 .btn,.restricted-page #loginform p .button,.gform_wrapper .button{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}
