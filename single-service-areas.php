@@ -19,13 +19,13 @@ $ants_page = get_field('ants_page');
 if ($location) {
     $term = get_term( $location[0], 'location' );
     $phone_number = get_field('location_phone_number', 'term_' . $term->term_id  );
+    $area = $term->name;
 } else {
     $phone_number = '(866) 887-7378';
 }
 ?>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
-
         <section class="service-hero position-relative"
             style="background-image: url(<?php echo esc_url($hero_image); ?>)">
             <div class="hero-overlay"></div>
@@ -165,14 +165,15 @@ if ($location) {
 
                 <div class="col-12 col-lg-6">
                     <h2>Residential Pest Control <?php echo $city; ?></h2>
-                    <p>If you own a residence in Santee, call Simple Pest Management to deal with your pest problem. Our
+                    <p>If you own a residence in <?php echo $city; ?>, call Simple Pest Management to deal with your
+                        pest problem. Our
                         team works with property managers, landlords, homeowners, and tenants. We offer pest inspections
                         and estimates for any of the following properties.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Apartment Pest Control in Santee.</li>
-                        <li class="font-weight-bold mb-1">Duplex Pest Control in Santee.</li>
-                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in Santee.</li>
-                        <li class="font-weight-bold">Condo Pest Control in Santee.</li>
+                        <li class="font-weight-bold mb-1">Apartment Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Duplex Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold">Condo Pest Control in <?php echo $city; ?>.</li>
                     </ul>
                 </div>
             </div>
@@ -182,16 +183,17 @@ if ($location) {
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
                     <h2>Commercial Pest Control <?php echo $city; ?></h2>
                     <p>If you own a business or commercial building, call simple Pest Management for effective pest
-                        control services in Santee. We work with building managers, business owners, and employees.
+                        control services in <?php echo $city; ?>. We work with building managers, business owners, and
+                        employees.
                         Contact our pest control team for immediate assistance.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Offices.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Retail.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Medical Centers.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Restaurants.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Schools.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Warehouses.</li>
-                        <li class="font-weight-bold">Pest Control Santee for Supermarkets.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Offices.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Retail.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Medical Centers.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Restaurants.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Schools.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Warehouses.</li>
+                        <li class="font-weight-bold">Pest Control <?php echo $city; ?> for Supermarkets.</li>
                     </ul>
                 </div>
 
@@ -209,7 +211,8 @@ if ($location) {
                 <div class="row pb-4">
                     <div class="col-12 text-center">
                         <h2 class="mb-0">Our Range of <?php echo $city; ?> Pest Control Services</h2>
-                        <p class="mb-0 py-4">If you have a pest problem in Santee, contact Simple Pest Management at
+                        <p class="mb-0 py-4">If you have a pest problem in <?php echo $city; ?>, contact Simple Pest
+                            Management at
                             (619) 373-7378. We
                             have the team, skills, and products to eliminate pests from your property. We have decades
                             of experience working with homeowners and businesses in San Diego. We're confident we have
@@ -373,7 +376,7 @@ if ($location) {
                                     suitable for use in
                                     California. Our teams are trained to handle and use these
                                     products safely and effectively. We care about the environment and ensure we don't
-                                    harm the Santee ecosystem.</p>
+                                    harm the <?php echo $city; ?> ecosystem.</p>
                             </div>
                         </div>
                     </div>
@@ -448,7 +451,8 @@ if ($location) {
 
                     <div class="col-12 col-lg-6">
                         <h2><?php echo $city; ?> Pest Control Near Me</h2>
-                        <p>Simple Pest Management offers effective, affordable pest control services in Santee. We're
+                        <p>Simple Pest Management offers effective, affordable pest control services in
+                            <?php echo $city; ?>. We're
                             available for residences and business premises across the area.</p>
                         <p>Contact us for assistance anywhere around Big Rock Park, Padre Dam Park, or Northcote Park.
                             We service al communities in the area, including Mission View Estates, Venture Business
@@ -468,9 +472,11 @@ if ($location) {
                     <div class="col-12 col-lg-8 text-center text-lg-left">
                         <p class="h2 text-white">Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest
                             Control</p>
-                        <p class="mb-0 text-white">We offer pest inspections at properties across Santee. Our team has
+                        <p class="mb-0 text-white">We offer pest inspections at properties across <?php echo $city; ?>.
+                            Our team has
                             years of
-                            experience identifying pest infestations on properties throughout San Diego. We know what to
+                            experience identifying pest infestations on properties throughout <?php echo $area; ?>.
+                            We know what to
                             look for and how to stop it from spreading.
                         </p>
                     </div>
