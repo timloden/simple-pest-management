@@ -15,14 +15,50 @@ $rodent_page = get_field('rodent_page');
 $cockroach_page = get_field('cockroach_page');
 $fleas_page = get_field('flea_ticks_and_mites_page');
 $ants_page = get_field('ants_page');
+$surround_areas = [];
 
 if ($location) {
     $term = get_term( $location[0], 'location' );
     $phone_number = get_field('location_phone_number', 'term_' . $term->term_id  );
     $area = $term->name;
+
+    $args = array(
+        'post_type' => 'service-areas',
+        'posts_per_page' => 10,
+        'post__not_in' => array(get_the_ID()),
+        'tax_query' => array(
+            array(
+            'taxonomy' => 'location',
+            'field' => 'term_id',
+            'terms' => $term->term_id 
+            )
+        )
+    );
+
+    $service_areas = new WP_Query( $args );
+
+    if ($service_areas->have_posts()):
+ 
+        while($service_areas->have_posts()):
+     
+            $service_areas->the_post();
+
+            array_push($surround_areas, str_replace(' Pest Control', '', get_the_title()));
+     
+        endwhile;
+     
+        /* Restore original Post Data */
+        wp_reset_postdata();    
+     
+    endif;
+    
+
 } else {
     $phone_number = '(866) 887-7378';
+    $area = '';
 }
+
+error_log(print_r($surround_areas, true));
 ?>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
@@ -441,6 +477,8 @@ if ($location) {
                     </div>
                 </div>
 
+                <?php if (!empty($surround_areas)) : ?>
+
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="service-area-image-bg left">
@@ -450,19 +488,24 @@ if ($location) {
                     </div>
 
                     <div class="col-12 col-lg-6">
-                        <h2><?php echo $city; ?> Pest Control Near Me</h2>
-                        <p>Simple Pest Management offers effective, affordable pest control services in
-                            <?php echo $city; ?>. We're
-                            available for residences and business premises across the area.</p>
-                        <p>Contact us for assistance anywhere around Big Rock Park, Padre Dam Park, or Northcote Park.
-                            We service al communities in the area, including Mission View Estates, Venture Business
-                            Park, and Sky Ranch.</p>
-                        <p>Simple Pest Management is available for businesses and residences along Mast Boulevard,
-                            Cuyamaca Street, and Magnolia Avenue. Contact us for service along the San Diego River and
-                            Carlton Oaks Country Club. We service suburbs around the Santee Lakes Recreation Preserve
-                            and Town Center Community Park.</p>
+                        <h2>Service Areas</h2>
+                        <p>Offering pest control services in <?php echo $city; ?> and the surrounding areas.</p>
+                        <p>Contact us for assistance anywhere in the <?php echo $city; ?> area, including
+                            <?php echo implode(', ', $surround_areas); ?>, and more.</p>
+                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest Control</p>
+                        <p>We offer pest inspections at properties across <?php echo $city; ?>. Our team has years of
+                            experience
+                            identifying pest infestations on properties throughout <?php echo $area; ?>. We know what to
+                            look for
+                            and how to stop it from spreading.
+                        </p>
+                        <p class="h4"><a class="font-weight-bold"
+                                href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
+                        </p>
                     </div>
                 </div>
+
+                <?php endif; ?>
             </div>
         </section>
 
