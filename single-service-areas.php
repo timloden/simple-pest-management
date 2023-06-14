@@ -57,8 +57,6 @@ if ($location) {
     $phone_number = '(866) 887-7378';
     $area = '';
 }
-
-error_log(print_r($surround_areas, true));
 ?>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
