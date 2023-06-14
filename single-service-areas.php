@@ -15,35 +15,74 @@ $rodent_page = get_field('rodent_page');
 $cockroach_page = get_field('cockroach_page');
 $fleas_page = get_field('flea_ticks_and_mites_page');
 $ants_page = get_field('ants_page');
+$surround_areas = [];
 
 if ($location) {
     $term = get_term( $location[0], 'location' );
     $phone_number = get_field('location_phone_number', 'term_' . $term->term_id  );
+    $area = $term->name;
+
+    $args = array(
+        'post_type' => 'service-areas',
+        'posts_per_page' => 10,
+        'post__not_in' => array(get_the_ID()),
+        'tax_query' => array(
+            array(
+            'taxonomy' => 'location',
+            'field' => 'term_id',
+            'terms' => $term->term_id 
+            )
+        )
+    );
+
+    $service_areas = new WP_Query( $args );
+
+    if ($service_areas->have_posts()):
+ 
+        while($service_areas->have_posts()):
+     
+            $service_areas->the_post();
+
+            array_push($surround_areas, str_replace(' Pest Control', '', get_the_title()));
+     
+        endwhile;
+     
+        /* Restore original Post Data */
+        wp_reset_postdata();    
+     
+    endif;
+    
+
 } else {
     $phone_number = '(866) 887-7378';
+    $area = '';
 }
 ?>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
-
         <section class="service-hero position-relative"
             style="background-image: url(<?php echo esc_url($hero_image); ?>)">
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h1 class="text-white mb-3">Your local and best pest control service in <?php echo $city; ?>,
-                            California</h1>
-                        <p class="text-white">Simple Pest Management provides the <?php echo $city; ?> area with
-                            reliable & effective
-                            elimination of insects and rodents. We have pest control programs for all different types or
-                            residences including single family homes, condos, and apartment buildings. </p>
+                        <h1 class="text-white mb-3"><?php echo $city; ?> Pest Control Service</h1>
+                        <p class="text-white">Enjoy the peace of mind of a clean, bug-free home today, and never deal
+                            with unwelcome roommates again. Call us for same day service or fill out the form below to
+                            schedule your initial service at your convenience. From wasps to cockroaches, bed bugs to
+                            earwigs - our <?php echo $city; ?> pest control service has you covered.</p>
+
+                        <ul class="list-unstyled mb-0">
+                            <li class="text-white mb-2">✅ Pest-Free Home <strong>Guarantee</strong></li>
+                            <li class="text-white mb-2">✅ <strong>Same Day</strong> Service Available</li>
+                            <li class="text-white">✅ <strong>Kid & Pet</strong> Friendly Treatment</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <div class="container">
-            <div class="row justify-content-center py-5">
+            <!-- <div class="row justify-content-center py-5">
                 <div class="col-12 col-lg-10">
                     <p class="mb-0 text-center">We also service commercial properties including food processing
                         facilities,
@@ -51,17 +90,20 @@ if ($location) {
                         Management, we go out of our way to tailor service to our customer&apos;s specific needs;
                         whether they are looking for year-round protection or a one-time service.</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row py-5 align-items-center">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                    <p class="kicker text-primary font-weight-bold">Latest Technology</p>
-                    <h2 class="mb-4">Simple Pest Management strives to exceed our client&apos;s expectations</h2>
-                    <p>from the moment our technicians arrive. All of our technicians are uniformed are licensed, bonded
-                        and insured. But beyond these basics, you will find that they are professionals and will treat
-                        your home as they would that if their own family. We use the latest technology available in the
-                        pest control industry and have the experience to understand how and when to use the advanced
-                        tools and when to use basic, old fashioned hard work.</p>
+                    <p class="kicker text-primary font-weight-bold"></p>
+                    <h2 class="mb-4">A Professional And Reliable Exterminator</h2>
+                    <p>Your <?php echo $city; ?> exterminator will be uniformed, professional, and licensed by the
+                        state. Our
+                        company is licensed, bonded, and insured. But beyond these basics, you will find that your
+                        exterminator is professional and punctual, and will treat your home as they would theirs. We use
+                        the latest technology available in the pest control industry and have the experience to
+                        understand how and when to use advanced tools and when to use basic, old-fashioned hard work.
+                    </p>
+                    <p>Get rid of those bugs today!</p>
                 </div>
 
                 <div class="col-12 col-lg-6">
@@ -78,10 +120,11 @@ if ($location) {
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 text-center text-lg-left">
-                        <p class="h2 text-white">100% Satisfaction Guaranteed</p>
-                        <p class="mb-0 text-white">This is the difference with our company. We understand that
-                            technology
-                            won&apos;t always solve the problem if you don&apos;t have skilled technicians in control.
+                        <p class="mb-2 mb-lg-0 text-white">Why wait? Get those unwelcome guests out of your home with
+                            the most
+                            knowledgeable pest control team in <?php echo $city; ?>, CA. With our bug-free guarantee,
+                            you have
+                            nothing to lose...except for the bugs!
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
@@ -103,27 +146,47 @@ if ($location) {
 
                 <div class="col-12 col-lg-6">
                     <p class="kicker text-primary font-weight-bold">Reliable &amp; Effective Elimination</p>
-                    <h2>Simple Pest Management provides the <?php echo $city; ?> are with reliable</h2>
-                    <p>effective elimination of pests, bugs, insects and rodents. We have pest control programs for all
-                        different types of residences including single family homes, condos, and apartment buildings.
-                        We also service commercial properties including food processing facilities, restaurants,
-                        schools, office buildings and many other types of locations. At Simple Pest Management, we go
-                        out of our way to tailor service to our customer's specific needs, whether you are looking for
-                        year-round protection or a one-time service.</p>
+                    <h2>Thorough Pest Control Company</h2>
+                    <p>Our integrated pest management includes our unique Simple Pest 30-Point Protection Program.</p>
+                    <ol class="mb-0">
+                        <li class="mb-2"><strong>Inspect</strong> - We&apos;ll inspect your property, identify current
+                            and potential
+                            problems, and explain our plan of action before getting started.
+                        </li>
+                        <li class="mb-2"><strong>Protect</strong> - Our initial treatment will eliminate pests and
+                            create the first
+                            barrier which keeps other pests outside and away from your home.
+                        </li>
+                        <li><strong>Defend</strong> - Through regular, proactive treatments, your
+                            exterminator ensures
+                            your home stays pest-free, providing peace of mind for you and your family.
+                        </li>
+                    </ol>
                 </div>
             </div>
 
             <div class="row align-items-center py-3 py-lg-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                    <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
-                    <h2>Simple Pest Management strives to exceed our client&apos;s expectations</h2>
-                    <p>from the moment our technicians arrive. All our technicians are uniformed, professional and
-                        licensed with the state. The company is licensed, bonded, and insured.</p>
-                    <p>But beyond these basics, you will find that they are professionals and will treat your home as
-                        they would that if their own family.
-                        We use the latest technology available in the pest control industry and have the experience to
-                        understand how and when to use the advanced tools and when to use basic, old fashioned hard
-                        work.</p>
+                    <p class="kicker text-primary font-weight-bold">Local & Family Owned</p>
+                    <h2>Fast Pest Control Solutions</h2>
+                    <p>Your journey to freedom begins when you pick up the phone to schedule your first service with us.
+                        The magic unfolds as our dedicated team gets to work, exterminating every pest in sight,
+                        ensuring that your cherished abode is left as a pristine haven. Not just one pest, not just two,
+                        but over twenty different types of nuisances meet their end. </p>
+                    <p>And the protection doesn&apos;t stop there, our shield of assurance extends beyond this first
+                        purge,
+                        offering continuous safety against the unwelcome guests. Simple Pest isn't just about
+                        eliminating pests, it's about reclaiming your peace, protecting your happiness, and restoring
+                        your comfort. Your sanctuary is our mission, fast pest control solutions, your new reality.
+                    </p>
+                    <ol>
+                        <li class="mb-2">Schedule your first service</li>
+                        <li class="mb-2">Get a pest-free home</li>
+                        <li class="mb-2">Stay protected from 20+ pests</li>
+                    </ol>
+                    <p class="h4 mb-0"><a class="font-weight-bold"
+                            href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
+                    </p>
                 </div>
 
                 <div class="col-12 col-lg-6">
@@ -140,7 +203,8 @@ if ($location) {
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 text-center text-lg-left">
                         <p class="h2 text-white">Do you need pest control in <?php echo $city; ?>?</p>
-                        <p class="mb-0 text-white">Our team of pest experts is ready to take your call. We offer advice
+                        <p class="mb-2 mb-lg-0 text-white">Our team of pest experts is ready to take your call. We offer
+                            advice
                             on pest
                             control and a range of services to eliminate pests from your property. Don&apos;t let the
                             pests gain control of your property. Call Simple Pest Management
@@ -165,14 +229,15 @@ if ($location) {
 
                 <div class="col-12 col-lg-6">
                     <h2>Residential Pest Control <?php echo $city; ?></h2>
-                    <p>If you own a residence in Santee, call Simple Pest Management to deal with your pest problem. Our
+                    <p>If you own a residence in <?php echo $city; ?>, call Simple Pest Management to deal with your
+                        pest problem. Our
                         team works with property managers, landlords, homeowners, and tenants. We offer pest inspections
                         and estimates for any of the following properties.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Apartment Pest Control in Santee.</li>
-                        <li class="font-weight-bold mb-1">Duplex Pest Control in Santee.</li>
-                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in Santee.</li>
-                        <li class="font-weight-bold">Condo Pest Control in Santee.</li>
+                        <li class="font-weight-bold mb-1">Apartment Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Duplex Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold">Condo Pest Control in <?php echo $city; ?>.</li>
                     </ul>
                 </div>
             </div>
@@ -182,16 +247,17 @@ if ($location) {
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
                     <h2>Commercial Pest Control <?php echo $city; ?></h2>
                     <p>If you own a business or commercial building, call simple Pest Management for effective pest
-                        control services in Santee. We work with building managers, business owners, and employees.
+                        control services in <?php echo $city; ?>. We work with building managers, business owners, and
+                        employees.
                         Contact our pest control team for immediate assistance.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Offices.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Retail.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Medical Centers.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Restaurants.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Schools.</li>
-                        <li class="font-weight-bold mb-1">Pest Control Santee for Warehouses.</li>
-                        <li class="font-weight-bold">Pest Control Santee for Supermarkets.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Offices.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Retail.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Medical Centers.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Restaurants.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Schools.</li>
+                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Warehouses.</li>
+                        <li class="font-weight-bold">Pest Control <?php echo $city; ?> for Supermarkets.</li>
                     </ul>
                 </div>
 
@@ -209,12 +275,17 @@ if ($location) {
                 <div class="row pb-4">
                     <div class="col-12 text-center">
                         <h2 class="mb-0">Our Range of <?php echo $city; ?> Pest Control Services</h2>
-                        <p class="mb-0 py-4">If you have a pest problem in Santee, contact Simple Pest Management at
-                            (619) 373-7378. We
-                            have the team, skills, and products to eliminate pests from your property. We have decades
-                            of experience working with homeowners and businesses in San Diego. We're confident we have
-                            the right pest control strategy for your property. Call our pest control team for a free
-                            inspection today.</p>
+                        <p class="mb-0 py-4">If you have a pest problem in <?php echo $city; ?>, contact the best pest
+                            control company at
+                            <a
+                                href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>.
+                            We have the team, skills, and products to eliminate pests from your property. We have
+                            decades of experience working with homeowners and businesses in <?php echo $area; ?> area.
+                            We're confident
+                            we have the right pest control strategy for your property. Call our pest control team for a
+                            free inspection today.
+
+                        </p>
                     </div>
                 </div>
                 <div class="row">
@@ -235,6 +306,13 @@ if ($location) {
                             <li class="nav-item">
                                 <a class="nav-link font-weight-bold pest-type-button" id="ant" href="#">Ants</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold pest-type-button" id="spider" href="#">Spiders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold pest-type-button" id="silverfish"
+                                    href="#">Silverfish</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -246,13 +324,15 @@ if ($location) {
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2><?php if ($rodent_page) : ?><a href="<?php echo $rodent_page; ?>"><?php endif; ?>
 
-                                        Rodent Removal <?php echo $city; ?>
+                                        Rodent Control & Removal <?php echo $city; ?>
                                         <?php if ($rodent_page) : ?></a><?php endif; ?>
                                 </h2>
-                                <p class="mb-0">Rats are an issue for homeowners, businesses, and commercial property
-                                    managers. Rats chew wiring and create fire hazards. They also carry parasites and
-                                    diseases, spreading them through communities. Our rat eradication program ensures we
-                                    eliminate these pests from your property.</p>
+                                <p class="mb-0">Rodents, including rats, mice, moles, and voles, are an issue for
+                                    homeowners, businesses, and commercial property managers. Rats chew wiring and
+                                    create fire hazards. Rodents and their droppings also carry parasites and diseases,
+                                    spreading them through communities. Our rodent removal and control program ensures
+                                    we eliminate these pests from your property.
+                                </p>
                             </div>
 
                             <div class="col-12 col-lg-6">
@@ -269,13 +349,16 @@ if ($location) {
                                 <h2>
                                     <?php if ($cockroach_page) : ?><a
                                         href="<?php echo $cockroach_page; ?>"><?php endif; ?>
-                                        Cockroach Removal <?php echo $city; ?>
+                                        Cockroach Control <?php echo $city; ?>
                                         <?php if ($cockroach_page) : ?></a><?php endif; ?>
                                 </h2>
-                                <p class="mb-0">Roaches like to breed in the warm weather around San Diego. From
-                                    kitchens to production factories and storage areas, roaches are prevalent wherever
-                                    dark, damp conditions exist. Simple Pest Management uses effective control
-                                    strategies to eliminate cockroaches from any property.</p>
+                                <p class="mb-0">Turn the tide against relentless cockroaches with Simple Pest's
+                                    Cockroach Control Services. These unwelcome guests can be a persistent nuisance, but
+                                    our expertise offers the swift solution you need. Our advanced cockroach control
+                                    methods track and exterminate each intruder, restoring the sanctity of your home.
+                                    With Simple Pest, let your home be your fortress, impenetrable to the roach
+                                    invasion. Take back control with Simple Pest.
+                                </p>
                             </div>
 
                             <div class="col-12 col-lg-6">
@@ -314,17 +397,77 @@ if ($location) {
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
                                     <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Ant Removal <?php echo $city; ?>
+                                        Ant Control <?php echo $city; ?>
                                         <?php if ($ants_page) : ?></a><?php endif; ?>
                                 </h2>
-                                <p class="mb-0">Don&apos;t let the ants dig up your patio or driveway or destroy your
-                                    brickwork. Call Simple Pest Management, and we&apos;ll eliminate the queen and her
-                                    colony from your property.</p>
+                                <p class="mb-0">Harness the power of Simple Pest&apos;s Ant Control Services to reclaim
+                                    your
+                                    home. These tiny invaders can create a mammoth of a problem, undermining your peace
+                                    and comfort. But with Simple Pest, there's no cause for concern. Our advanced ant
+                                    control measures trace and terminate every trail, leaving your home an ant-free
+                                    zone. Say goodbye to unwanted picnics, as we deliver the effective solution you
+                                    need. With Simple Pest, tranquility returns to your domain.</p>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-ants.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="spider-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
+                                        Spider Control <?php echo $city; ?>
+                                        <?php if ($ants_page) : ?></a><?php endif; ?>
+                                </h2>
+                                <p class="mb-0">Confront your deepest fears with Simple Pest's unrivaled Spider Control
+                                    Services. It's not just about the run-of-the-mill invaders, we tackle the true
+                                    villains &mdash; the infamous Black Widow with its venomous allure, the notorious
+                                    Brown
+                                    Recluse that lurks in hidden corners, and the intimidating Wolf Spider, a fearsome
+                                    adversary in any home. Each has a name, each a terrifying reputation, but to us,
+                                    they're merely challenges waiting to be surmounted. With our expertise, these
+                                    threatening creatures become powerless. Banish the nightmares, discard the fear,
+                                    Simple Pest is here.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-spiders.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="silverfish-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
+                                        Silverfish Control <?php echo $city; ?>
+                                        <?php if ($ants_page) : ?></a><?php endif; ?>
+                                </h2>
+                                <p class="mb-0">Combat the quiet invaders with Simple Pest's Silverfish Control
+                                    Services. These stealthy pests can silently damage your cherished belongings. But
+                                    rest easy, Simple Pest is your shield. Our exceptional silverfish control finds and
+                                    eradicates them from their hidden corners, ending their damage. No more ruined
+                                    keepsakes or wallpapers. Trust in Simple Pest and reclaim your home from the
+                                    silverfish menace. Enjoy peace of mind as we fortify your sanctuary.
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-silverfish.jpg">
                                 </div>
                             </div>
                         </div>
@@ -343,8 +486,11 @@ if ($location) {
                         <p class="mb-0 py-4">When you contact Simple Pest Management to handle your pest situation, you
                             the
                             following in your service level agreement with us.<br>Contact our team at
-                            <?php echo $phone_number; ?> for
-                            immediate assistance.</p>
+                            <a
+                                href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
+                            for
+                            immediate assistance.
+                        </p>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 pb-5">
@@ -355,10 +501,10 @@ if ($location) {
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/authentication.svg"
                                     alt="Proven process pest control icon">
                                 <h3 class="card-title h6">Proven Pest Control Processes</h3>
-                                <p class="mb-0">Simple Pest Control developed our pest control strategies over decades
-                                    of experience
-                                    in the field. We have knowledge of the local area and how it affects pest behavior.
-                                    You can rely on our team to deliver you a pest-free property.</p>
+                                <p class="mb-0">We developed our pest control strategies over decades of experience in
+                                    the field. We have knowledge of the local area and how it affects pest behavior. You
+                                    can rely on our team to deliver you a pest-free property.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -371,9 +517,9 @@ if ($location) {
                                 <h3 class="card-title h6">Eco-Friendly Pest Control Systems</h3>
                                 <p class="mb-0">We use pest control products that meet 'Green Pro Certification,'
                                     suitable for use in
-                                    California. Our teams are trained to handle and use these
+                                    California. Every Simple Pest exterminator is trained to handle and use these
                                     products safely and effectively. We care about the environment and ensure we don't
-                                    harm the Santee ecosystem.</p>
+                                    harm the <?php echo $city; ?> ecosystem.</p>
                             </div>
                         </div>
                     </div>
@@ -385,9 +531,8 @@ if ($location) {
                                     alt="Licensed pest control icon">
                                 <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
                                 <p class="mb-0">Our business is established, licensed, and insured. We remove the risk
-                                    of hiring
-                                    people to work on your property. If anything happens while we're on-site, it's our
-                                    problem, not yours.</p>
+                                    of hiring people to work on your property. If anything happens while we're on-site,
+                                    it's our problem, not yours.</p>
                             </div>
                         </div>
                     </div>
@@ -416,8 +561,7 @@ if ($location) {
                                 <h3 class="card-title h6">100% Satisfaction Guarantee</h3>
                                 <p class="mb-0">We include a 100% satisfaction guarantee with every job. We value our
                                     reputation in the <?php echo $city; ?> community as the leading pest control
-                                    specialist in San
-                                    Diego.</p>
+                                    specialist in the <?php echo $area; ?> area.</p>
                             </div>
                         </div>
                     </div>
@@ -429,36 +573,44 @@ if ($location) {
                                     alt="Savings pest control icon">
                                 <h3 class="card-title h6">Affordable, Competitive Rates</h3>
                                 <p class="mb-0">Simple Pest Management offers pest inspections and estimates and
-                                    affordable prices on
-                                    pest control services. When you hire us, you leverage our experienced pest team and
-                                    knowledge, giving you lasting results for your property. Our transparent invoicing
-                                    includes no hidden charges.</p>
+                                    affordable prices on pest control services. When you hire us, you leverage our
+                                    experienced pest team and knowledge, giving you lasting results for your property.
+                                    Our transparent invoicing includes no hidden charges.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <?php if (!empty($surround_areas)) : ?>
+
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="service-area-image-bg left">
                             <img class="img-fluid"
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/7-pest-control-near-you.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/7-pest-control-near-you.jpg"
+                                loading="lazy">
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-6">
-                        <h2><?php echo $city; ?> Pest Control Near Me</h2>
-                        <p>Simple Pest Management offers effective, affordable pest control services in Santee. We're
-                            available for residences and business premises across the area.</p>
-                        <p>Contact us for assistance anywhere around Big Rock Park, Padre Dam Park, or Northcote Park.
-                            We service al communities in the area, including Mission View Estates, Venture Business
-                            Park, and Sky Ranch.</p>
-                        <p>Simple Pest Management is available for businesses and residences along Mast Boulevard,
-                            Cuyamaca Street, and Magnolia Avenue. Contact us for service along the San Diego River and
-                            Carlton Oaks Country Club. We service suburbs around the Santee Lakes Recreation Preserve
-                            and Town Center Community Park.</p>
+                        <h2>Service Areas</h2>
+                        <p>Offering pest control services in <?php echo $city; ?> and the surrounding areas.</p>
+                        <p>Contact us for assistance anywhere in the <?php echo $city; ?> area, including
+                            <?php echo implode(', ', $surround_areas); ?>, and more.</p>
+                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest Control</p>
+                        <p>We offer pest inspections at properties across <?php echo $city; ?>. Our team has years of
+                            experience
+                            identifying pest infestations on properties throughout <?php echo $area; ?>. We know what to
+                            look for
+                            and how to stop it from spreading.
+                        </p>
+                        <p class="h4"><a class="font-weight-bold"
+                                href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
+                        </p>
                     </div>
                 </div>
+
+                <?php endif; ?>
             </div>
         </section>
 
@@ -468,9 +620,11 @@ if ($location) {
                     <div class="col-12 col-lg-8 text-center text-lg-left">
                         <p class="h2 text-white">Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest
                             Control</p>
-                        <p class="mb-0 text-white">We offer pest inspections at properties across Santee. Our team has
+                        <p class="mb-0 text-white">We offer pest inspections at properties across <?php echo $city; ?>.
+                            Our team has
                             years of
-                            experience identifying pest infestations on properties throughout San Diego. We know what to
+                            experience identifying pest infestations on properties throughout <?php echo $area; ?>.
+                            We know what to
                             look for and how to stop it from spreading.
                         </p>
                     </div>
@@ -487,9 +641,9 @@ if ($location) {
                 <div class="col-12 text-center">
                     <h2 class="mb-0"><?php echo $city; ?> Pest Control FAQ</h2>
                     <p class="mb-0 pt-4 pb-5">When you contract Simple Pest Management to handle your pest situation,
-                        you get
-                        the following in
-                        your service level agreement with Contact our team at (619) 373-7378 for immediate assistance.
+                        you get the following in your service level agreement with Contact our team at <a
+                            href="tel:8668877378">(866) 887-7378</a>
+                        for immediate assistance.
                     </p>
                 </div>
             </div>
@@ -511,12 +665,11 @@ if ($location) {
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Simple Pest Management works with pest control products complying with &apos;Green
-                                    Pro
-                                    Certification.&apos; Our products break down into harmless compounds, leaving no
-                                    impact
+                                    Simple Pest Management works with pest control products complying with 'Green Pro
+                                    Certification.' Our products break down into harmless compounds, leaving no impact
                                     on the local groundwater or run-off. Our pest control systems are safe for soil and
                                     the local environment - they are safe for your family and pets.
+
                                 </div>
                             </div>
                         </div>
@@ -527,7 +680,7 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        Does your rodent eradication program harm pets or the local wildlife?
+                                        Does your rodent control program harm pets or the local wildlife?
                                     </button>
                                 </h2>
                             </div>
@@ -538,12 +691,11 @@ if ($location) {
                                         disease in the community. Rats carry parasites like fleas, lice, and ticks and
                                         diseases like the Hantavirus; seeing rodents scuttling around your property is a
                                         problem.</p>
-                                    <p class="mb-0">Contact Simple Pest Management for effective rat eradication with
-                                        safe pest
-                                        control systems designed to eliminate the rats, not your pets or the local
-                                        wildlife. We care for the community of <?php echo $city; ?>. Our pest control
-                                        systems are
-                                        ethical and efficient, with no harmful effects on the ecosystem. </p>
+                                    <p class="mb-0">Our rodent control solutions are designed to eliminate the rats, not
+                                        your pets or the local wildlife. We care for the community of
+                                        <?php echo $city; ?>. Our
+                                        pest control systems are ethical and efficient, with no harmful effects on the
+                                        ecosystem.</p>
                                 </div>
                             </div>
                         </div>
@@ -561,12 +713,13 @@ if ($location) {
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>Call Simple Pest Management and we&apos;ll send a pest control team to your
-                                        premises for a pest inspection. Our pest control experts know where pests like
-                                        to hide on your property.</p>
-                                    <p class="mb-0">We&apos;ll find the source of the infestation and eradicate it with
-                                        lasting results. We offer our clients free estimates for pest control. Contact
-                                        our team and book your inspection today. </p>
+                                    <p>Yes, we offer free pest inspections. Our pest control experts know where pests
+                                        like to hide on your property and will prepare a report and estimate after
+                                        inspecting your property.
+                                    </p>
+                                    <p class="mb-0">If you want to use our extermination services, we will eliminate the
+                                        problems and prevent future issues with lasting results. Book your inspection
+                                        today.</p>
                                 </div>
                             </div>
                         </div>
@@ -585,9 +738,9 @@ if ($location) {
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <p>We recommend homeowners and business owners in <?php echo $city; ?> implement a
-                                        preventative
-                                        pest control strategy for their property. By taking action and stopping the
-                                        problem before it starts, you keep your property pest free for the future. </p>
+                                        preventative pest control strategy for their property. By taking action and
+                                        stopping the problem before it starts, you keep your property pest free for the
+                                        future.</p>
                                     <p class="mb-0">The pest control requirements of properties depend on their size and
                                         nature. Single-family homes may require a monthly or bi-monthly approach, while
                                         apartments may need a bi-weekly or monthly pest control strategy.
@@ -613,8 +766,8 @@ if ($location) {
                                 <div class="card-body">
                                     <p>DIY pest control usually involves leaving out bait packs or granules for ants,
                                         rodents and cockroaches. While these systems provide temporary results, they
-                                        don&apos;t stop your pest problem. DIY pest control makes a dent in the pest
-                                        population on your property, but it rebounds shortly after that. </p>
+                                        don't stop your pest problem. DIY pest control makes a dent in the pest
+                                        population on your property, but it rebounds shortly after that.</p>
                                     <p class="mb-0">With Simple Pest Management, you get a team with decades of
                                         experience handling all types of pest infestations in <?php echo $city; ?>. We
                                         know where
