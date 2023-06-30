@@ -327,7 +327,7 @@ if ($location) {
                                         Rodent Control & Removal <?php echo $city; ?>
                                         <?php if ($rodent_page) : ?></a><?php endif; ?>
                                 </h2>
-                                <p class="mb-0">Rodents, including rats, mice, moles, and voles, are an issue for
+                                <p class="mb-0">Rodents, including rats and mice, are an issue for
                                     homeowners, businesses, and commercial property managers. Rats chew wiring and
                                     create fire hazards. Rodents and their droppings also carry parasites and diseases,
                                     spreading them through communities. Our rodent removal and control program ensures
