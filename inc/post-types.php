@@ -58,7 +58,6 @@ function custom_post_type_services() {
 		'show_in_rest'          => true,
 	);
 	register_post_type( 'services', $args );
-
 }
 add_action( 'init', 'custom_post_type_services', 0 );
 
@@ -119,8 +118,59 @@ function custom_post_type_service_areas() {
 	);
 	register_post_type( 'service-areas', $args );
 
+	add_rewrite_rule( 'service-areas/([^/]+)/wasps', 'index.php?service-areas=$matches[1]&wasps=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/rodents', 'index.php?service-areas=$matches[1]&rodents=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/bed-bugs', 'index.php?service-areas=$matches[1]&bed-bugs=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/cockroach', 'index.php?service-areas=$matches[1]&cockroaches=yes', 'top' );
+
 }
 add_action( 'init', 'custom_post_type_service_areas', 0 );
+
+
+function prefix_register_query_var( $vars ) {
+
+	$vars[] = 'wasps';
+	$vars[] = 'rodents';
+	$vars[] = 'bed-bugs';
+	$vars[] = 'cockroaches';
+	return $vars;
+}
+
+add_filter( 'query_vars', 'prefix_register_query_var' );
+
+function prefix_url_rewrite_templates() {
+
+	if ( is_singular( 'service-areas' ) && get_query_var('wasps')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-wasps.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('rodents')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-rodents.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('bed-bugs')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-bed-bugs.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('cockroaches')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-cockroaches.php';
+		});
+	}
+}
+
+add_action( 'template_redirect', 'prefix_url_rewrite_templates' );
+
 
 // Pest post type
 
