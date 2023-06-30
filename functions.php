@@ -104,6 +104,17 @@ function my_prefix_comments_open( $open, $post_id ) {
 }
 add_filter( 'comments_open', 'my_prefix_comments_open', 10, 2 );
 
+if (in_array('seo-by-rank-math/rank-math.php', apply_filters('active_plugins', get_option('active_plugins')))) { 
+	include_once 'custom-sitemap.php';
+
+	add_filter('rank_math/sitemap/providers', function( $external_providers ) {
+		$external_providers['custom'] = new \RankMath\Sitemap\Providers\Custom();
+		return $external_providers;
+	});
+
+	add_filter( 'rank_math/sitemap/enable_caching', '__return_false');
+}
+
 /**
  * Load includes
  */
