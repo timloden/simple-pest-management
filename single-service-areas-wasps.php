@@ -58,7 +58,6 @@ if ($location) {
     $area = '';
 }
 ?>
-<h1>WASPS</h1>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
         <section class="service-hero position-relative"
@@ -67,17 +66,27 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h1 class="text-white mb-3"><?php echo $city; ?> Pest Control Service</h1>
-                        <p class="text-white">Enjoy the peace of mind of a clean, bug-free home today, and never deal
-                            with unwelcome roommates again. Call us for same day service or fill out the form below to
-                            schedule your initial service at your convenience. From wasps to cockroaches, bed bugs to
-                            earwigs - our <?php echo $city; ?> pest control service has you covered.</p>
+                        <h1 class="text-white mb-3">Wasp Control Service in <?php echo $city; ?></h1>
+                        <p class="text-white">Have wasps established a buzzing fortress in your <?php echo $city; ?>
+                            abode or
+                            office, transforming your once calm haven into a stage for fear and discomfort? At Simple
+                            Pest, we specialize in wasp control <?php echo $city; ?>, providing a swift remedy to this
+                            troublesome
+                            predicament.
+                        </p>
 
-                        <ul class="list-unstyled mb-0">
+                        <ul class="list-unstyled">
                             <li class="text-white mb-2">✅ Pest-Free Home <strong>Guarantee</strong></li>
                             <li class="text-white mb-2">✅ <strong>Same Day</strong> Service Available</li>
                             <li class="text-white">✅ <strong>Kid & Pet</strong> Friendly Treatment</li>
                         </ul>
+
+                        <p class="mb-0 text-white">In the fight against these unwelcome invaders, you need a trusted
+                            ally. With
+                            Simple Pest, you&apos;ve got a friend in the wasp extermination business - and we&apos;re
+                            prepared to
+                            defend your territory, ensuring your peace of mind.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -96,7 +105,7 @@ if ($location) {
             <div class="row py-5 align-items-center">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold"></p>
-                    <h2 class="mb-4">A Professional And Reliable Exterminator</h2>
+                    <h2 class="mb-4">A Professional And Reliable Wasp Exterminator</h2>
                     <p>Your <?php echo $city; ?> exterminator will be uniformed, professional, and licensed by the
                         state. Our
                         company is licensed, bonded, and insured. But beyond these basics, you will find that your
@@ -123,9 +132,9 @@ if ($location) {
                     <div class="col-12 col-lg-8 text-center text-lg-left">
                         <p class="mb-2 mb-lg-0 text-white">Why wait? Get those unwelcome guests out of your home with
                             the most
-                            knowledgeable pest control team in <?php echo $city; ?>, CA. With our bug-free guarantee,
+                            knowledgeable wasp control team in <?php echo $city; ?>, CA. With our bug-free guarantee,
                             you have
-                            nothing to lose...except for the bugs!
+                            nothing to lose...except for the wasps!
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
@@ -147,7 +156,7 @@ if ($location) {
 
                 <div class="col-12 col-lg-6">
                     <p class="kicker text-primary font-weight-bold">Reliable &amp; Effective Elimination</p>
-                    <h2>Thorough Pest Control Company</h2>
+                    <h2>Thorough Wasp Control Company</h2>
                     <p>Our integrated pest management includes our unique Simple Pest 30-Point Protection Program.</p>
                     <ol class="mb-0">
                         <li class="mb-2"><strong>Inspect</strong> - We&apos;ll inspect your property, identify current
@@ -169,16 +178,19 @@ if ($location) {
             <div class="row align-items-center py-3 py-lg-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Local & Family Owned</p>
-                    <h2>Fast Pest Control Solutions</h2>
-                    <p>Your journey to freedom begins when you pick up the phone to schedule your first service with us.
-                        The magic unfolds as our dedicated team gets to work, exterminating every pest in sight,
-                        ensuring that your cherished abode is left as a pristine haven. Not just one pest, not just two,
-                        but over twenty different types of nuisances meet their end. </p>
-                    <p>And the protection doesn&apos;t stop there, our shield of assurance extends beyond this first
-                        purge,
-                        offering continuous safety against the unwelcome guests. Simple Pest isn't just about
-                        eliminating pests, it's about reclaiming your peace, protecting your happiness, and restoring
-                        your comfort. Your sanctuary is our mission, fast pest control solutions, your new reality.
+                    <h2>Fast Wasp Control Solutions</h2>
+                    <p>Your pathway to peace begins the moment you give us a ring to book your first service. That's
+                        when the real magic happens! Our friendly team rolls up their sleeves and gets down to business,
+                        sending each and every wasp on its way, transforming your treasured home back into the calm
+                        retreat you remember. And it's not just one type of wasp, or two - we tackle a whole variety!
+                        From the sting of yellow jackets to the hum of digger wasps, and the buzz of tarantula hawks,
+                        they all find their exit route when we arrive.
+
+                    </p>
+                    <p>But our care for your comfort doesn't end with that first service. Our protective shield stays
+                        with you, offering continuous reassurance against any winged interlopers that might consider
+                        setting up shop. Your sanctuary is our purpose, fast and friendly wasp control solutions are our
+                        promise. Welcome to your new wasp-free reality.
                     </p>
                     <ol>
                         <li class="mb-2">Schedule your first service</li>
@@ -203,7 +215,7 @@ if ($location) {
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 text-center text-lg-left">
-                        <p class="h2 text-white">Do you need pest control in <?php echo $city; ?>?</p>
+                        <p class="h2 text-white">Do you need wasp control in <?php echo $city; ?>?</p>
                         <p class="mb-2 mb-lg-0 text-white">Our team of pest experts is ready to take your call. We offer
                             advice
                             on pest
@@ -229,16 +241,17 @@ if ($location) {
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <h2>Residential Pest Control <?php echo $city; ?></h2>
+                    <h2>Residential Wasp Control <?php echo $city; ?></h2>
                     <p>If you own a residence in <?php echo $city; ?>, call Simple Pest Management to deal with your
                         pest problem. Our
                         team works with property managers, landlords, homeowners, and tenants. We offer pest inspections
                         and estimates for any of the following properties.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Apartment Pest Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold mb-1">Duplex Pest Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold">Condo Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Apartment Wasp Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Duplex Wasp Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Single Family Home Wasp Control in <?php echo $city; ?>.
+                        </li>
+                        <li class="font-weight-bold">Condo Wasp Control in <?php echo $city; ?>.</li>
                     </ul>
                 </div>
             </div>
@@ -246,19 +259,19 @@ if ($location) {
             <div class="row align-items-center py-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
-                    <h2>Commercial Pest Control <?php echo $city; ?></h2>
-                    <p>If you own a business or commercial building, call simple Pest Management for effective pest
-                        control services in <?php echo $city; ?>. We work with building managers, business owners, and
+                    <h2>Commercial Wasp Control <?php echo $city; ?></h2>
+                    <p>If you own a business or commercial building, call simple Pest Management for your wasp
+                        control needs in <?php echo $city; ?>. We work with building managers, business owners, and
                         employees.
                         Contact our pest control team for immediate assistance.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Offices.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Retail.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Medical Centers.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Restaurants.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Schools.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Warehouses.</li>
-                        <li class="font-weight-bold">Pest Control <?php echo $city; ?> for Supermarkets.</li>
+                        <li class="font-weight-bold mb-1">Wasp Control <?php echo $city; ?> for Offices.</li>
+                        <li class="font-weight-bold mb-1">Wasp Control <?php echo $city; ?> for Retail.</li>
+                        <li class="font-weight-bold mb-1">Wasp Control <?php echo $city; ?> for Medical Centers.</li>
+                        <li class="font-weight-bold mb-1">Wasp Control <?php echo $city; ?> for Restaurants.</li>
+                        <li class="font-weight-bold mb-1">Wasp Control <?php echo $city; ?> for Schools.</li>
+                        <li class="font-weight-bold mb-1">Wasp Control <?php echo $city; ?> for Warehouses.</li>
+                        <li class="font-weight-bold">Wasp Control <?php echo $city; ?> for Supermarkets.</li>
                     </ul>
                 </div>
 
@@ -275,17 +288,9 @@ if ($location) {
             <div class="container">
                 <div class="row pb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Our Range of <?php echo $city; ?> Pest Control Services</h2>
-                        <p class="mb-0 py-4">If you have a pest problem in <?php echo $city; ?>, contact the best pest
-                            control company at
-                            <a
-                                href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>.
-                            We have the team, skills, and products to eliminate pests from your property. We have
-                            decades of experience working with homeowners and businesses in <?php echo $area; ?> area.
-                            We're confident
-                            we have the right pest control strategy for your property. Call our pest control team for a
-                            free inspection today.
-
+                        <h2 class="mb-0">Our Range of <?php echo $city; ?> Wasp Control Services</h2>
+                        <p class="mb-0 py-4">Every wasp species is unique. Fortunately, we're equipped to deal with a
+                            variety of them, including:
                         </p>
                     </div>
                 </div>
@@ -293,26 +298,23 @@ if ($location) {
                     <div class="col-12">
                         <ul class="nav nav-pills nav-justified flex-column flex-md-row border rounded">
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold active pest-type-button" id="rodent"
-                                    href="#">Rodent</a>
+                                <a class="nav-link font-weight-bold active pest-type-button" id="rat" href="#">Yellow
+                                    Jackets</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="cockroach"
-                                    href="#">Cockroach</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="mice" href="#">Paper Wasps</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="flea" href="#">Flea,
-                                    Tick, and Mites</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="moles" href="#">Digger
+                                    Wasps</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="ant" href="#">Ants</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="voles" href="#">Tarantula
+                                    Hawks</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="spider" href="#">Spiders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="silverfish"
-                                    href="#">Silverfish</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="mud-daubers" href="#">Mud
+                                    Daubers</a>
                             </li>
                         </ul>
 
@@ -320,147 +322,15 @@ if ($location) {
                 </div>
 
                 <div class="row">
-                    <div class="col-12 pest-type-content" id="rodent-info">
+                    <div class="col-12 pest-type-content" id="rat-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2><?php if ($rodent_page) : ?><a href="<?php echo $rodent_page; ?>"><?php endif; ?>
-
-                                        Rodent Control & Removal <?php echo $city; ?>
-                                        <?php if ($rodent_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Rodents, including rats and mice, are an issue for
-                                    homeowners, businesses, and commercial property managers. Rats chew wiring and
-                                    create fire hazards. Rodents and their droppings also carry parasites and diseases,
-                                    spreading them through communities. Our rodent removal and control program ensures
-                                    we eliminate these pests from your property.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-rodents.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="cockroach-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($cockroach_page) : ?><a
-                                        href="<?php echo $cockroach_page; ?>"><?php endif; ?>
-                                        Cockroach Control <?php echo $city; ?>
-                                        <?php if ($cockroach_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Turn the tide against relentless cockroaches with Simple Pest's
-                                    Cockroach Control Services. These unwelcome guests can be a persistent nuisance, but
-                                    our expertise offers the swift solution you need. Our advanced cockroach control
-                                    methods track and exterminate each intruder, restoring the sanctity of your home.
-                                    With Simple Pest, let your home be your fortress, impenetrable to the roach
-                                    invasion. Take back control with Simple Pest.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/cockroach-program.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="flea-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($fleas_page) : ?><a href="<?php echo $fleas_page; ?>"><?php endif; ?>
-                                        Flea, Tick and Mite Removal <?php echo $city; ?>
-                                        <?php if ($fleas_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Wildlife drops ticks on people&apos;s properties, and mites and fleas
-                                    usually
-                                    arrive on the backs of rats or pets. Simple Pest Management will eliminate these
-                                    microscopic pests from your home or business premises. Contact us for a pest
-                                    inspection of your property.</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-crawling.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="ant-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Ant Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Harness the power of Simple Pest&apos;s Ant Control Services to reclaim
-                                    your
-                                    home. These tiny invaders can create a mammoth of a problem, undermining your peace
-                                    and comfort. But with Simple Pest, there's no cause for concern. Our advanced ant
-                                    control measures trace and terminate every trail, leaving your home an ant-free
-                                    zone. Say goodbye to unwanted picnics, as we deliver the effective solution you
-                                    need. With Simple Pest, tranquility returns to your domain.</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-ants.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="spider-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Spider Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Confront your deepest fears with Simple Pest's unrivaled Spider Control
-                                    Services. It's not just about the run-of-the-mill invaders, we tackle the true
-                                    villains &mdash; the infamous Black Widow with its venomous allure, the notorious
-                                    Brown
-                                    Recluse that lurks in hidden corners, and the intimidating Wolf Spider, a fearsome
-                                    adversary in any home. Each has a name, each a terrifying reputation, but to us,
-                                    they're merely challenges waiting to be surmounted. With our expertise, these
-                                    threatening creatures become powerless. Banish the nightmares, discard the fear,
-                                    Simple Pest is here.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-spiders.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="silverfish-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Silverfish Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Combat the quiet invaders with Simple Pest's Silverfish Control
-                                    Services. These stealthy pests can silently damage your cherished belongings. But
-                                    rest easy, Simple Pest is your shield. Our exceptional silverfish control finds and
-                                    eradicates them from their hidden corners, ending their damage. No more ruined
-                                    keepsakes or wallpapers. Trust in Simple Pest and reclaim your home from the
-                                    silverfish menace. Enjoy peace of mind as we fortify your sanctuary.
+                                <h2>Yellow Jackets</h2>
+                                <p class="mb-0">Known for their distinctive yellow and black bodies and their presence
+                                    at your late-summer barbecues, Yellow jackets can be particularly aggressive,
+                                    especially when their nests are disturbed. Our expert team swiftly and safely
+                                    handles yellow jacket issues, freeing your outdoor spaces from their unwelcome
+                                    presence.
 
                                 </p>
                             </div>
@@ -468,7 +338,98 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-silverfish.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-yellow-jacket.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="mice-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    Paper Wasps
+                                </h2>
+                                <p class="mb-0">Recognizable by their thin waists and the umbrella-shaped nests they
+                                    construct from chewed wood pulp, Paper wasps can be a painful problem if aggravated.
+                                    We have the tools and techniques to remove paper wasps without causing unnecessary
+                                    disturbances.
+
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-paper-wasp.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="moles-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    Digger Wasps
+                                </h2>
+                                <p class="mb-0">Also known as cicada killers, these solitary insects prefer to burrow in
+                                    sandy soil and hunt cicadas to feed their young. Although they typically avoid
+                                    conflict with humans, their intimidating size can be off-putting. Let us handle
+                                    these natural burrowers for you.
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-digger-wasp.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="voles-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    Tarantula Hawks
+                                </h2>
+                                <p class="mb-0">With a sting ranked as one of the most painful in the insect world,
+                                    these large, blue-black wasps prey on tarantulas. While they are not typically
+                                    aggressive to humans, a chance encounter can be extremely painful. We can help keep
+                                    these formidable predators at a safe distance.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-tarantula-hawks.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="mud-daubers-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    Mud Daubers
+                                </h2>
+                                <p class="mb-0">These solitary wasps construct nests of mud on the sides of buildings
+                                    and are generally non-aggressive but can become a nuisance when they establish
+                                    themselves on your property. Our team can effectively eliminate and prevent Mud
+                                    dauber infestations.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-mud-daubers.jpg">
                                 </div>
                             </div>
                         </div>
@@ -483,10 +444,12 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Why Choose Us for <?php echo $city; ?> Pest Control?</h2>
-                        <p class="mb-0 py-4">When you contact Simple Pest Management to handle your pest situation, you
-                            the
-                            following in your service level agreement with us.<br>Contact our team at
+                        <h2>Why Choose Us for <?php echo $city; ?> Wasp Control?</h2>
+                        <p>When you contact Simple Pest Management to handle your pest situation, you get the following
+                            in your service level agreement with us.
+                        </p>
+
+                        <p class="mb-0 py-4">Contact our team at
                             <a
                                 href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
                             for
@@ -501,10 +464,12 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/authentication.svg"
                                     alt="Proven process pest control icon">
-                                <h3 class="card-title h6">Proven Pest Control Processes</h3>
-                                <p class="mb-0">We developed our pest control strategies over decades of experience in
-                                    the field. We have knowledge of the local area and how it affects pest behavior. You
-                                    can rely on our team to deliver you a pest-free property.
+                                <h3 class="card-title h6">Proven Wasp Control Processes</h3>
+                                <p class="mb-0">Our wasp control processes have been tested time and again, yielding
+                                    consistently successful results. We don&apos;t experiment with your property - we
+                                    apply
+                                    proven methodologies to ensure you are free from the buzzing menace of wasps. With
+                                    Simple Pest, you choose reliability and effectiveness.
                                 </p>
                             </div>
                         </div>
@@ -515,12 +480,11 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/eco-friendly.svg"
                                     alt="Eco friendly pest control icon">
-                                <h3 class="card-title h6">Eco-Friendly Pest Control Systems</h3>
-                                <p class="mb-0">We use pest control products that meet 'Green Pro Certification,'
-                                    suitable for use in
-                                    California. Every Simple Pest exterminator is trained to handle and use these
-                                    products safely and effectively. We care about the environment and ensure we don't
-                                    harm the <?php echo $city; ?> ecosystem.</p>
+                                <h3 class="card-title h6">Eco-Friendly Wasp Control Systems</h3>
+                                <p class="mb-0">We respect the environment as much as we respect your need for safety.
+                                    Our eco-friendly pest control systems are designed to minimize the impact on the
+                                    surrounding environment and non-target species. When you choose us, you choose a
+                                    company committed to sustainable and responsible pest control practices.</p>
                             </div>
                         </div>
                     </div>
@@ -530,10 +494,12 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/licensed.svg"
                                     alt="Licensed pest control icon">
-                                <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
-                                <p class="mb-0">Our business is established, licensed, and insured. We remove the risk
-                                    of hiring people to work on your property. If anything happens while we're on-site,
-                                    it's our problem, not yours.</p>
+                                <h3 class="card-title h6">Licensed, Bonded, and Insured Wasp Control</h3>
+                                <p class="mb-0">Our company is fully licensed, bonded, and insured. This means you can
+                                    trust us for professional service, safe in the knowledge that you're protected.
+                                    Choosing us means choosing peace of mind, knowing that we take full responsibility
+                                    for our actions and services.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -543,12 +509,12 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/effective.svg"
                                     alt="Effective pest control icon">
-                                <h3 class="card-title h6">Fast, Effective, Pest Elimination with Lasting Results</h3>
-                                <p class="mb-0">Our pest control systems yield fast, effective, and consistent results
-                                    for our clients. We&apos;re confident we&apos;ll take care of your pest problem with
-                                    lasting
-                                    results for your property. Simple Pest Management offers you elite pest control
-                                    services in <?php echo $city; ?>.</p>
+                                <h3 class="card-title h6">Fast, Effective, Wasp Elimination with Lasting Results</h3>
+                                <p class="mb-0">Time is of the essence in pest control. Our service offers fast and
+                                    effective wasp elimination, but we don't stop there. Our solutions are designed to
+                                    provide lasting results, ensuring that once wasps are gone, they stay gone. When you
+                                    choose us, you choose a long-term partner in your battle against wasps.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -560,9 +526,12 @@ if ($location) {
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/satisfaction.svg"
                                     alt="Satisfaction pest control icon">
                                 <h3 class="card-title h6">100% Satisfaction Guarantee</h3>
-                                <p class="mb-0">We include a 100% satisfaction guarantee with every job. We value our
-                                    reputation in the <?php echo $city; ?> community as the leading pest control
-                                    specialist in the <?php echo $area; ?> area.</p>
+                                <p class="mb-0">We believe in our service, and we stand behind it with a 100%
+                                    satisfaction guarantee. We won't rest until you&apos;re completely satisfied with
+                                    our
+                                    service and your wasp problem is fully resolved. When you choose Simple Pest, you
+                                    choose a company that puts your satisfaction first.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -573,10 +542,10 @@ if ($location) {
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/savings.svg"
                                     alt="Savings pest control icon">
                                 <h3 class="card-title h6">Affordable, Competitive Rates</h3>
-                                <p class="mb-0">Simple Pest Management offers pest inspections and estimates and
-                                    affordable prices on pest control services. When you hire us, you leverage our
-                                    experienced pest team and knowledge, giving you lasting results for your property.
-                                    Our transparent invoicing includes no hidden charges.</p>
+                                <p class="mb-0">We believe that excellent wasp control shouldn&apos;t break the bank. We
+                                    offer affordable and competitive rates, providing excellent value for our expert
+                                    service. With us, you choose a service that respects your budget while delivering
+                                    top-tier results.</p>
                             </div>
                         </div>
                     </div>
@@ -598,10 +567,11 @@ if ($location) {
                         <p>Offering pest control services in <?php echo $city; ?> and the surrounding areas.</p>
                         <p>Contact us for assistance anywhere in the <?php echo $city; ?> area, including
                             <?php echo implode(', ', $surround_areas); ?>, and more.</p>
-                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest Control</p>
+                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Wasp Control</p>
                         <p>We offer pest inspections at properties across <?php echo $city; ?>. Our team has years of
                             experience
-                            identifying pest infestations on properties throughout <?php echo $area; ?>. We know what to
+                            identifying pest infestations on properties throughout <?php echo $area; ?>. We know what
+                            to
                             look for
                             and how to stop it from spreading.
                         </p>
@@ -640,7 +610,7 @@ if ($location) {
         <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="mb-0"><?php echo $city; ?> Pest Control FAQ</h2>
+                    <h2 class="mb-0"><?php echo $city; ?> Wasp Control FAQ</h2>
                     <p class="mb-0 pt-4 pb-5">When you contract Simple Pest Management to handle your pest situation,
                         you get the following in your service level agreement with Contact our team at <a
                             href="tel:8668877378">(866) 887-7378</a>
@@ -657,8 +627,7 @@ if ($location) {
                                     <button class="btn btn-link btn-block text-left text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
-                                        Does Simple Pest Management offer eco-friendly pest control in
-                                        <?php echo $city; ?>
+                                        How do I permanently get rid of wasps in my yard?
                                     </button>
                                 </h2>
                             </div>
@@ -666,11 +635,13 @@ if ($location) {
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Simple Pest Management works with pest control products complying with 'Green Pro
-                                    Certification.' Our products break down into harmless compounds, leaving no impact
-                                    on the local groundwater or run-off. Our pest control systems are safe for soil and
-                                    the local environment - they are safe for your family and pets.
-
+                                    <p class="mb-0">Permanent wasp removal requires a comprehensive approach that
+                                        includes identification, removal, and prevention. It's crucial to identify the
+                                        type of wasp, locate its nest, and safely remove it. Ongoing prevention,
+                                        including regular inspections and maintenance of your yard, can also deter wasps
+                                        from returning. A professional pest control service like Simple Pest is your
+                                        best bet for a comprehensive and lasting solution.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -681,22 +652,19 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        Does your rodent control program harm pets or the local wildlife?
+                                        What&apos;s the best thing to get rid of wasps?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>Simple Pest Management stops rodents from destroying your property and spreading
-                                        disease in the community. Rats carry parasites like fleas, lice, and ticks and
-                                        diseases like the Hantavirus; seeing rodents scuttling around your property is a
-                                        problem.</p>
-                                    <p class="mb-0">Our rodent control solutions are designed to eliminate the rats, not
-                                        your pets or the local wildlife. We care for the community of
-                                        <?php echo $city; ?>. Our
-                                        pest control systems are ethical and efficient, with no harmful effects on the
-                                        ecosystem.</p>
+                                    <p class="mb-0">The most effective solution for getting rid of wasps is professional
+                                        pest control. Trained technicians have the knowledge, equipment, and safe
+                                        pesticides necessary to deal with a wasp infestation in a swift and safe manner.
+                                        It's recommended to avoid DIY removal, particularly for larger infestations, as
+                                        this can pose significant risks without the appropriate training and equipment.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -707,83 +675,31 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
-                                        Does Simple Pest Management offer pest inspections in <?php echo $city; ?>?
+                                        Can pest control keep wasps away?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>Yes, we offer free pest inspections. Our pest control experts know where pests
-                                        like to hide on your property and will prepare a report and estimate after
-                                        inspecting your property.
+                                    <p class="mb-0">Absolutely! Pest control companies like Simple Pest not only
+                                        eradicate existing wasp infestations but can also implement preventive measures
+                                        to keep wasps from returning. This might include regular inspections, treatments
+                                        as necessary, and advice on modifications to your property to make it less
+                                        attractive to wasps. The key to keeping wasps away in the long term is
+                                        consistent, professional pest control.
                                     </p>
-                                    <p class="mb-0">If you want to use our extermination services, we will eliminate the
-                                        problems and prevent future issues with lasting results. Book your inspection
-                                        today.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3 border rounded">
-                            <div class="card-header" id="headingFour">
-                                <h2 class="mb-0">
-                                    <button
-                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
-                                        type="button" data-toggle="collapse" data-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        How often should I do preventative pest control in <?php echo $city; ?>?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>We recommend homeowners and business owners in <?php echo $city; ?> implement a
-                                        preventative pest control strategy for their property. By taking action and
-                                        stopping the problem before it starts, you keep your property pest free for the
-                                        future.</p>
-                                    <p class="mb-0">The pest control requirements of properties depend on their size and
-                                        nature. Single-family homes may require a monthly or bi-monthly approach, while
-                                        apartments may need a bi-weekly or monthly pest control strategy.
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3 border rounded">
-                            <div class="card-header" id="headingFive">
-                                <h2 class="mb-0">
-                                    <button
-                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
-                                        type="button" data-toggle="collapse" data-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive">
-                                        Should I try to eliminate the pests in my home using DIY pest control
-                                        strategies?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>DIY pest control usually involves leaving out bait packs or granules for ants,
-                                        rodents and cockroaches. While these systems provide temporary results, they
-                                        don't stop your pest problem. DIY pest control makes a dent in the pest
-                                        population on your property, but it rebounds shortly after that.</p>
-                                    <p class="mb-0">With Simple Pest Management, you get a team with decades of
-                                        experience handling all types of pest infestations in <?php echo $city; ?>. We
-                                        know where
-                                        to look to find the nest and eradicate the pests. Our services provide lasting
-                                        results, and a preventative pest control program keeps them away.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+</div>
 
-    </main><!-- #main -->
+</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php
