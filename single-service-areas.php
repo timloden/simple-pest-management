@@ -11,8 +11,6 @@ get_header();
 $city = get_field('city');
 $location = get_field('location');
 $hero_image = get_field('hero_image') ? get_field('hero_image') : get_template_directory_uri() . '/assets/images/1-featured-image.jpg';
-$rodent_page = get_field('rodent_page');
-$cockroach_page = get_field('cockroach_page');
 $fleas_page = get_field('flea_ticks_and_mites_page');
 $ants_page = get_field('ants_page');
 $surround_areas = [];
@@ -322,10 +320,11 @@ if ($location) {
                     <div class="col-12 pest-type-content" id="rodent-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2><?php if ($rodent_page) : ?><a href="<?php echo $rodent_page; ?>"><?php endif; ?>
+                                <h2>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'rodents'; ?>">
 
                                         Rodent Control & Removal <?php echo $city; ?>
-                                        <?php if ($rodent_page) : ?></a><?php endif; ?>
+                                    </a>
                                 </h2>
                                 <p class="mb-0">Rodents, including rats and mice, are an issue for
                                     homeowners, businesses, and commercial property managers. Rats chew wiring and
@@ -347,10 +346,9 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <?php if ($cockroach_page) : ?><a
-                                        href="<?php echo $cockroach_page; ?>"><?php endif; ?>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'cockroaches'; ?>">
                                         Cockroach Control <?php echo $city; ?>
-                                        <?php if ($cockroach_page) : ?></a><?php endif; ?>
+                                    </a>
                                 </h2>
                                 <p class="mb-0">Turn the tide against relentless cockroaches with Simple Pest's
                                     Cockroach Control Services. These unwelcome guests can be a persistent nuisance, but
