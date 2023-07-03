@@ -11,10 +11,6 @@ get_header();
 $city = get_field('city');
 $location = get_field('location');
 $hero_image = get_field('hero_image') ? get_field('hero_image') : get_template_directory_uri() . '/assets/images/1-featured-image.jpg';
-$rodent_page = get_field('rodent_page');
-$cockroach_page = get_field('cockroach_page');
-$fleas_page = get_field('flea_ticks_and_mites_page');
-$ants_page = get_field('ants_page');
 $surround_areas = [];
 
 if ($location) {
@@ -58,7 +54,6 @@ if ($location) {
     $area = '';
 }
 ?>
-<h1>DEB BUGS</h1>
 <div id="primary" class="content-area services-single">
     <main id="main" class="site-main">
         <section class="service-hero position-relative"
@@ -67,17 +62,19 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h1 class="text-white mb-3"><?php echo $city; ?> Pest Control Service</h1>
-                        <p class="text-white">Enjoy the peace of mind of a clean, bug-free home today, and never deal
-                            with unwelcome roommates again. Call us for same day service or fill out the form below to
-                            schedule your initial service at your convenience. From wasps to cockroaches, bed bugs to
-                            earwigs - our <?php echo $city; ?> pest control service has you covered.</p>
+                        <h1 class="text-white mb-3">Bed Bug Control Service in <?php echo $city; ?></h1>
+                        <p class="text-white">At Simple Pest, we understand the gravity of a bed bug infestation. Our
+                            pest control solutions are expertly designed to not only get rid of these pesky intruders
+                            but also prevent any future infestations. We proudly serve homeowners across
+                            <?php echo $city; ?> and
+                            the broader California area, offering professional, effective, and affordable bed bug
+                            control services.</p>
 
-                        <ul class="list-unstyled mb-0">
-                            <li class="text-white mb-2">✅ Pest-Free Home <strong>Guarantee</strong></li>
-                            <li class="text-white mb-2">✅ <strong>Same Day</strong> Service Available</li>
-                            <li class="text-white">✅ <strong>Kid & Pet</strong> Friendly Treatment</li>
-                        </ul>
+                        <p class="text-white pb-0">A single pregnant female can cause an infestation of more than 5,000
+                            bed bugs within a six-month period. That&apos;s 27 new bed bugs per day! Don&apos;t wait
+                            another
+                            minute for the bed bugs to spread. Call us to treat your home today.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -96,13 +93,11 @@ if ($location) {
             <div class="row py-5 align-items-center">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold"></p>
-                    <h2 class="mb-4">A Professional And Reliable Exterminator</h2>
-                    <p>Your <?php echo $city; ?> exterminator will be uniformed, professional, and licensed by the
-                        state. Our
-                        company is licensed, bonded, and insured. But beyond these basics, you will find that your
-                        exterminator is professional and punctual, and will treat your home as they would theirs. We use
-                        the latest technology available in the pest control industry and have the experience to
-                        understand how and when to use advanced tools and when to use basic, old-fashioned hard work.
+                    <h2 class="mb-4">We Understand Bed Bugs</h2>
+                    <p>Bed bugs are insidious pests that hide in crevices, box springs, bed frames, and even headboards.
+                        Our specialists are trained to recognize the signs of bed bugs, from the musty odor to the bite
+                        marks and reddish-brown exoskeletons they leave behind. We're well-versed with all aspects of
+                        bed bug removal, from early detection to bed bug treatment.
                     </p>
                     <p>Get rid of those bugs today!</p>
                 </div>
@@ -123,9 +118,9 @@ if ($location) {
                     <div class="col-12 col-lg-8 text-center text-lg-left">
                         <p class="mb-2 mb-lg-0 text-white">Why wait? Get those unwelcome guests out of your home with
                             the most
-                            knowledgeable pest control team in <?php echo $city; ?>, CA. With our bug-free guarantee,
+                            knowledgeable bed bug control team in <?php echo $city; ?>, CA. With our bug-free guarantee,
                             you have
-                            nothing to lose...except for the bugs!
+                            nothing to lose...except for the bed bugs!
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 text-center text-lg-end">
@@ -147,44 +142,25 @@ if ($location) {
 
                 <div class="col-12 col-lg-6">
                     <p class="kicker text-primary font-weight-bold">Reliable &amp; Effective Elimination</p>
-                    <h2>Thorough Pest Control Company</h2>
-                    <p>Our integrated pest management includes our unique Simple Pest 30-Point Protection Program.</p>
-                    <ol class="mb-0">
-                        <li class="mb-2"><strong>Inspect</strong> - We&apos;ll inspect your property, identify current
-                            and potential
-                            problems, and explain our plan of action before getting started.
-                        </li>
-                        <li class="mb-2"><strong>Protect</strong> - Our initial treatment will eliminate pests and
-                            create the first
-                            barrier which keeps other pests outside and away from your home.
-                        </li>
-                        <li><strong>Defend</strong> - Through regular, proactive treatments, your
-                            exterminator ensures
-                            your home stays pest-free, providing peace of mind for you and your family.
-                        </li>
-                    </ol>
+                    <h2>Expertise in Bed Bug Extermination</h2>
+                    <p>With years of experience under our belt and a team of skilled bed bug exterminators, we are
+                        equipped to tackle any bed bug problem. Our specialists are trained in various treatment
+                        methods, including heat treatment, which is a popular, eco-friendly option that eliminates bed
+                        bugs in all stages of their life cycle.
+                    </p>
                 </div>
             </div>
 
             <div class="row align-items-center py-3 py-lg-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Local & Family Owned</p>
-                    <h2>Fast Pest Control Solutions</h2>
-                    <p>Your journey to freedom begins when you pick up the phone to schedule your first service with us.
-                        The magic unfolds as our dedicated team gets to work, exterminating every pest in sight,
-                        ensuring that your cherished abode is left as a pristine haven. Not just one pest, not just two,
-                        but over twenty different types of nuisances meet their end. </p>
-                    <p>And the protection doesn&apos;t stop there, our shield of assurance extends beyond this first
-                        purge,
-                        offering continuous safety against the unwelcome guests. Simple Pest isn't just about
-                        eliminating pests, it's about reclaiming your peace, protecting your happiness, and restoring
-                        your comfort. Your sanctuary is our mission, fast pest control solutions, your new reality.
+                    <h2>Comprehensive Bed Bug Control Solutions</h2>
+                    <p>For comprehensive pest management, we also inspect linens, bed sheets, and other potential hiding
+                        spots for any signs of a bed bug infestation. After a thorough bed bug inspection, we create
+                        custom pest control solutions tailored to your specific needs. Whether you're dealing with adult
+                        bed bugs or a full-blown infestation, Simple Pest is your best choice for bed bug control in
+                        <?php echo $city; ?>.
                     </p>
-                    <ol>
-                        <li class="mb-2">Schedule your first service</li>
-                        <li class="mb-2">Get a pest-free home</li>
-                        <li class="mb-2">Stay protected from 20+ pests</li>
-                    </ol>
                     <p class="h4 mb-0"><a class="font-weight-bold"
                             href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
                     </p>
@@ -203,7 +179,7 @@ if ($location) {
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 text-center text-lg-left">
-                        <p class="h2 text-white">Do you need pest control in <?php echo $city; ?>?</p>
+                        <p class="h2 text-white">Do you need bed bug service in <?php echo $city; ?>?</p>
                         <p class="mb-2 mb-lg-0 text-white">Our team of pest experts is ready to take your call. We offer
                             advice
                             on pest
@@ -229,16 +205,21 @@ if ($location) {
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <h2>Residential Pest Control <?php echo $city; ?></h2>
-                    <p>If you own a residence in <?php echo $city; ?>, call Simple Pest Management to deal with your
-                        pest problem. Our
-                        team works with property managers, landlords, homeowners, and tenants. We offer pest inspections
-                        and estimates for any of the following properties.</p>
+                    <h2>Trust the Bed Bug Pest Control Experts</h2>
+                    <p>At Simple Pest, we're more than just a pest control company. We're a part of the
+                        <?php echo $city; ?>
+                        community. We take pride in helping homeowners in the <?php echo $city; ?> area live comfortably
+                        and
+                        bug-free. So why not get a free inspection? Call us today for a free quote and let's help you
+                        enjoy a bed bug-free home.
+                    </p>
+                    <p>We offer bed bug inspections and estimates for any of the following properties.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Apartment Pest Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold mb-1">Duplex Pest Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold mb-1">Single Family Home Pest Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold">Condo Pest Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Apartment bed bug treatments in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Duplex bed bug treatments in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Single Family Home bed bug treatments in <?php echo $city; ?>.
+                        </li>
+                        <li class="font-weight-bold">Condo bed bug treatments in <?php echo $city; ?>.</li>
                     </ul>
                 </div>
             </div>
@@ -246,20 +227,22 @@ if ($location) {
             <div class="row align-items-center py-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
-                    <h2>Commercial Pest Control <?php echo $city; ?></h2>
-                    <p>If you own a business or commercial building, call simple Pest Management for effective pest
-                        control services in <?php echo $city; ?>. We work with building managers, business owners, and
-                        employees.
-                        Contact our pest control team for immediate assistance.</p>
-                    <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Offices.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Retail.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Medical Centers.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Restaurants.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Schools.</li>
-                        <li class="font-weight-bold mb-1">Pest Control <?php echo $city; ?> for Warehouses.</li>
-                        <li class="font-weight-bold">Pest Control <?php echo $city; ?> for Supermarkets.</li>
-                    </ul>
+                    <h2>Safe Pest Control Methods</h2>
+                    <p>We understand the importance of safety when dealing with pest problems. Our team uses carefully
+                        selected insecticides and pesticides to ensure the well-being of your family and pets. And rest
+                        assured, our extermination services are designed to be environmentally friendly and safe for all
+                        occupants of your home.
+                    </p>
+                    <p class="mb-0">
+                        To resolve your bed bug infestation, we typically apply two treatments to the affected areas in
+                        your home. The first consists of residual products that are designed to kill bed bugs on contact
+                        while the second product is an insect growth regulator that prevents adults from reproducing.
+                        All of our products are EPA approved, so you can rest easy knowing that we will always leave
+                        your home safer than we found it. Treatments will vary depending on the size of your infestation
+                        and how many rooms you have that are infested, but most cases consist of one initial treatment
+                        and two follow-up treatments every 15 days. These follow up treatment schedules make sure we get
+                        rid of the bed bug infestation.
+                    </p>
                 </div>
 
                 <div class="col-12 col-lg-6">
@@ -274,208 +257,67 @@ if ($location) {
         <section class="range-of-services py-3 py-lg-5">
             <div class="container">
                 <div class="row pb-4">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-0">Our Range of <?php echo $city; ?> Pest Control Services</h2>
-                        <p class="mb-0 py-4">If you have a pest problem in <?php echo $city; ?>, contact the best pest
-                            control company at
-                            <a
-                                href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>.
-                            We have the team, skills, and products to eliminate pests from your property. We have
-                            decades of experience working with homeowners and businesses in <?php echo $area; ?> area.
-                            We're confident
-                            we have the right pest control strategy for your property. Call our pest control team for a
-                            free inspection today.
+                    <div class="col-12">
+                        <h2 class=" text-center">Our Bed Bug Treatment Process</h2>
+                        <p class="mb-0">To resolve your bed bug infestation, we typically apply two treatments to the
+                            affected areas in your home. The first consists of residual products that are designed to
+                            kill bed bugs on contact while the second product is an insect growth regulator that
+                            prevents adults from reproducing. All of our products are EPA approved, so you can rest easy
+                            knowing that we will always leave your home safer than we found it. Treatments will vary
+                            depending on the size of your infestation and how many rooms you have that are infested, but
+                            most cases consist of one initial treatment and two follow-up treatments every 15 days.
+                            These follow up treatment schedules make sure we get rid of the bed bug infestation.
 
                         </p>
                     </div>
                 </div>
-                <div class="row">
+
+                <div class="row pb-4">
                     <div class="col-12">
-                        <ul class="nav nav-pills nav-justified flex-column flex-md-row border rounded">
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold active pest-type-button" id="rodent"
-                                    href="#">Rodent</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="cockroach"
-                                    href="#">Cockroach</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="flea" href="#">Flea,
-                                    Tick, and Mites</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="ant" href="#">Ants</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="spider" href="#">Spiders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="silverfish"
-                                    href="#">Silverfish</a>
-                            </li>
-                        </ul>
-
+                        <h2 class=" text-center">Bed Bug Steam Treatments</h2>
+                        <p>Simple Pest Management distinguishes itself as a premier bed bug extermination service in
+                            <?php echo $city; ?>, utilizing state-of-the-art steam treatment techniques. Our innovative
+                            approach
+                            ensures an unerring annihilation of both the pests and their eggs, regardless of their
+                            refuge.
+                        </p>
+                        <p>Recurring bed bug issues often signify that these pests have evolved to resist conventional
+                            chemical treatments. Our steam treatment triumphs over this challenge by elevating the
+                            infested area to an intolerable temperature, rendering survival impossible for bed bugs.</p>
+                        <p>Standing apart from traditional bed bug remedies, our steam solutions require no chemical
+                            involvement and bypass the need for direct pest contact. Our adept exterminators simply
+                            administer steam and heat to the compromised zones, letting the fatal temperatures
+                            accomplish the task.</p>
+                        <p>It&apos;s critical to note that commercial steamers for garments or carpets won&apos;t
+                            suffice - this
+                            is not a DIY project! Achieving an optimal temperature balance is paramount: too low, and
+                            the bed bugs endure; too high, and it risks damage to your furnishings and surfaces. Always
+                            trust a professional for steam treatments. Reach out to Simple Pest Management today and
+                            schedule a complimentary consultation!
+                        </p>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 pest-type-content" id="rodent-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2><?php if ($rodent_page) : ?><a href="<?php echo $rodent_page; ?>"><?php endif; ?>
-
-                                        Rodent Control & Removal <?php echo $city; ?>
-                                        <?php if ($rodent_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Rodents, including rats and mice, are an issue for
-                                    homeowners, businesses, and commercial property managers. Rats chew wiring and
-                                    create fire hazards. Rodents and their droppings also carry parasites and diseases,
-                                    spreading them through communities. Our rodent removal and control program ensures
-                                    we eliminate these pests from your property.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-rodents.jpg">
-                                </div>
-                            </div>
-                        </div>
+                <div class="row pb-4">
+                    <div class="col-12">
+                        <h2 class="text-center">Preparation</h2>
+                        <p>Preparation is essential for the most effective bed bug treatment. Here is what you should do
+                            to prepare your living space for our bed bug exterminator:
+                        </p>
+                        <p>The heat of your dryer can kill any bed bugs or eggs that have found their way into your
+                            clothes. Run your clothes in the dryer for at least 45 minutes and either leave them in the
+                            dryer or secure them in sealed bags until our treatment is complete.</p>
+                        <p>Remove all of your sheets and bedding (wash and dry them), and lean your mattress and box
+                            spring against one wall.</p>
+                        <p>All items in your closet, dresser, nightstand, etc. should be removed and placed into plastic
+                            bags.
+                        </p>
+                        <p class="mb-0">These plastic bags should be stored somewhere away from your living areas so
+                            that they
+                            don&apos;t get in the way during treatment. Following these preparation steps will allow our
+                            bed bug exterminator to effectively treat your infestation.</p>
                     </div>
-
-                    <div class="col-12 pest-type-content d-none" id="cockroach-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($cockroach_page) : ?><a
-                                        href="<?php echo $cockroach_page; ?>"><?php endif; ?>
-                                        Cockroach Control <?php echo $city; ?>
-                                        <?php if ($cockroach_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Turn the tide against relentless cockroaches with Simple Pest's
-                                    Cockroach Control Services. These unwelcome guests can be a persistent nuisance, but
-                                    our expertise offers the swift solution you need. Our advanced cockroach control
-                                    methods track and exterminate each intruder, restoring the sanctity of your home.
-                                    With Simple Pest, let your home be your fortress, impenetrable to the roach
-                                    invasion. Take back control with Simple Pest.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/cockroach-program.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="flea-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($fleas_page) : ?><a href="<?php echo $fleas_page; ?>"><?php endif; ?>
-                                        Flea, Tick and Mite Removal <?php echo $city; ?>
-                                        <?php if ($fleas_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Wildlife drops ticks on people&apos;s properties, and mites and fleas
-                                    usually
-                                    arrive on the backs of rats or pets. Simple Pest Management will eliminate these
-                                    microscopic pests from your home or business premises. Contact us for a pest
-                                    inspection of your property.</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-crawling.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="ant-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Ant Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Harness the power of Simple Pest&apos;s Ant Control Services to reclaim
-                                    your
-                                    home. These tiny invaders can create a mammoth of a problem, undermining your peace
-                                    and comfort. But with Simple Pest, there's no cause for concern. Our advanced ant
-                                    control measures trace and terminate every trail, leaving your home an ant-free
-                                    zone. Say goodbye to unwanted picnics, as we deliver the effective solution you
-                                    need. With Simple Pest, tranquility returns to your domain.</p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-ants.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="spider-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Spider Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Confront your deepest fears with Simple Pest's unrivaled Spider Control
-                                    Services. It's not just about the run-of-the-mill invaders, we tackle the true
-                                    villains &mdash; the infamous Black Widow with its venomous allure, the notorious
-                                    Brown
-                                    Recluse that lurks in hidden corners, and the intimidating Wolf Spider, a fearsome
-                                    adversary in any home. Each has a name, each a terrifying reputation, but to us,
-                                    they're merely challenges waiting to be surmounted. With our expertise, these
-                                    threatening creatures become powerless. Banish the nightmares, discard the fear,
-                                    Simple Pest is here.
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-spiders.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 pest-type-content d-none" id="silverfish-info">
-                        <div class="row align-items-center py-3 py-lg-5">
-                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
-                                        Silverfish Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
-                                </h2>
-                                <p class="mb-0">Combat the quiet invaders with Simple Pest's Silverfish Control
-                                    Services. These stealthy pests can silently damage your cherished belongings. But
-                                    rest easy, Simple Pest is your shield. Our exceptional silverfish control finds and
-                                    eradicates them from their hidden corners, ending their damage. No more ruined
-                                    keepsakes or wallpapers. Trust in Simple Pest and reclaim your home from the
-                                    silverfish menace. Enjoy peace of mind as we fortify your sanctuary.
-
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-silverfish.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
         </section>
 
@@ -483,10 +325,11 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Why Choose Us for <?php echo $city; ?> Pest Control?</h2>
-                        <p class="mb-0 py-4">When you contact Simple Pest Management to handle your pest situation, you
-                            the
-                            following in your service level agreement with us.<br>Contact our team at
+                        <h2>Why Choose Us for Bed Bug Control in <?php echo $city; ?>?</h2>
+                        <p>Choosing Simple Pest means choosing a partner that stands for excellence and integrity.
+                            Here's why we are the preferred pest control service in the <?php echo $city; ?> area.
+                        </p>
+                        <p class="mb-0 py-4">Contact our team at
                             <a
                                 href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone_number); ?>"><?php echo $phone_number; ?></a>
                             for
@@ -499,38 +342,9 @@ if ($location) {
                         <div class="card h-100">
                             <div class="card-body">
                                 <img class="mb-3"
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/authentication.svg"
-                                    alt="Proven process pest control icon">
-                                <h3 class="card-title h6">Proven Pest Control Processes</h3>
-                                <p class="mb-0">We developed our pest control strategies over decades of experience in
-                                    the field. We have knowledge of the local area and how it affects pest behavior. You
-                                    can rely on our team to deliver you a pest-free property.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <img class="mb-3"
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/eco-friendly.svg"
-                                    alt="Eco friendly pest control icon">
-                                <h3 class="card-title h6">Eco-Friendly Pest Control Systems</h3>
-                                <p class="mb-0">We use pest control products that meet 'Green Pro Certification,'
-                                    suitable for use in
-                                    California. Every Simple Pest exterminator is trained to handle and use these
-                                    products safely and effectively. We care about the environment and ensure we don't
-                                    harm the <?php echo $city; ?> ecosystem.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/licensed.svg"
                                     alt="Licensed pest control icon">
-                                <h3 class="card-title h6">Licensed, Bonded, and Insured Pest Control</h3>
+                                <h3 class="card-title h6">Licensed, Bonded, and Insured Bed Bug Control</h3>
                                 <p class="mb-0">Our business is established, licensed, and insured. We remove the risk
                                     of hiring people to work on your property. If anything happens while we're on-site,
                                     it's our problem, not yours.</p>
@@ -541,14 +355,46 @@ if ($location) {
                         <div class="card h-100">
                             <div class="card-body">
                                 <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/authentication.svg"
+                                    alt="Proven process pest control icon">
+                                <h3 class="card-title h6">Customized Treatment Options</h3>
+                                <p class="mb-0">We understand that each bed bug infestation is unique. That&apos;s why
+                                    we
+                                    offer a range of treatment options, from heat treatments to conventional insecticide
+                                    treatments. Our technicians will work with you to decide the most effective and
+                                    convenient approach for your bed bug problem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <img class="mb-3"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/eco-friendly.svg"
+                                    alt="Eco friendly pest control icon">
+                                <h3 class="card-title h6">Eco-Friendly Bed Bug Control Systems</h3>
+                                <p class="mb-0">We use bed bug control products that meet 'Green Pro Certification,'
+                                    suitable for use in
+                                    California. Every Simple Pest exterminator is trained to handle and use these
+                                    products safely and effectively. We care about the environment and ensure we don't
+                                    harm the <?php echo $city; ?> ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/effective.svg"
                                     alt="Effective pest control icon">
-                                <h3 class="card-title h6">Fast, Effective, Pest Elimination with Lasting Results</h3>
-                                <p class="mb-0">Our pest control systems yield fast, effective, and consistent results
-                                    for our clients. We&apos;re confident we&apos;ll take care of your pest problem with
-                                    lasting
-                                    results for your property. Simple Pest Management offers you elite pest control
-                                    services in <?php echo $city; ?>.</p>
+                                <h3 class="card-title h6">Exceptional Customer Service</h3>
+                                <p class="mb-0">At Simple Pest, we value our customers. We believe in clear
+                                    communication and dedicated service. Our team is always available to answer any
+                                    questions you may have about the process or the products we use. We're committed to
+                                    keeping you informed every step of the way.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -561,7 +407,7 @@ if ($location) {
                                     alt="Satisfaction pest control icon">
                                 <h3 class="card-title h6">100% Satisfaction Guarantee</h3>
                                 <p class="mb-0">We include a 100% satisfaction guarantee with every job. We value our
-                                    reputation in the <?php echo $city; ?> community as the leading pest control
+                                    reputation in the <?php echo $city; ?> community as the leading bed bug control
                                     specialist in the <?php echo $area; ?> area.</p>
                             </div>
                         </div>
@@ -572,11 +418,10 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/savings.svg"
                                     alt="Savings pest control icon">
-                                <h3 class="card-title h6">Affordable, Competitive Rates</h3>
-                                <p class="mb-0">Simple Pest Management offers pest inspections and estimates and
-                                    affordable prices on pest control services. When you hire us, you leverage our
-                                    experienced pest team and knowledge, giving you lasting results for your property.
-                                    Our transparent invoicing includes no hidden charges.</p>
+                                <h3 class="card-title h6">Highly Trained and Experienced Staff</h3>
+                                <p class="mb-0">Our team is our strength. With years of experience in pest management,
+                                    our experts are well-equipped to handle all kinds of pest problems, including bed
+                                    bug infestations. They are knowledgeable, friendly, and professional.</p>
                             </div>
                         </div>
                     </div>
@@ -595,13 +440,14 @@ if ($location) {
 
                     <div class="col-12 col-lg-6">
                         <h2>Service Areas</h2>
-                        <p>Offering pest control services in <?php echo $city; ?> and the surrounding areas.</p>
+                        <p>Offering bed bug control services in <?php echo $city; ?> and the surrounding areas.</p>
                         <p>Contact us for assistance anywhere in the <?php echo $city; ?> area, including
                             <?php echo implode(', ', $surround_areas); ?>, and more.</p>
-                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Pest Control</p>
+                        <p>Get a Bde Bug Inspection and Estimate for <?php echo $city; ?> Pest Control</p>
                         <p>We offer pest inspections at properties across <?php echo $city; ?>. Our team has years of
                             experience
-                            identifying pest infestations on properties throughout <?php echo $area; ?>. We know what to
+                            identifying bed bug infestations on properties throughout <?php echo $area; ?>. We know what
+                            to
                             look for
                             and how to stop it from spreading.
                         </p>
@@ -640,8 +486,8 @@ if ($location) {
         <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="mb-0"><?php echo $city; ?> Pest Control FAQ</h2>
-                    <p class="mb-0 pt-4 pb-5">When you contract Simple Pest Management to handle your pest situation,
+                    <h2 class="mb-0">Frequently Asked Questions</h2>
+                    <p class="mb-0 pt-4 pb-5">When you contract Simple Pest Management to handle your bed bug situation,
                         you get the following in your service level agreement with Contact our team at <a
                             href="tel:8668877378">(866) 887-7378</a>
                         for immediate assistance.
@@ -657,8 +503,7 @@ if ($location) {
                                     <button class="btn btn-link btn-block text-left text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
-                                        Does Simple Pest Management offer eco-friendly pest control in
-                                        <?php echo $city; ?>
+                                        What is the best treatment to get rid of bed bugs?
                                     </button>
                                 </h2>
                             </div>
@@ -666,11 +511,12 @@ if ($location) {
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Simple Pest Management works with pest control products complying with 'Green Pro
-                                    Certification.' Our products break down into harmless compounds, leaving no impact
-                                    on the local groundwater or run-off. Our pest control systems are safe for soil and
-                                    the local environment - they are safe for your family and pets.
-
+                                    <p class="mb-0">There&apos;s no one-size-fits-all treatment for bed bugs. The best
+                                        method
+                                        depends on factors such as the severity of infestation and location of the bugs.
+                                        However, heat treatment is often considered very effective as it can penetrate
+                                        all stages of a bed bug's life cycle and reach areas that insecticides cannot.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -681,22 +527,18 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        Does your rodent control program harm pets or the local wildlife?
+                                        Is there any way to completely get rid of bed bugs?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>Simple Pest Management stops rodents from destroying your property and spreading
-                                        disease in the community. Rats carry parasites like fleas, lice, and ticks and
-                                        diseases like the Hantavirus; seeing rodents scuttling around your property is a
-                                        problem.</p>
-                                    <p class="mb-0">Our rodent control solutions are designed to eliminate the rats, not
-                                        your pets or the local wildlife. We care for the community of
-                                        <?php echo $city; ?>. Our
-                                        pest control systems are ethical and efficient, with no harmful effects on the
-                                        ecosystem.</p>
+                                    <p class="mb-0">Yes, with professional assistance, it's entirely possible to
+                                        eliminate a bed bug infestation. At Simple Pest, we employ a combination of
+                                        treatments including heat treatment, insecticides, and preventive measures to
+                                        ensure complete bed bug eradication.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -707,20 +549,18 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
-                                        Does Simple Pest Management offer pest inspections in <?php echo $city; ?>?
+                                        Should I throw away my bed if I have bed bugs?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>Yes, we offer free pest inspections. Our pest control experts know where pests
-                                        like to hide on your property and will prepare a report and estimate after
-                                        inspecting your property.
+                                    <p class="mb-0">Before resorting to throwing away your bed, consider professional
+                                        bed bug
+                                        treatment. With the right approach, bed bugs can be successfully eliminated from
+                                        your bed and other infested furniture.
                                     </p>
-                                    <p class="mb-0">If you want to use our extermination services, we will eliminate the
-                                        problems and prevent future issues with lasting results. Book your inspection
-                                        today.</p>
                                 </div>
                             </div>
                         </div>
@@ -731,21 +571,17 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
-                                        How often should I do preventative pest control in <?php echo $city; ?>?
+                                        How do you get rid of bed bugs in California?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>We recommend homeowners and business owners in <?php echo $city; ?> implement a
-                                        preventative pest control strategy for their property. By taking action and
-                                        stopping the problem before it starts, you keep your property pest free for the
-                                        future.</p>
-                                    <p class="mb-0">The pest control requirements of properties depend on their size and
-                                        nature. Single-family homes may require a monthly or bi-monthly approach, while
-                                        apartments may need a bi-weekly or monthly pest control strategy.
-
+                                    <p class="mb-0">Getting rid of bed bugs in California involves a comprehensive
+                                        approach that includes inspection, treatment, and follow-up visits. We recommend
+                                        working with professional pest control services like Simple Pest to ensure
+                                        complete extermination.
                                     </p>
                                 </div>
                             </div>
@@ -757,23 +593,62 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseFive"
                                         aria-expanded="false" aria-controls="collapseFive">
-                                        Should I try to eliminate the pests in my home using DIY pest control
-                                        strategies?
+                                        What are bed bugs?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>DIY pest control usually involves leaving out bait packs or granules for ants,
-                                        rodents and cockroaches. While these systems provide temporary results, they
-                                        don't stop your pest problem. DIY pest control makes a dent in the pest
-                                        population on your property, but it rebounds shortly after that.</p>
-                                    <p class="mb-0">With Simple Pest Management, you get a team with decades of
-                                        experience handling all types of pest infestations in <?php echo $city; ?>. We
-                                        know where
-                                        to look to find the nest and eradicate the pests. Our services provide lasting
-                                        results, and a preventative pest control program keeps them away.
+                                    <p class="mb-0">Bed bugs are small, oval, brownish insects that feed on the blood of
+                                        animals or humans. Adult bed bugs have flat bodies about the size of an apple
+                                        seed. After feeding, their bodies swell and become reddish. Bed bugs do not fly,
+                                        but they can move quickly over floors, walls, and ceilings.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border rounded">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        How do I get rid of bed bugs on my mattress?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="mb-0">The process involves vacuuming, heat treatment, or using specific
+                                        insecticides.
+                                        However, it's strongly recommended to get professional help. Our technicians at
+                                        Simple Pest have the experience and the tools to effectively rid your mattress
+                                        of bed bugs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border rounded">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                        type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseSeven">
+                                        What are the symptoms of bed bugs?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="mb-0">Symptoms of bed bugs can vary, but common signs include itchy bed
+                                        bug bite marks, often in lines or clusters, small blood stains on your sheets,
+                                        and a distinctive musty odor. You may also see the bugs themselves or their
+                                        exoskeletons in your bed or hiding spots.
+
                                     </p>
                                 </div>
                             </div>

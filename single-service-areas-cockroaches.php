@@ -11,10 +11,6 @@ get_header();
 $city = get_field('city');
 $location = get_field('location');
 $hero_image = get_field('hero_image') ? get_field('hero_image') : get_template_directory_uri() . '/assets/images/1-featured-image.jpg';
-$rodent_page = get_field('rodent_page');
-$cockroach_page = get_field('cockroach_page');
-$fleas_page = get_field('flea_ticks_and_mites_page');
-$ants_page = get_field('ants_page');
 $surround_areas = [];
 
 if ($location) {
