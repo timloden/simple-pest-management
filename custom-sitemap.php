@@ -20,10 +20,22 @@ class Custom implements Provider {
 	}
 
 	public function get_sitemap_links( $type, $max_entries, $current_page ) {
-		$links     = [ 
-			[ 'loc' => 'http://www.example.com/' ],
-			[ 'loc' => 'http://www.example.com/2',],
-		];
+        $links = [];
+        
+        $query = new \WP_Query( [
+            'post_type'      => 'service-areas',
+            'nopaging'       => true,
+            'posts_per_page' => '-1',
+        ]);
+
+        $post_ids = wp_list_pluck( $query->posts, 'ID' );
+
+        foreach ($post_ids as $post_id) {
+            array_push($links, array('loc' => get_permalink($post_id) . 'rodents'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'wasps'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'cockroaches'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'bed-bugs'));
+        }
 
 		return $links;
 	}
