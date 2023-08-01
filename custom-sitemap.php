@@ -31,10 +31,10 @@ class Custom implements Provider {
         $post_ids = wp_list_pluck( $query->posts, 'ID' );
 
         foreach ($post_ids as $post_id) {
-            array_push($links, array('loc' => get_permalink($post_id) . 'rodents'));
-            array_push($links, array('loc' => get_permalink($post_id) . 'wasps'));
-            array_push($links, array('loc' => get_permalink($post_id) . 'cockroaches'));
-            array_push($links, array('loc' => get_permalink($post_id) . 'bed-bugs'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'rodents/'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'wasps/'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'cockroaches/'));
+            array_push($links, array('loc' => get_permalink($post_id) . 'bed-bugs/'));
         }
 
 		return $links;
