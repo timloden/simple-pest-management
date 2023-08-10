@@ -232,7 +232,8 @@ $hero_title = get_field('hero_title');
             if ($video) : ?>
             <div class="embed-responsive embed-responsive-16by9">
                 <video controls>
-                    <source src="<?php echo $video['url']; ?>" type="video/mp4">
+                    <source src="<?php echo $video['url']; ?>" type="video/mp4"
+                        poster="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-video-poster.png">
                 </video>
             </div>
             <?php endif; ?>

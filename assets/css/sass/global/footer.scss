@@ -28,6 +28,20 @@ footer {
         font-size: 12px;
     }
 
+    #footer-header-menu {
+        padding-top: 1rem;
+        margin-top: 0.5rem;
+        border-top: 1px solid #dee2e6;
+    }
+
+    @include media-breakpoint-up(lg) {
+        #footer-header-menu {
+            padding-top: 0;
+            border-top: none;
+            margin-top: 0;
+        }
+    }
+
     #menu-footer {
         font-size: 14px;
 
@@ -42,3 +56,5 @@ footer {
         }
     }
 }
+
+
