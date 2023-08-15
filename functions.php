@@ -115,6 +115,18 @@ if (in_array('seo-by-rank-math/rank-math.php', apply_filters('active_plugins', g
 	add_filter( 'rank_math/sitemap/enable_caching', '__return_false');
 }
 
+// canonical change for service area pest detail pages
+
+add_filter( 'rank_math/frontend/canonical', function( $canonical ) {
+	global $post;
+
+	if('service-areas' == get_post_type()){
+		$canonical = 'https://'.$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; //your custom canonical URL here. 
+	}
+	
+	return $canonical;
+});
+
 /**
  * Load includes
  */
