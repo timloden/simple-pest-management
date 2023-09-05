@@ -167,6 +167,34 @@ function prefix_url_rewrite_templates() {
 			return get_template_directory() . '/single-service-areas-cockroaches.php';
 		});
 	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('ants')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-ants.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('silverfish')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-silverfish.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('spiders')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-spiders.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('fleas-ticks-mites')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-fleas-ticks-mites.php';
+		});
+	}
 }
 
 add_action( 'template_redirect', 'prefix_url_rewrite_templates' );
