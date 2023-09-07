@@ -122,6 +122,7 @@ function custom_post_type_service_areas() {
 	add_rewrite_rule( 'service-areas/([^/]+)/rodents', 'index.php?service-areas=$matches[1]&rodents=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/bed-bugs', 'index.php?service-areas=$matches[1]&bed-bugs=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/cockroach', 'index.php?service-areas=$matches[1]&cockroaches=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/silverfish', 'index.php?service-areas=$matches[1]&silverfish=yes', 'top' );
 
 }
 add_action( 'init', 'custom_post_type_service_areas', 0 );
@@ -133,6 +134,7 @@ function prefix_register_query_var( $vars ) {
 	$vars[] = 'rodents';
 	$vars[] = 'bed-bugs';
 	$vars[] = 'cockroaches';
+	$vars[] = 'silverfish';
 	return $vars;
 }
 
