@@ -371,9 +371,9 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <?php if ($fleas_page) : ?><a href="<?php echo $fleas_page; ?>"><?php endif; ?>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'fleas-ticks-mites'; ?>">
                                         Flea, Tick and Mite Removal <?php echo $city; ?>
-                                        <?php if ($fleas_page) : ?></a><?php endif; ?>
+                                    </a>
                                 </h2>
                                 <p class="mb-0">Wildlife drops ticks on people&apos;s properties, and mites and fleas
                                     usually
@@ -394,9 +394,9 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'ants'; ?>">
                                         Ant Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
+                                    </a>
                                 </h2>
                                 <p class="mb-0">Harness the power of Simple Pest&apos;s Ant Control Services to reclaim
                                     your
@@ -419,9 +419,9 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'spiders'; ?>">
                                         Spider Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
+                                    </a>
                                 </h2>
                                 <p class="mb-0">Confront your deepest fears with Simple Pest's unrivaled Spider Control
                                     Services. It's not just about the run-of-the-mill invaders, we tackle the true
@@ -448,9 +448,9 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <?php if ($ants_page) : ?><a href="<?php echo $ants_page; ?>"><?php endif; ?>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'silverfish'; ?>">
                                         Silverfish Control <?php echo $city; ?>
-                                        <?php if ($ants_page) : ?></a><?php endif; ?>
+                                    </a>
                                 </h2>
                                 <p class="mb-0">Combat the quiet invaders with Simple Pest's Silverfish Control
                                     Services. These stealthy pests can silently damage your cherished belongings. But
