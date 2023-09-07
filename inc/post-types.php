@@ -122,7 +122,10 @@ function custom_post_type_service_areas() {
 	add_rewrite_rule( 'service-areas/([^/]+)/rodents', 'index.php?service-areas=$matches[1]&rodents=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/bed-bugs', 'index.php?service-areas=$matches[1]&bed-bugs=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/cockroach', 'index.php?service-areas=$matches[1]&cockroaches=yes', 'top' );
-
+	add_rewrite_rule( 'service-areas/([^/]+)/silverfish', 'index.php?service-areas=$matches[1]&silverfish=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/spiders', 'index.php?service-areas=$matches[1]&spiders=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/ants', 'index.php?service-areas=$matches[1]&ants=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/fleas-ticks-mites', 'index.php?service-areas=$matches[1]&fleas-ticks-mites=yes', 'top' );
 }
 add_action( 'init', 'custom_post_type_service_areas', 0 );
 
@@ -133,6 +136,10 @@ function prefix_register_query_var( $vars ) {
 	$vars[] = 'rodents';
 	$vars[] = 'bed-bugs';
 	$vars[] = 'cockroaches';
+	$vars[] = 'silverfish';
+	$vars[] = 'spiders';
+	$vars[] = 'ants';
+	$vars[] = 'fleas-ticks-mites';
 	return $vars;
 }
 
@@ -165,6 +172,34 @@ function prefix_url_rewrite_templates() {
 
 		add_filter( 'template_include', function() {
 			return get_template_directory() . '/single-service-areas-cockroaches.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('ants')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-ants.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('silverfish')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-silverfish.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('spiders')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-spiders.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('fleas-ticks-mites')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-fleas-ticks-mites.php';
 		});
 	}
 }
