@@ -286,28 +286,40 @@ if ($location) {
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <ul class="nav nav-pills nav-justified flex-column flex-md-row border rounded">
-                            <li class="nav-item">
+                        <ul
+                            class="nav nav-pills justify-content-center flex-column flex-md-row border rounded flex-wrap">
+                            <li class="text-center col-3">
                                 <a class="nav-link font-weight-bold active pest-type-button" id="rodent"
                                     href="#">Rodent</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="text-center col-3">
                                 <a class="nav-link font-weight-bold pest-type-button" id="cockroach"
                                     href="#">Cockroach</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="text-center col-3">
                                 <a class="nav-link font-weight-bold pest-type-button" id="flea" href="#">Flea,
                                     Tick, and Mites</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="text-center col-3">
                                 <a class="nav-link font-weight-bold pest-type-button" id="ant" href="#">Ants</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="text-center col-3">
                                 <a class="nav-link font-weight-bold pest-type-button" id="spider" href="#">Spiders</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="silverfish"
-                                    href="#">Silverfish</a>
+                            <li class="text-center col-3">
+                                <a class="nav-link font-weight-bold pest-type-button" id="carpetbeetle" href="#">Carpet
+                                    Beetles</a>
+                            </li>
+                            <li class="text-center col-3">
+                                <a class="nav-link font-weight-bold pest-type-button" id="centipede"
+                                    href="#">Centipede</a>
+                            </li>
+                            <li class="text-center col-3">
+                                <a class="nav-link font-weight-bold pest-type-button" id="mosquito"
+                                    href="#">Mosquito</a>
+                            </li>
+                            <li class="text-center col-3">
+                                <a class="nav-link font-weight-bold pest-type-button" id="earwig" href="#">Earwig</a>
                             </li>
                         </ul>
 
@@ -464,6 +476,111 @@ if ($location) {
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
                                         src="/wp-content/themes/simple-pest-management/assets/images/pest-silverfish.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="carpetbeetle-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'carpet-beetle'; ?>">
+                                        Carpet Beetle Control <?php echo $city; ?>
+                                    </a>
+                                </h2>
+                                <p class="mb-0">Defend your sanctuary against the elusive intruders with Simple Pest's
+                                    Silverfish Control Services. These sneaky critters may quietly multiply and wreak
+                                    havoc on your carpets and clothing, but fear not, for Simple Pest is your safeguard.
+                                    Our carpet beetle control program is designed to seek out and eliminate these
+                                    elusive creatures from their hiding spots, putting an end to their destructive
+                                    habits. Place your trust in Simple Pest, and take back control of your home from
+                                    these pesky critters.
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Carpet-Beetle.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="centipede-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'centipede'; ?>">
+                                        Centipede Control <?php echo $city; ?>
+                                    </a>
+                                </h2>
+                                <p class="mb-0">Combat relentless centipedes with Simple Pest's Centipede Control
+                                    Services. These unwelcome guests can be a persistent nuisance, but our expertise
+                                    offers the swift solution you need. Our advanced centipede control methods
+                                    exterminate these intruders, restoring the sanctity of your home. Take back control
+                                    with Simple Pest.
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Centipede.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="mosquito-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'mosquito'; ?>">
+                                        Mosquito Control <?php echo $city; ?>
+                                    </a>
+                                </h2>
+                                <p class="mb-0">With Simple Pest on your side, you can take back your space from pesky
+                                    mosquitoes. No more swatting and scratching - just peace of mind knowing your
+                                    property is mosquito-free and safe for everyone. Let us handle the mosquito problem,
+                                    so you can enjoy the great outdoors without worrying about those bloodsuckers.
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Mosquito.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="earwig-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'earwig'; ?>">
+                                        Earwig Control <?php echo $city; ?>
+                                    </a>
+                                </h2>
+                                <p class="mb-0">Our earwig control methods are designed to track down and eliminate
+                                    every last critter, restoring your home to an earwig-free haven. Say farewell to
+                                    those unwelcome creepy-crawlies and the nuisance they bring. With Simple Pest,
+                                    serenity returns to your living space, and you can enjoy a bug-free environment once
+                                    more.
+
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Earwig-Bug.webp">
                                 </div>
                             </div>
                         </div>
