@@ -288,37 +288,37 @@ if ($location) {
                     <div class="col-12">
                         <ul
                             class="nav nav-pills justify-content-center flex-column flex-md-row border rounded flex-wrap">
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold active pest-type-button" id="rodent"
                                     href="#">Rodent</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="cockroach"
                                     href="#">Cockroach</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="flea" href="#">Flea,
                                     Tick, and Mites</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="ant" href="#">Ants</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="spider" href="#">Spiders</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="carpetbeetle" href="#">Carpet
                                     Beetles</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="centipede"
                                     href="#">Centipede</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="mosquito"
                                     href="#">Mosquito</a>
                             </li>
-                            <li class="text-center col-3">
+                            <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="earwig" href="#">Earwig</a>
                             </li>
                         </ul>
