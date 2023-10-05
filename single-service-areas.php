@@ -485,7 +485,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'carpet-beetle'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'carpet-beetles'; ?>">
                                         Carpet Beetle Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -513,7 +513,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'centipede'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'centipedes'; ?>">
                                         Centipede Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -539,7 +539,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'mosquito'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'mosquitos'; ?>">
                                         Mosquito Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -564,7 +564,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'earwig'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'earwigs'; ?>">
                                         Earwig Control <?php echo $city; ?>
                                     </a>
                                 </h2>

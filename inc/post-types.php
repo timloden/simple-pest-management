@@ -140,6 +140,10 @@ function prefix_register_query_var( $vars ) {
 	$vars[] = 'spiders';
 	$vars[] = 'ants';
 	$vars[] = 'fleas-ticks-mites';
+	$vars[] = 'carpet-beetles';
+	$vars[] = 'centipedes';
+	$vars[] = 'mosquitos';
+	$vars[] = 'earwigs';
 	return $vars;
 }
 
@@ -202,6 +206,35 @@ function prefix_url_rewrite_templates() {
 			return get_template_directory() . '/single-service-areas-fleas-ticks-mites.php';
 		});
 	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('carpet-beetles')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-carpet-beetles.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('centipedes')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-centipedes.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('mosquitos')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-mosquitos.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('earwigs')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-earwigs.php';
+		});
+	}
+
 }
 
 add_action( 'template_redirect', 'prefix_url_rewrite_templates' );
