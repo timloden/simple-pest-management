@@ -312,14 +312,14 @@ if ($location) {
                             </li>
                             <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="centipede"
-                                    href="#">Centipede</a>
+                                    href="#">Centipedes</a>
                             </li>
                             <li class="text-center col-12 col-lg-3 px-0">
                                 <a class="nav-link font-weight-bold pest-type-button" id="mosquito"
-                                    href="#">Mosquito</a>
+                                    href="#">Mosquitos</a>
                             </li>
                             <li class="text-center col-12 col-lg-3 px-0">
-                                <a class="nav-link font-weight-bold pest-type-button" id="earwig" href="#">Earwig</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="earwig" href="#">Earwigs</a>
                             </li>
                         </ul>
 
