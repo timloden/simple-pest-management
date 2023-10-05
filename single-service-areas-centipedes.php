@@ -62,8 +62,8 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h1 class="text-white mb-3">Carpet Beetle Control Service in <?php echo $city; ?></h1>
-                        <p class="text-white">Enjoy the peace of mind of a clean, carpet beetle-free home today, and
+                        <h1 class="text-white mb-3">Centipede Control Service in <?php echo $city; ?></h1>
+                        <p class="text-white">Enjoy the peace of mind of a clean, centipede-free home today, and
                             never deal with unwelcome roommates again. Call us for same-day service or fill out the form
                             below to schedule your initial service at your convenience.
                         </p>
@@ -74,11 +74,11 @@ if ($location) {
                             <li class="text-white">✅ <strong>Kid & Pet</strong> Friendly Treatment</li>
                         </ul>
 
-                        <p class="mb-0 text-white">When you've spotted carpet beetles in your <?php echo $city; ?> home,
+                        <p class="mb-0 text-white">When you've spotted centipedes in your <?php echo $city; ?> home,
                             you know
                             it's time
-                            to call for professional help. At Simple Pest, we specialize in superior carpet beetles
-                            control in
+                            to call for professional help. At Simple Pest, we specialize in superior centipede control
+                            in
                             <?php echo $city; ?>, offering unparalleled pest control services that rid your residence or
                             business
                             of these unsightly critters.
@@ -126,7 +126,7 @@ if ($location) {
                     <div class="col-12 col-lg-8 text-center text-lg-left">
                         <p class="mb-2 mb-lg-0 text-white">Why wait? Get those unwelcome guests out of your home with
                             the most
-                            knowledgeable carpet beetles control team in <?php echo $city; ?>, CA. With our bug-free
+                            knowledgeable centipede control team in <?php echo $city; ?>, CA. With our bug-free
                             guarantee,
                             you have
                             nothing to lose...except for the ant!
@@ -151,13 +151,14 @@ if ($location) {
 
                 <div class="col-12 col-lg-6">
                     <p class="kicker text-primary font-weight-bold">Reliable &amp; Effective Elimination</p>
-                    <h2>Don&apos;t Let Carpet Beetles Rule Your <?php echo $city; ?> Home</h2>
-                    <p>Carpet Beetles are more than just household pests - they can threaten the health and well-being
+                    <h2>Don&apos;t Let Centipedes Rule Your <?php echo $city; ?> Home</h2>
+                    <p>Centipedes are more than just household pests - they can threaten the health and well-being
                         of you and
-                        your family. Simple Pest focuses on carpet beetles control in <?php echo $city; ?>, using
-                        advanced sprays
+                        your family. Simple Pest focuses on centipede control in <?php echo $city; ?>, using advanced
+                        sprays
                         and baits
-                        to target different types of ants. From pharaoh carpet beetles to argentine ants, our team has
+                        to target different types of centipedes. From pharaoh centipedes to argentine centipedes, our
+                        team has
                         you
                         covered.
                     </p>
@@ -167,10 +168,10 @@ if ($location) {
             <!-- <div class="row align-items-center py-3 py-lg-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Local & Family Owned</p>
-                    <h2>Fast Carpet Beetle Control Solutions</h2>
+                    <h2>Fast Centipede Control Solutions</h2>
                     <p>Your pathway to peace begins the moment you give us a ring to book your first service. That's
                         when the real magic happens! Our friendly team rolls up their sleeves and gets down to business,
-                        sending each and every carpet beetles on its way, transforming your treasured home back into the calm
+                        sending each and every centipede on its way, transforming your treasured home back into the calm
                         retreat you remember. And it's not just one type of ant, or two - we tackle a whole variety!
                         From the sting of yellow jackets to the hum of digger ant, and the buzz of tarantula hawks,
                         they all find their exit route when we arrive.
@@ -178,7 +179,7 @@ if ($location) {
                     </p>
                     <p>But our care for your comfort doesn't end with that first service. Our protective shield stays
                         with you, offering continuous reassurance against any winged interlopers that might consider
-                        setting up shop. Your sanctuary is our purpose, fast and friendly carpet beetles control solutions are our
+                        setting up shop. Your sanctuary is our purpose, fast and friendly centipede control solutions are our
                         promise. Welcome to your new ant-free reality.
                     </p>
                     <ol>
@@ -204,7 +205,7 @@ if ($location) {
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-8 text-center text-lg-left">
-                        <p class="h2 text-white">Do you need carpet beetles control in <?php echo $city; ?>?</p>
+                        <p class="h2 text-white">Do you need centipede control in <?php echo $city; ?>?</p>
                         <p class="mb-2 mb-lg-0 text-white">Our team of pest experts is ready to take your call. We offer
                             advice
                             on pest
@@ -230,18 +231,18 @@ if ($location) {
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <h2>Residential Carpet Beetle Control <?php echo $city; ?></h2>
+                    <h2>Residential Centipede Control <?php echo $city; ?></h2>
                     <p>If you own a residence in <?php echo $city; ?>, call Simple Pest Management to deal with your
-                        carpet beetles problem. Our
+                        centipede problem. Our
                         team works with property managers, landlords, homeowners, and tenants. We offer pest inspections
                         and estimates for any of the following properties.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Apartment Carpet Beetle Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold mb-1">Duplex Carpet Beetle Control in <?php echo $city; ?>.</li>
-                        <li class="font-weight-bold mb-1">Single Family Home Carpet Beetle Control in
+                        <li class="font-weight-bold mb-1">Apartment Centipede Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Duplex Centipede Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold mb-1">Single Family Home Centipede Control in
                             <?php echo $city; ?>.
                         </li>
-                        <li class="font-weight-bold">Condo Carpet Beetle Control in <?php echo $city; ?>.</li>
+                        <li class="font-weight-bold">Condo Centipede Control in <?php echo $city; ?>.</li>
                     </ul>
                 </div>
             </div>
@@ -249,23 +250,23 @@ if ($location) {
             <div class="row align-items-center py-5">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <p class="kicker text-primary font-weight-bold">Experience to Understand</p>
-                    <h2>Commercial Carpet Beetle Control <?php echo $city; ?></h2>
+                    <h2>Commercial Centipede Control <?php echo $city; ?></h2>
                     <p>If you own a business or commercial building, call simple Pest Management for your ant
                         control needs in <?php echo $city; ?>. We work with building managers, business owners, and
                         employees.
                         Contact our pest control team for immediate assistance.</p>
                     <ul class="mb-0">
-                        <li class="font-weight-bold mb-1">Carpet Beetle Control <?php echo $city; ?> for Offices.</li>
-                        <li class="font-weight-bold mb-1">Carpet Beetle Control <?php echo $city; ?> for Retail.</li>
-                        <li class="font-weight-bold mb-1">Carpet Beetle Control <?php echo $city; ?> for Medical
+                        <li class="font-weight-bold mb-1">Centipede Control <?php echo $city; ?> for Offices.</li>
+                        <li class="font-weight-bold mb-1">Centipede Control <?php echo $city; ?> for Retail.</li>
+                        <li class="font-weight-bold mb-1">Centipede Control <?php echo $city; ?> for Medical
                             Centers.
                         </li>
-                        <li class="font-weight-bold mb-1">Carpet Beetle Control <?php echo $city; ?> for Restaurants.
+                        <li class="font-weight-bold mb-1">Centipede Control <?php echo $city; ?> for Restaurants.
                         </li>
-                        <li class="font-weight-bold mb-1">Carpet Beetle Control <?php echo $city; ?> for Schools.</li>
-                        <li class="font-weight-bold mb-1">Carpet Beetle Control <?php echo $city; ?> for Warehouses.
+                        <li class="font-weight-bold mb-1">Centipede Control <?php echo $city; ?> for Schools.</li>
+                        <li class="font-weight-bold mb-1">Centipede Control <?php echo $city; ?> for Warehouses.
                         </li>
-                        <li class="font-weight-bold">Carpet Beetle Control <?php echo $city; ?> for Supermarkets.</li>
+                        <li class="font-weight-bold">Centipede Control <?php echo $city; ?> for Supermarkets.</li>
                     </ul>
                 </div>
 
@@ -282,12 +283,10 @@ if ($location) {
             <div class="container">
                 <div class="row pb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Our Range of <?php echo $city; ?> Carpet Beetle Control Services</h2>
-                        <p class="mb-0 py-4">At Simple Pest, we offer comprehensive carpet beetles control services that
-                            are
-                            designed to tackle various types of carpet beetles infestations. Our services are
-                            specifically
-                            tailored to address and eliminate the different species of carpet beetles found in
+                        <h2 class="mb-0">Our Range of <?php echo $city; ?> Centipede Control Services</h2>
+                        <p class="mb-0 py-4">At Simple Pest, we offer comprehensive centipede control services that are
+                            designed to tackle various types of centipede infestations. Our services are specifically
+                            tailored to address and eliminate the different species of centipede found in
                             <?php echo $city; ?>
                             and the surrounding areas.
                         </p>
@@ -297,17 +296,21 @@ if ($location) {
                     <div class="col-12">
                         <ul class="nav nav-pills nav-justified flex-column flex-md-row border rounded">
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold active pest-type-button" id="rat" href="#">Varied
-                                    Carpet Beetle
+                                <a class="nav-link font-weight-bold active pest-type-button" id="rat" href="#">House
+                                    Centipede
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="mice" href="#">Furniture
-                                    Carpet Beetle</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="mice" href="#">Soil
+                                    Centipede</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-weight-bold pest-type-button" id="moles" href="#">Black Carpet
-                                    Beetle</a>
+                                <a class="nav-link font-weight-bold pest-type-button" id="moles" href="#">Tiger
+                                    Centipede</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold pest-type-button" id="stone" href="#">Stone
+                                    Centipede</a>
                             </li>
 
                         </ul>
@@ -319,18 +322,20 @@ if ($location) {
                     <div class="col-12 pest-type-content" id="rat-info">
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                <h2>Varied Carpet Beetle</h2>
-                                <p class="mb-0">Varied carpet beetles are about 1/10 inch, oval-shaped, and have a
-                                    unique yellow, black, and white pattern on their back. Don't rely on the color to
-                                    identify them since they lose these scales as they age. These beetles eat dead
-                                    insects, clothes, and carpet and can do serious damage.
+                                <h2>House Centipede</h2>
+                                <p class="mb-0">
+                                    House centipedes are tannish-brown and generally can measure an inch and
+                                    a half long. This type of centipede is very docile and will generally flee when
+                                    approached. On the off chance that a house centipede does bite, these bites are less
+                                    toxic and minimally painful. These critters are attracted to high-moisture areas
+                                    such as a dripping faucet or a leaking hose.
                                 </p>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-varied-carpet-beetle.jpeg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-house-centipede.jpeg">
                                 </div>
                             </div>
                         </div>
@@ -340,22 +345,19 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    Furniture Carpet Beetle
+                                    Soil Centipede
                                 </h2>
-                                <p class="mb-0">With a length of 1/8 inch, furniture carpet beetles are slightly larger
-                                    and rounder than the varied carpet beetles. Distinguishing between the furniture and
-                                    varied carpet beetles can be difficult since they are similar in size and
-                                    coloration. The main way to distinguish is by looking at the larvae. Furniture
-                                    carpet beetle larvae are white with brown bands across the body while the varied
-                                    carpet beetle is covered with dark hairs.
-
+                                <p class="mb-0">
+                                    Soil centipedes are red and just shy of 2 inches long. These worm-like
+                                    centipedes are most commonly found under rocks and digging through the soil and can
+                                    burrow over two feet deep. Interestingly, soil centipedes do not have eyes!
                                 </p>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-furniture-carpet-beetle.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-soil-centipede.jpg">
                                 </div>
                             </div>
                         </div>
@@ -365,21 +367,44 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    Black Carpet Beetle
+                                    Tiger Centipede
                                 </h2>
-                                <p class="mb-0">Black carpet beetles are about 1/8 inch long and have a shiny black
-                                    appearance. Of these three most common types, the black carpet beetles lay the most
-                                    eggs, and these eggs hatch the fastest. If you spot a number of back carpet beetles,
-                                    just know that there may be eggs about to hatch. These eggs are typically laid near
-                                    a food source such as carpet, clothing, or dog food.
-
+                                <p class="mb-0">
+                                    Tiger centipedes are about 4-7 inches and range in color from blue to
+                                    orange. While they're longer and thicker, they are not any more likely to bite than
+                                    the other species mentioned. As a general rule of thumb, the bigger the tiger
+                                    centipede, the more painful the bite will be. Interestingly, this type of centipede
+                                    is actually sold as a pet.
                                 </p>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-black-carpet-beetle.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-tiger-centipede.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 pest-type-content d-none" id="stone-info">
+                        <div class="row align-items-center py-3 py-lg-5">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <h2>
+                                    Stone Centipede
+                                </h2>
+                                <p class="mb-0">
+                                    Stone centipedes are reddish-brown and can grow to be a little over an inch long. As
+                                    their name suggests, these centipedes are commonly found hiding under rocks and logs
+                                    on upper layers of soil. Unless you are allergic to the venom, a bite from a stone
+                                    centipede feels akin to a bee sting.
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="service-area-image-bg right pest-type">
+                                    <img class="img-fluid"
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-stone-centipede.jpg">
                                 </div>
                             </div>
                         </div>
@@ -394,7 +419,7 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2>Why Choose Us for <?php echo $city; ?> Carpet Beetle Control?</h2>
+                        <h2>Why Choose Us for <?php echo $city; ?> Centipede Control?</h2>
                         <p>When you contact Simple Pest Management to handle your pest situation, you get the following
                             in your service level agreement with us.
                         </p>
@@ -414,8 +439,8 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/authentication.svg"
                                     alt="Proven process pest control icon">
-                                <h3 class="card-title h6">Proven Carpet Beetle Control Processes</h3>
-                                <p class="mb-0">We developed our carpet beetles control strategies over decades of
+                                <h3 class="card-title h6">Proven Centipede Control Processes</h3>
+                                <p class="mb-0">We developed our centipede control strategies over decades of
                                     experience in the field. We have knowledge of the local area and how it affects pest
                                     behavior. You can rely on our team to deliver you a pest-free property.
                                 </p>
@@ -443,7 +468,7 @@ if ($location) {
                                 <img class="mb-3"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/licensed.svg"
                                     alt="Licensed pest control icon">
-                                <h3 class="card-title h6">Licensed, Bonded, and Insured Carpet Beetle Control</h3>
+                                <h3 class="card-title h6">Licensed, Bonded, and Insured Centipede Control</h3>
                                 <p class="mb-0">Our business is established, licensed, and insured. We remove the risk
                                     of hiring people to work on your property. If anything happens while we're on-site,
                                     it's our problem, not yours.
@@ -515,7 +540,7 @@ if ($location) {
                         <p>Offering pest control services in <?php echo $city; ?> and the surrounding areas.</p>
                         <p>Contact us for assistance anywhere in the <?php echo $city; ?> area, including
                             <?php echo implode(', ', $surround_areas); ?>, and more.</p>
-                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Carpet Beetle Control</p>
+                        <p>Get a Pest Inspection and Estimate for <?php echo $city; ?> Centipede Control</p>
                         <p>We offer pest inspections at properties across <?php echo $city; ?>. Our team has years of
                             experience
                             identifying pest infestations on properties throughout <?php echo $area; ?>. We know what
@@ -558,7 +583,7 @@ if ($location) {
         <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="mb-0"><?php echo $city; ?> Carpet Beetle Control FAQ</h2>
+                    <h2 class="mb-0"><?php echo $city; ?> Centipede Control FAQ</h2>
                     <p class="mb-0 pt-4 pb-5">When you contract Simple Pest Management to handle your pest situation,
                         you get the following in your service level agreement with Contact our team at <a
                             href="tel:8668877378">(866) 887-7378</a>
@@ -575,7 +600,7 @@ if ($location) {
                                     <button class="btn btn-link btn-block text-left text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
-                                        How much does pest control cost for carpet beetles?
+                                        How much does pest control cost for centipedes?
                                     </button>
                                 </h2>
                             </div>
@@ -583,11 +608,12 @@ if ($location) {
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="mb-0">The cost of professional pest control for carpet beetles can vary
+                                    <p class="mb-0">
+                                        The cost of professional pest control for centipedes can vary
                                         depending on the size of the infestation and the area to be treated. Generally,
-                                        the average cost for a professional carpet beetle control service ranges from
-                                        $250 to $400. For more accurate pricing, please contact us for a free quote
-                                        tailored to your specific needs.
+                                        the average cost for a professional centipede control service ranges from $300
+                                        to $500. For more accurate pricing, please contact us for a free quote tailored
+                                        to your specific needs.
                                     </p>
                                 </div>
                             </div>
@@ -599,20 +625,19 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        What are the signs of a carpet beetle infestation?
+                                        What are the signs of a centipede infestation?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="mb-0">The most common sign of a carpet beetle infestation is seeing a
-                                        number of them crawling around your home, particularly in carpets or around
-                                        clothing. Since these critters are nocturnal, it’s possible you don’t see them
-                                        at all. Additional signs of a carpet beetle infestation include waking up with
-                                        itchy red bumps, finding holes in your clothing, or seeing their furry shed
-                                        skin.
-
+                                    <p class="mb-0">
+                                        The most common sign of a centipede infestation is seeing a number of them
+                                        crawling around your home, particularly around drains. Since these critters are
+                                        nocturnal, it's possible you don't see them at all. Additional signs of a
+                                        centipede infestation include waking up with bite marks, frequently seeing other
+                                        bugs around your home, or finding their shed skin (molts).
                                     </p>
                                 </div>
                             </div>
@@ -625,18 +650,18 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
-                                        Are carpet beetles harmful?
+                                        Are centipedes harmful?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="mb-0">Carpet beetles will not bite, or carry disease, but some people
-                                        experience skin reactions to carpet beetle larvae hairs. Depending on the
-                                        sensitivity to these allergens, the skin can become red and itchy and may spread
-                                        to other parts of the body.
-
+                                    <p class="mb-0">
+                                        Centipedes are generally not aggressive but, if provoked, some species can
+                                        inflict very painful bites. Additionally, some individuals are allergic to the
+                                        venom that centipedes inject. Whether you're allergic or not, we suggest you
+                                        advise caution when approaching and handling centipedes.
                                     </p>
                                 </div>
                             </div>
@@ -649,18 +674,19 @@ if ($location) {
                                         class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
                                         type="button" data-toggle="collapse" data-target="#collapseFive"
                                         aria-expanded="false" aria-controls="collapseFive">
-                                        What should you do if carpet beetles come into your home?
+                                        What should you do if centipedes come into your home?
                                     </button>
                                 </h2>
                             </div>
                             <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p class="mb-0">If you see a number of carpet beetles in your home or suspect that
-                                        you have a carpet beetle problem, call a professional pest control service like
-                                        Simple Pest. We will help identify the extent of the infestation, eliminate the
-                                        current population, and take measures to prevent future infestations. In the
-                                        meantime, you can get rid of the carpet beetles you see by vacuuming them up.
+                                    <p class="mb-0">
+                                        If you see a number of centipedes in your home or suspect that you have a
+                                        centipede problem, call a professional pest control service like Simple Pest. We
+                                        will help identify the extent of the infestation, eliminate the current
+                                        population, and take measures to prevent future infestations. In the meantime,
+                                        you can get rid of the centipedes you see by vacuuming them up.
                                     </p>
                                 </div>
                             </div>
