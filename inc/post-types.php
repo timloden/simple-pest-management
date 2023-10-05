@@ -126,6 +126,10 @@ function custom_post_type_service_areas() {
 	add_rewrite_rule( 'service-areas/([^/]+)/spiders', 'index.php?service-areas=$matches[1]&spiders=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/ants', 'index.php?service-areas=$matches[1]&ants=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/fleas-ticks-mites', 'index.php?service-areas=$matches[1]&fleas-ticks-mites=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/carpet-beetles', 'index.php?service-areas=$matches[1]&carpet-beetles=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/centipedes', 'index.php?service-areas=$matches[1]&centipedes=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/mosquitos', 'index.php?service-areas=$matches[1]&mosquitos=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/earwigs', 'index.php?service-areas=$matches[1]&earwigs=yes', 'top' );
 }
 add_action( 'init', 'custom_post_type_service_areas', 0 );
 
