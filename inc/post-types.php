@@ -126,6 +126,10 @@ function custom_post_type_service_areas() {
 	add_rewrite_rule( 'service-areas/([^/]+)/spiders', 'index.php?service-areas=$matches[1]&spiders=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/ants', 'index.php?service-areas=$matches[1]&ants=yes', 'top' );
 	add_rewrite_rule( 'service-areas/([^/]+)/fleas-ticks-mites', 'index.php?service-areas=$matches[1]&fleas-ticks-mites=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/carpet-beetles', 'index.php?service-areas=$matches[1]&carpet-beetles=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/centipedes', 'index.php?service-areas=$matches[1]&centipedes=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/mosquitos', 'index.php?service-areas=$matches[1]&mosquitos=yes', 'top' );
+	add_rewrite_rule( 'service-areas/([^/]+)/earwigs', 'index.php?service-areas=$matches[1]&earwigs=yes', 'top' );
 }
 add_action( 'init', 'custom_post_type_service_areas', 0 );
 
@@ -140,6 +144,10 @@ function prefix_register_query_var( $vars ) {
 	$vars[] = 'spiders';
 	$vars[] = 'ants';
 	$vars[] = 'fleas-ticks-mites';
+	$vars[] = 'carpet-beetles';
+	$vars[] = 'centipedes';
+	$vars[] = 'mosquitos';
+	$vars[] = 'earwigs';
 	return $vars;
 }
 
@@ -202,6 +210,35 @@ function prefix_url_rewrite_templates() {
 			return get_template_directory() . '/single-service-areas-fleas-ticks-mites.php';
 		});
 	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('carpet-beetles')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-carpet-beetles.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('centipedes')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-centipedes.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('mosquitos')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-mosquitos.php';
+		});
+	}
+
+	if ( is_singular( 'service-areas' ) && get_query_var('earwigs')) {
+
+		add_filter( 'template_include', function() {
+			return get_template_directory() . '/single-service-areas-earwigs.php';
+		});
+	}
+
 }
 
 add_action( 'template_redirect', 'prefix_url_rewrite_templates' );
