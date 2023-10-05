@@ -326,7 +326,7 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-pharaoh-ants.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-varied-carpet-beetle.jpeg">
                                 </div>
                             </div>
                         </div>
@@ -351,7 +351,7 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-pavement-ants.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-furniture-carpet-beetle.jpg">
                                 </div>
                             </div>
                         </div>
@@ -375,7 +375,7 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-carpenter-ants.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-black-carpet-beetle.jpg">
                                 </div>
                             </div>
                         </div>
