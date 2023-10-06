@@ -62,6 +62,10 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
+                        <p class="mb-3 mb-lg-5 text-white">
+                            <a class="text-white" href="<?php echo get_permalink();?>"><?php echo $city; ?> Pest
+                                Control Service</a> / Wasps
+                        </p>
                         <h1 class="text-white mb-3">Wasp Control Service in <?php echo $city; ?></h1>
                         <p class="text-white">Have wasps established a buzzing fortress in your <?php echo $city; ?>
                             abode or

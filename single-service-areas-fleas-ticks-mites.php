@@ -62,6 +62,10 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
+                        <p class="mb-3 mb-lg-5 text-white">
+                            <a class="text-white" href="<?php echo get_permalink();?>"><?php echo $city; ?> Pest
+                                Control Service</a> / Fleas, Ticks and Mites
+                        </p>
                         <h1 class="text-white mb-3">Fleas, Ticks, and Mites Control Service in <?php echo $city; ?></h1>
                         <p class="text-white">Enjoy the peace of mind of a clean, ant-free home today, and never deal
                             with unwelcome roommates again. Call us for same-day service or fill out the form below to

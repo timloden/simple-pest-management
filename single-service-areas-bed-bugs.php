@@ -62,6 +62,10 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
+                        <p class="mb-3 mb-lg-5 text-white">
+                            <a class="text-white" href="<?php echo get_permalink();?>"><?php echo $city; ?> Pest
+                                Control Service</a> / Bed Bugs
+                        </p>
                         <h1 class="text-white mb-3">Bed Bug Control Service in <?php echo $city; ?></h1>
                         <p class="text-white">At Simple Pest, we understand the gravity of a bed bug infestation. Our
                             pest control solutions are expertly designed to not only get rid of these pesky intruders
