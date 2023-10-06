@@ -39,6 +39,10 @@ class Custom implements Provider {
 			array_push($links, array('loc' => get_permalink($post_id) . 'spiders/'));
 			array_push($links, array('loc' => get_permalink($post_id) . 'silverfish/'));
 			array_push($links, array('loc' => get_permalink($post_id) . 'fleas-ticks-mites/'));
+			array_push($links, array('loc' => get_permalink($post_id) . 'carpet-beetles/'));
+			array_push($links, array('loc' => get_permalink($post_id) . 'centipedes'));
+			array_push($links, array('loc' => get_permalink($post_id) . 'mosquitos/'));
+			array_push($links, array('loc' => get_permalink($post_id) . 'earwigs/'));
         }
 
 		return $links;
