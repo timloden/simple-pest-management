@@ -62,6 +62,10 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
+                        <p class="mb-3 mb-lg-5 text-white">
+                            <a class="text-white" href="<?php echo get_permalink();?>"><?php echo $city; ?> Pest
+                                Control Service</a> / Centipedes
+                        </p>
                         <h1 class="text-white mb-3">Centipede Control Service in <?php echo $city; ?></h1>
                         <p class="text-white">Enjoy the peace of mind of a clean, centipede-free home today, and
                             never deal with unwelcome roommates again. Call us for same-day service or fill out the form

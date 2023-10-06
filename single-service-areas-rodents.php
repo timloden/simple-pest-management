@@ -62,6 +62,10 @@ if ($location) {
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
+                        <p class="mb-3 mb-lg-5 text-white">
+                            <a class="text-white" href="<?php echo get_permalink();?>"><?php echo $city; ?> Pest
+                                Control Service</a> / Rodents
+                        </p>
                         <h1 class="text-white mb-3"><?php echo $city; ?> Rodent Control Service</h1>
                         <p class="text-white">Welcome to Simple Pest, your first line of defense against rodent
                             invasions in California. We are your go-to rodent control company when it comes to all
