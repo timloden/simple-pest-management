@@ -62,11 +62,12 @@ add_filter( 'rank_math/frontend/description', function( $description ) {
             if (array_key_exists($pest, $query_vars)) {
 
                 if (str_ends_with($pest, 's')) {
-                    $pest = rtrim($pest, "s");
+                    $pest = ucfirst(rtrim($pest, "s"));
                 }
 
-                $city = get_field('city', $post_id);
-                $description = '100% Satisfaction Guaranteed - ' . ucfirst($city) . ' ' . ucfirst($pest) . ' Control';
+                $city = ucfirst(get_field('city', $post_id));
+
+                $description = str_replace($city . ' Pest', $city . ' ' . $pest, $description);
             }
         }
     }
