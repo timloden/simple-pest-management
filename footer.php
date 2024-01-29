@@ -77,7 +77,8 @@
                 <div class="d-flex flex-wrap">
                     <div class="col-12 col-lg-5 pl-0">
                         <img class="img-fluid lazy"
-                            data-src="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-logo-horizontal-color-expanded.png">
+                            data-src="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-logo-horizontal-color-expanded.png"
+                            alt="Simple Pest Management">
 
                         <?php echo esc_attr(the_field('address', 'option')) ?>
                     </div>
