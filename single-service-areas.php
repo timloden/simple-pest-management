@@ -331,7 +331,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'rodents'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'rodents'; ?>/">
 
                                         Rodent Control & Removal <?php echo $city; ?>
                                     </a>
