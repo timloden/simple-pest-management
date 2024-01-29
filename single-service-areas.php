@@ -105,7 +105,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/2-simple-pest-management-truck.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/2-simple-pest-management-truck.jpg"
+                            alt="Reliable Exterminator">
                     </div>
 
                 </div>
@@ -136,7 +137,8 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg"
+                            alt="Simple Pest Management Exterminator">
                     </div>
                 </div>
 
@@ -188,7 +190,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/4-simple-pest-management-customer.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/4-simple-pest-management-customer.jpg"
+                            alt="Simple Pest Management Locally Owned">
                     </div>
                 </div>
             </div>
@@ -219,7 +222,8 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg"
+                            alt="Residential Pest Control">
                     </div>
                 </div>
 
@@ -260,7 +264,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg"
+                            alt="Commercial Pest Control">
                     </div>
                 </div>
             </div>
@@ -331,7 +336,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'rodents'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'rodents'; ?>/">
 
                                         Rodent Control & Removal <?php echo $city; ?>
                                     </a>
@@ -346,7 +351,8 @@ if ($location) {
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-rodents.jpg">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-rodents.jpg"
+                                        alt="Rodents Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -371,7 +377,8 @@ if ($location) {
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/cockroach-program.jpg">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/cockroach-program.jpg"
+                                        alt="Cockroaches Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -394,7 +401,8 @@ if ($location) {
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-crawling.jpg">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-crawling.jpg"
+                                        alt="Flea, Ticks and Mites Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -419,7 +427,8 @@ if ($location) {
 
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
-                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-ants.jpg">
+                                    <img class="img-fluid" src="/wp-content/uploads/2020/07/pest-ants.jpg"
+                                        alt="Ants Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -448,7 +457,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-spiders.jpg">
+                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-spiders.jpg"
+                                        alt="Spiders Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -475,7 +485,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-silverfish.jpg">
+                                        src="/wp-content/themes/simple-pest-management/assets/images/pest-silverfish.jpg"
+                                        alt="Silverfish Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -503,7 +514,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/Carpet-Beetle.webp">
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Carpet-Beetle.webp"
+                                        alt="Carpet Beetles Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -529,7 +541,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/Centipede.webp">
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Centipede.webp"
+                                        alt="Centipedes Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -554,7 +567,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/Mosquito.webp">
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Mosquito.webp"
+                                        alt="Mosquitos Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -580,7 +594,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="/wp-content/themes/simple-pest-management/assets/images/Earwig-Bug.webp">
+                                        src="/wp-content/themes/simple-pest-management/assets/images/Earwig-Bug.webp"
+                                        alt="Earwigs Exterminator">
                                 </div>
                             </div>
                         </div>
@@ -701,7 +716,7 @@ if ($location) {
                         <div class="service-area-image-bg left">
                             <img class="img-fluid"
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/7-pest-control-near-you.jpg"
-                                loading="lazy">
+                                loading="lazy" alt="Pest Control near you">
                         </div>
                     </div>
 

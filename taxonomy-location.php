@@ -32,9 +32,9 @@ $discount_subtitle = get_field('hero_discount_subtitle', $home_page_id);
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left">
-                        <h1 class="text-white"><?php echo ($hero_title) ? $hero_title : 'Got bugs?' ?><br><span
+                        <h2 class="text-white"><?php echo ($hero_title) ? $hero_title : 'Got bugs?' ?><br><span
                                 class="text-success">Simple.</span> Call
-                            us!</h1>
+                            us!</h2>
                         <p class="h2 text-white pt-3">
                             <?php echo esc_attr($phone_number); ?> (PEST)
                         </p>

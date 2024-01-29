@@ -188,7 +188,7 @@ $hero_title = get_field('hero_title');
 
     <div class="row py-5">
         <div class="col-12 text-center">
-            <a href="/free-estimate" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
+            <a href="/free-estimate/" class="btn btn-orange font-weight-bold btn-lg">Get your FREE ESTIMATE
                 today!</a>
         </div>
     </div>

@@ -61,7 +61,170 @@
         $cookie = '';
     }
 ?>
-
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Simple Pest Management",
+        "image": "https://www.simplepest.com/wp-content/uploads/2020/07/simple-pest-logo-2x.png",
+        "@id": "https://www.simplepest.com/",
+        "url": "https://www.simplepest.com/",
+        "telephone": "+16193737378",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10739 Woodside Ave Ste A",
+            "addressLocality": "Santee",
+            "addressRegion": "CA",
+            "postalCode": "92071",
+            "addressCountry": "US"
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "21:00"
+        }, {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/SimplePestManagement/",
+            "https://www.linkedin.com/company/simple-pest-management"
+        ],
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+16193737378",
+            "contactType": "customer service",
+            "areaServed": "San Diego",
+            "availableLanguage": "en"
+        }, {
+            "@type": "ContactPoint",
+            "telephone": "+19169097378",
+            "contactType": "customer service",
+            "areaServed": "Sacramento",
+            "availableLanguage": "en"
+        }],
+        "hasOfferCatalog": [{
+                "@type": ["OfferCatalog"],
+                "name": "Residential Pest Control",
+                "url": "https://www.simplepest.com/services/residential-pest-control/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Commercial Pest Control",
+                "url": "https://www.simplepest.com/services/commercial-pest-control/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Rodent Control",
+                "url": "https://www.simplepest.com/services/rodent-control/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Bed Bugs Program",
+                "url": "https://www.simplepest.com/services/bed-bugs/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Snake Deterrent Program",
+                "url": "https://www.simplepest.com/services/snake-control/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Cockroach Program",
+                "url": "https://www.simplepest.com/services/cockroach-program/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Fleas, Ticks, Mites Program",
+                "url": "https://www.simplepest.com/services/flea-ticks-mite-program/"
+            },
+            {
+                "@type": ["OfferCatalog"],
+                "name": "Car accident lawsuit loans",
+                "url": "https://upliftlegalfunding.com/car-accident-loans/"
+            }
+        ],
+        "department": [{
+            "@type": "ProfessionalService",
+            "name": "Simple Pest Management",
+            "image": "https://www.simplepest.com/wp-content/uploads/2020/07/simple-pest-logo-2x.png",
+            "@id": "https://www.simplepest.com/location/san-diego-county/",
+            "url": "https://www.simplepest.com/location/san-diego-county/",
+            "telephone": "+16193737378",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "10739 Woodside Ave Ste A",
+                "addressLocality": "Santee",
+                "addressRegion": "CA",
+                "postalCode": "92071",
+                "addressCountry": "US"
+            },
+            "hasMap": "https://www.google.com/maps?cid=2007139651071388648",
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "21:00"
+            }, {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "18:00"
+            }]
+        }, {
+            "@type": "ProfessionalService",
+            "name": "Simple Pest Management",
+            "image": "https://www.simplepest.com/wp-content/uploads/2020/07/simple-pest-logo-2x.png",
+            "@id": "https://www.simplepest.com/location/sacramento-county/",
+            "url": "https://www.simplepest.com/location/sacramento-county/",
+            "telephone": "+19169097378",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3453 Ramona Ave Suite 12",
+                "addressLocality": "Sacramento",
+                "addressRegion": "CA",
+                "postalCode": "95826",
+                "addressCountry": "US"
+            },
+            "hasMap": "https://www.google.com/maps?cid=980652533771243809",
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "07:30",
+                "closes": "19:30"
+            }, {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:30",
+                "closes": "17:00"
+            }]
+        }]
+    }
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
