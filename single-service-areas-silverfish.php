@@ -116,7 +116,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/2-simple-pest-management-truck.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/2-simple-pest-management-truck.jpg"
+                            alt="Simple Pest Management">
                     </div>
 
                 </div>
@@ -148,7 +149,8 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg"
+                            alt="Simple Pest Management Exterminator">
                     </div>
                 </div>
 
@@ -225,7 +227,8 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg"
+                            alt="Simple Pest Management Residential Pest Control">
                     </div>
                 </div>
 
@@ -268,7 +271,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg"
+                            alt="Simple Pest Management Commercial Pest Control">
                     </div>
                 </div>
             </div>
@@ -323,7 +327,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-common-silverfish.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-common-silverfish.jpg"
+                                        alt="Common Silverfishx">
                                 </div>
                             </div>
                         </div>
@@ -347,7 +352,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-common-silverfish.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-common-silverfish.jpg"
+                                        alt="Grey Silverfish">
                                 </div>
                             </div>
                         </div>
@@ -371,7 +377,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-four-lined-silverfish.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-four-lined-silverfish.jpg"
+                                        alt="Four-Lined Silverfish">
                                 </div>
                             </div>
                         </div>
@@ -498,7 +505,7 @@ if ($location) {
                         <div class="service-area-image-bg left">
                             <img class="img-fluid"
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/7-pest-control-near-you.jpg"
-                                loading="lazy">
+                                loading="lazy" alt="Pest control near <?php echo $city; ?>">
                         </div>
                     </div>
 
