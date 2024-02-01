@@ -147,7 +147,8 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/3-simple-pest-management-exterminator.jpg"
+                            alt="Simple Pest Management Exterminator">
                     </div>
                 </div>
 
@@ -181,7 +182,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/4-simple-pest-management-customer.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/4-simple-pest-management-customer.jpg"
+                            alt="Simple Pest Management Family Owned">
                     </div>
                 </div>
             </div>
@@ -212,7 +214,8 @@ if ($location) {
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="service-area-image-bg left">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/5-residential-pest-control.jpg"
+                            alt="Simple Pest Management Residential Pest Control">
                     </div>
                 </div>
 
@@ -255,7 +258,8 @@ if ($location) {
                 <div class="col-12 col-lg-6">
                     <div class="service-area-image-bg right">
                         <img class="img-fluid"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg">
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/6-commercial-pest-control.jpg"
+                            alt="Simple Pest Management Commercial Pest Control">
                     </div>
                 </div>
             </div>
@@ -321,7 +325,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-german-cockroach.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-german-cockroach.jpg"
+                                        alt="German Cockroaches">
                                 </div>
                             </div>
                         </div>
@@ -345,7 +350,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-brown-banded-cockroach.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-brown-banded-cockroach.jpg"
+                                        alt="Brown-Banded Cockroaches">
                                 </div>
                             </div>
                         </div>
@@ -370,7 +376,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-asian-cockroach.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-asian-cockroach.jpg"
+                                        alt="Asian (Oriental) Cockroaches">
                                 </div>
                             </div>
                         </div>
@@ -395,7 +402,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-smokey-cockroach.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-smokey-cockroach.jpg"
+                                        alt="Smokybrown Cockroaches">
                                 </div>
                             </div>
                         </div>
@@ -418,7 +426,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-american-cockroach.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-american-cockroach.jpg"
+                                        alt="American Cockroaches">
                                 </div>
                             </div>
                         </div>
@@ -443,7 +452,8 @@ if ($location) {
                             <div class="col-12 col-lg-6">
                                 <div class="service-area-image-bg right pest-type">
                                     <img class="img-fluid"
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-turkistan-cockroach.jpg">
+                                        src="<?php echo get_template_directory_uri(); ?>/assets/images/pest-turkistan-cockroach.jpg"
+                                        alt="Turkestan Cockroaches">
                                 </div>
                             </div>
                         </div>
@@ -572,7 +582,7 @@ if ($location) {
                         <div class="service-area-image-bg left">
                             <img class="img-fluid"
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/7-pest-control-near-you.jpg"
-                                loading="lazy">
+                                loading="lazy" alt="Pest control near <?php echo $city; ?>">
                         </div>
                     </div>
 

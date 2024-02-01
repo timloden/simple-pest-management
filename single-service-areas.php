@@ -362,7 +362,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'cockroaches'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'cockroaches'; ?>/">
                                         Cockroach Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -388,7 +388,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'fleas-ticks-mites'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'fleas-ticks-mites'; ?>/">
                                         Flea, Tick and Mite Removal <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -412,7 +412,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'ants'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'ants'; ?>/">
                                         Ant Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -438,7 +438,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'spiders'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'spiders'; ?>/">
                                         Spider Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -468,7 +468,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'silverfish'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'silverfish'; ?>/">
                                         Silverfish Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -496,7 +496,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'carpet-beetles'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'carpet-beetles'; ?>/">
                                         Carpet Beetle Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -525,7 +525,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'centipedes'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'centipedes'; ?>/">
                                         Centipede Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -552,7 +552,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'mosquitos'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'mosquitos'; ?>/">
                                         Mosquito Control <?php echo $city; ?>
                                     </a>
                                 </h2>
@@ -578,7 +578,7 @@ if ($location) {
                         <div class="row align-items-center py-3 py-lg-5">
                             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                 <h2>
-                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'earwigs'; ?>">
+                                    <a href="<?php echo $_SERVER['REQUEST_URI'] . 'earwigs'; ?>/">
                                         Earwig Control <?php echo $city; ?>
                                     </a>
                                 </h2>
