@@ -30,7 +30,7 @@ $hero_title = get_field('hero_title');
                                 }
                                 
                                 get_template_part( 'template-parts/content-single', get_post_type() );
-                                echo '<div class="text-center text-lg-left"><a class="btn btn-primary mt-4" href="/free-estimate">Get your FREE Estimate!</a></div>';
+                                echo '<div class="text-center text-lg-left"><a class="btn btn-primary mt-4" href="/free-estimate/">Get your FREE Estimate!</a></div>';
 
                             endwhile; // End of the loop.
                             ?>
