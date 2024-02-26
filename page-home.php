@@ -287,8 +287,360 @@ $hero_title = get_field('hero_title');
 
             </div>
         </div>
+        <div class="row my-4">
+            <div class="col-12 text-center">
+                <h2>California pest control FAQs</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingOne">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    What common pests should residents be aware of in California?
+                                </button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">California residents should be aware of various pests including rodents,
+                                    fleas, mice,
+                                    cockroaches, termites, bedbugs, ants, earwigs, and wasps. Gophers are also a common
+                                    issue in California lawns, causing damage to gardens and potentially to underground
+                                    utilities.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingTwo">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Can weather in California affect pest activity?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">Yes, pests in California can be influenced by the weather. For example,
+                                    warmer temperatures can increase ant and cockroach activity, while rainy seasons
+                                    might lead to more mosquitoes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingThree">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Are landlords responsible for pest control in California?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">In California, landlords are generally responsible for maintaining
+                                    pest-free rental properties. However, if a tenant's actions lead to an infestation,
+                                    the tenant may be responsible for pest control. This includes situations where
+                                    unclean habits or unreported maintenance issues contribute to an infestation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingFour">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    What can I do to prevent pest infestations in my home?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">Keep your home clean and free of food crumbs. Seal cracks and crevices,
+                                    fix leaks, and ensure proper garbage disposal. Regular maintenance and cleanliness
+                                    are key in preventing infestations.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingFive">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                    What services does Simple Pest Management offer?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">Simple Pest Management provides a range of pest control services,
+                                    including residential and commercial pest control, rodent control, bed bug
+                                    treatment, snake deterrent programs, cockroach control, and programs for fleas,
+                                    ticks, and mites. We also offer eco-friendly pest control solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingSix">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    How can I get a free estimate from Simple Pest Management?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">You can get a free estimate by contacting Simple Pest Management via our
+                                    phone at (866) 311-6189. We only require some basic information about the pest
+                                    problem and your location to provide an estimate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingSeven">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                    aria-expanded="false" aria-controls="collapseSeven">
+                                    How often should I have my property inspected for pests?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">We recommend to have a professional inspection at least once a year.
+                                    However, if you live in an area prone to specific pests or have experienced
+                                    infestations before, more frequent inspections might be necessary.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingEight">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseEight"
+                                    aria-expanded="false" aria-controls="collapseEight">
+                                    Are there eco-friendly pest control options available in California?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">Yes, Simple Pest Management offers eco-friendly pest control solutions,
+                                    focusing on safety and environmental concerns while effectively managing pest
+                                    issues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingNine">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseNine"
+                                    aria-expanded="false" aria-controls="collapseNine">
+                                    Is pest control safe for my pets and family?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">Most modern pest control methods are safe for families and pets,
+                                    especially when performed by licensed professionals. Discuss any safety concerns
+                                    with Simple Pest Management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingTen">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseTen"
+                                    aria-expanded="false" aria-controls="collapseTen">
+                                    How long does a typical pest control treatment last?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">The effectiveness of a treatment depends on the type of pest and the
+                                    methods used. Some treatments may last a few months, while others might need to be
+                                    reapplied more frequently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingEleven">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseEleven"
+                                    aria-expanded="false" aria-controls="collapseEleven">
+                                    Does Simple Pest Management have a satisfaction guarantee?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">Yes, we offer a 100% pest-free guarantee. For customers on a maintenance
+                                    plan, if pests return between service appointments, the company will provide
+                                    additional service at no extra cost. One-time service treatments come with a 45-day
+                                    pest-free guarantee.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border rounded">
+                        <div class="card-header" id="headingTwelve">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-dark font-weight-bold"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwelve"
+                                    aria-expanded="false" aria-controls="collapseTwelve">
+                                    Are DIY pest control methods effective in California?
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="mb-0">While DIY methods can provide temporary relief, they may not be
+                                    effective for major infestations. Simple Pest Management can offer more
+                                    comprehensive solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+        "@type": "Question",
+        "name": "What common pests should residents be aware of in California?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "California residents should be aware of various pests including rodents, fleas, mice, cockroaches, termites, bedbugs, ants, earwigs, and wasps. Gophers are also a common issue in California lawns, causing damage to gardens and potentially to underground utilities."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Can weather in California affect pest activity?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, pests in California can be influenced by the weather. For example, warmer temperatures can increase ant and cockroach activity, while rainy seasons might lead to more mosquitoes."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Are landlords responsible for pest control in California?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In California, landlords are generally responsible for maintaining pest-free rental properties. However, if a tenant's actions lead to an infestation, the tenant may be responsible for pest control. This includes situations where unclean habits or unreported maintenance issues contribute to an infestation."
+        }
+    }, {
+        "@type": "Question",
+        "name": "What can I do to prevent pest infestations in my home?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep your home clean and free of food crumbs. Seal cracks and crevices, fix leaks, and ensure proper garbage disposal. Regular maintenance and cleanliness are key in preventing infestations."
+        }
+    }, {
+        "@type": "Question",
+        "name": "What services does Simple Pest Management offer?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simple Pest Management provides a range of pest control services, including residential and commercial pest control, rodent control, bed bug treatment, snake deterrent programs, cockroach control, and programs for fleas, ticks, and mites. We also offer eco-friendly pest control solutions."
+        }
+    }, {
+        "@type": "Question",
+        "name": "How can I get a free estimate from Simple Pest Management?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can get a free estimate by contacting Simple Pest Management via our phone at (866) 311-6189. We only require some basic information about the pest problem and your location to provide an estimate."
+        }
+    }, {
+        "@type": "Question",
+        "name": "How often should I have my property inspected for pests?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend to have a professional inspection at least once a year. However, if you live in an area prone to specific pests or have experienced infestations before, more frequent inspections might be necessary."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Are there eco-friendly pest control options available in California?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Simple Pest Management offers eco-friendly pest control solutions, focusing on safety and environmental concerns while effectively managing pest issues."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Is pest control safe for my pets and family?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most modern pest control methods are safe for families and pets, especially when performed by licensed professionals. Discuss any safety concerns with Simple Pest Management."
+        }
+    }, {
+        "@type": "Question",
+        "name": "How long does a typical pest control treatment last?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The effectiveness of a treatment depends on the type of pest and the methods used. Some treatments may last a few months, while others might need to be reapplied more frequently."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Does Simple Pest Management have a satisfaction guarantee?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer a 100% pest-free guarantee. For customers on a maintenance plan, if pests return between service appointments, the company will provide additional service at no extra cost. One-time service treatments come with a 45-day pest-free guarantee."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Are DIY pest control methods effective in California?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While DIY methods can provide temporary relief, they may not be effective for major infestations. Simple Pest Management can offer more comprehensive solutions."
+        }
+    }]
+}
+</script>
 <?php
 get_footer();
