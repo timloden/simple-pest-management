@@ -27,9 +27,10 @@
                 <div class="row">
                     <?php while( have_rows('review_sites', 'option') ): the_row(); 
                     $image = get_sub_field('image');
+                    $link = get_sub_field('link');
                     ?>
                     <div class="col-6 col-lg-3">
-                        <a href="<?php the_sub_field('link'); ?>" target="_blank">
+                        <a href="<?php echo $link; ?>" target="_blank">
                             <img src="<?php echo $image['url']; ?>" class="img-fluid px-1">
                         </a>
                     </div>

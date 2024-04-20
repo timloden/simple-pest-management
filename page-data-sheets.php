@@ -32,7 +32,7 @@ get_header();
                     $label = get_sub_field('label');
                     ?>
                     <tr>
-                        <td><?php the_sub_field('name'); ?></td>
+                        <td><?php echo get_sub_field('name'); ?></td>
                         <td><a href="<?php echo $sheet; ?>" target="_blank">Safety Data Sheet</a></td>
                         <td><a href="<?php echo $label; ?>" target="_blank">Label</a></td>
                     </tr>

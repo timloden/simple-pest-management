@@ -86,9 +86,13 @@ $hero_title = get_field('hero_title');
                 <div class="pl-0 pl-lg-5 position-sticky" style="top: 300px;">
                     <h2 class="mb-4 pb-4 border-bottom"><?php the_field('mission_title'); ?></h2>
                     <?php the_field('mission_text'); ?>
-                    <p class="mt-4 pt-4 border-top"><?php the_field('guarantee_text'); ?></p>
-                    <p class="h5">100% Satisfaction Guaranteed</p>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-4 pt-4 border-top"><?php the_field('guarantee_text'); ?></p>
+                <p class="h5 text-center">100% Satisfaction Guaranteed</p>
             </div>
         </div>
     </div>
@@ -268,7 +272,7 @@ $hero_title = get_field('hero_title');
             $image = get_sub_field('image');
             ?>
             <div class="col-6 col-lg-3">
-                <a href="<?php the_sub_field('link'); ?>" target="_blank">
+                <a href="<?php echo get_sub_field('link'); ?>" target="_blank">
                     <img data-src="<?php echo $image['url']; ?>" class="img-fluid px-3 lazy">
                 </a>
             </div>
