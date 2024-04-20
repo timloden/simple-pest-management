@@ -204,7 +204,7 @@ $discount_subtitle = get_field('hero_discount_subtitle', $home_page_id);
             $image = get_sub_field('image');
             ?>
                     <div class="col-6 col-lg-3">
-                        <a href="<?php the_sub_field('link'); ?>" target="_blank">
+                        <a href="<?php echo get_sub_field('link'); ?>" target="_blank">
                             <img data-src="<?php echo $image['url']; ?>" class="img-fluid px-3 lazy">
                         </a>
                     </div>
