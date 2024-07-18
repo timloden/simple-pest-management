@@ -310,7 +310,8 @@
                     "multiple": 0,
                     "return_format": "object",
                     "ui": 1,
-                    "parent_repeater": "field_60b1a875addb1"
+                    "parent_repeater": "field_60b1a875addb1",
+                    "bidirectional_target": []
                 }
             ]
         },
@@ -420,6 +421,26 @@
                     "parent_repeater": "field_5f597995e349a"
                 }
             ]
+        },
+        {
+            "key": "field_6699793ee4064",
+            "label": "Elfsight Reviews",
+            "name": "elfsight_reviews",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_63322034d4574",
@@ -591,5 +612,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689744745
+    "modified": 1721334108
 }
