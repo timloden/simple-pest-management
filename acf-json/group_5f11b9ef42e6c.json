@@ -6,6 +6,7 @@
             "key": "field_5f11ba2951637",
             "label": "Logo",
             "name": "logo",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -30,6 +31,7 @@
             "key": "field_5f12733c00d21",
             "label": "Phone Number",
             "name": "phone_number",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -49,6 +51,7 @@
             "key": "field_5f12734400d22",
             "label": "Address",
             "name": "address",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -68,6 +71,7 @@
             "key": "field_61c0b519e843e",
             "label": "Hours M-F",
             "name": "hours_m-f",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -87,6 +91,7 @@
             "key": "field_61c0b530e843f",
             "label": "Hours Saturday",
             "name": "hours_saturday",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -106,6 +111,7 @@
             "key": "field_61c0b53ae8440",
             "label": "Hours Sunday",
             "name": "hours_sunday",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -125,6 +131,7 @@
             "key": "field_5f1273e36ecaa",
             "label": "Client Login Link",
             "name": "client_login_link",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -144,6 +151,7 @@
             "key": "field_5f11ba7551638",
             "label": "Header Embed",
             "name": "header_embed",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -163,6 +171,7 @@
             "key": "field_5f11ba8751639",
             "label": "Footer Embed",
             "name": "footer_embed",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -182,6 +191,7 @@
             "key": "field_614ceb658475e",
             "label": "Footer Message",
             "name": "footer_message",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -201,6 +211,7 @@
             "key": "field_5f19a44770588",
             "label": "Review Sites",
             "name": "review_sites",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -214,12 +225,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5f19a4b070589",
                     "label": "image",
                     "name": "image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -238,12 +250,14 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_5f19a44770588"
                 },
                 {
                     "key": "field_5f19a4be7058a",
                     "label": "Link",
                     "name": "link",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -257,14 +271,17 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5f19a44770588"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_5fd55bf389676",
             "label": "Global Message",
             "name": "global_message",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "Leave blank to remove the global message",
             "required": 0,
@@ -284,6 +301,7 @@
             "key": "field_61b7dc1c801a9",
             "label": "Pest Routes Auth Token",
             "name": "pest_routes_auth_token",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -303,6 +321,7 @@
             "key": "field_61b7dc33801aa",
             "label": "Pest Routes Auth Key",
             "name": "pest_routes_auth_key",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -317,6 +336,26 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_66a27f37229f3",
+            "label": "Careers Title",
+            "name": "careers_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -337,5 +376,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640019349
+    "modified": 1721925446
 }

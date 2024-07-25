@@ -1,30 +1,14 @@
-.page-template-page-careers-php {
-    .btn-orange {
-        &:hover {
-            color: #fff;
+.careers-single {
+    .gform_fields {
+        legend {
+            display: none;
         }
-    }
 
-    .btn-outline-primary {
-        color: $primary;
+        .ginput_container_fileupload {
+            margin-bottom: 1rem;
 
-        &:hover {
-            color: #fff;
-        }
-    }
-
-    .job-listing {
-        .gform_fields {
-            legend {
-                display: none;
-            }
-
-            .ginput_container_fileupload {
-                margin-bottom: 1rem;
-
-                .gform_fileupload_rules {
-                    font-size: 0.75rem;
-                }
+            .gform_fileupload_rules {
+                font-size: 0.75rem;
             }
         }
     }
