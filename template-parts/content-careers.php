@@ -9,14 +9,15 @@
  */
 
 ?>
-<article class="mb-5 job-posting">
+<article class="mb-5">
 
     <div class="row justify-content-center post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-8 job-posting pb-5">
 
             <h2 class="h4"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h2>
             <p><?php the_excerpt(); ?></p>
-            <p class="mb-0 text-right"><a href="<?php the_permalink(); ?>">Learn more about this position <i class="las la-angle-right"></i></a></p>
+            <p class="mb-0 text-left text-lg-right"><a href="<?php the_permalink(); ?>">Learn more about this position
+                    <i class="las la-angle-right"></i></a></p>
         </div>
     </div>
 

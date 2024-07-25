@@ -6,7 +6,7 @@ Theme URI: https://timloden.com/
 Author: Tim Loden
 Author URI: https://timloden.com/
 Description: 
-Version: 1.14.0
+Version: 1.14.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -2990,6 +2990,8 @@ h2.gform_submission_error{font-size:1rem}
 .services-single .service-area-image-bg.right.pest-type{background:-webkit-gradient(linear,left top,right top,color-stop(50%,transparent),color-stop(50%,#7dc242));background:linear-gradient(90deg,transparent 50%,#7dc242 50%)}
 .services-single .service-area-image-bg.left{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#7dc242),color-stop(50%,#fff));background:linear-gradient(90deg,#7dc242 50%,#fff 50%)}
 .services-single .range-of-services{background:-webkit-gradient(linear,left bottom,left top,from(white),color-stop(50%,#e3f4ff),to(white));background:linear-gradient(0,white 0,#e3f4ff 50%,white 100%)}
+.jobs .job-posting{border-bottom:1px solid #dee2e6 !important}
+.jobs article:last-child .job-posting{border-bottom:0 !important}
 .careers-single .gform_fields legend{display:none}
 .careers-single .gform_fields .ginput_container_fileupload{margin-bottom:1rem}
 .careers-single .gform_fields .ginput_container_fileupload .gform_fileupload_rules{font-size:.75rem}

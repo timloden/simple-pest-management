@@ -1,3 +1,17 @@
+.jobs {
+    .job-posting {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    article {
+        &:last-child {
+            .job-posting {
+                border-bottom: 0 !important;
+            }
+        }
+    }
+}
+
 .careers-single {
     .gform_fields {
         legend {
