@@ -24,7 +24,7 @@
     }
 
     .limited-time-container {
-        border-radius: 0.25rem 0.25rem 0 0;
+        border-radius: 34px 34px 0 0;
     }
 
     // .container {
@@ -44,11 +44,10 @@
 
 .accordion {
     .accordion-item {
-
         button {
             font-weight: bold;
             font-size: 1.2rem;
-    
+
             i {
                 transition: transform 0.2s ease-in-out;
             }
@@ -57,19 +56,18 @@
                 color: $black;
                 font-size: 1.5rem;
             }
-    
-            &[aria-expanded="true"] {
+
+            &[aria-expanded='true'] {
                 i.la-chevron-left {
                     transform: rotate(-90deg);
                 }
-               
             }
-    
-            &:hover, &:active, &:focus {
+
+            &:hover,
+            &:active,
+            &:focus {
                 text-decoration: none;
             }
-           
         }
     }
-    
 }

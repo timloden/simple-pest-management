@@ -201,3 +201,6 @@ $escaped-characters: (
     ('(', '%28'),
     (')', '%29')
 ) !default;
+
+$border-radius: 34px !default;
+$btn-border-radius-lg: $border-radius !default;

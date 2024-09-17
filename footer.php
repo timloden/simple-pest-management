@@ -9,9 +9,10 @@
  *
  * @package underscores
  */
+$logo = get_field('logo', 'option');
 ?>
 
-<?php if (!is_front_page()) :?>
+<?php if (!is_front_page()) : ?>
 <section class="clients border-top">
     <div class="container py-5">
         <div class="row align-items-center">
@@ -23,12 +24,12 @@
                 </div>
             </div>
             <div class="col-12 col-lg-8">
-                <?php if( have_rows('review_sites', 'option') ): ?>
+                <?php if (have_rows('review_sites', 'option')): ?>
                 <div class="row">
-                    <?php while( have_rows('review_sites', 'option') ): the_row(); 
-                    $image = get_sub_field('image');
-                    $link = get_sub_field('link');
-                    ?>
+                    <?php while (have_rows('review_sites', 'option')): the_row();
+                                $image = get_sub_field('image');
+                                $link = get_sub_field('link');
+                            ?>
                     <div class="col-6 col-lg-3">
                         <a href="<?php echo $link; ?>" target="_blank">
                             <img src="<?php echo $image['url']; ?>" class="img-fluid px-1">
@@ -66,7 +67,7 @@
                     </div>
                     <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative">
                         <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
-                        <?php gravity_form( 3, false, false, false, '', true, 12 ); ?>
+                        <?php gravity_form(3, false, false, false, '', true, 12); ?>
                     </div>
                 </div>
             </div>
@@ -77,14 +78,13 @@
             <div class="col-12 col-lg-7 mb-3">
                 <div class="d-flex flex-wrap">
                     <div class="col-12 col-lg-5 pl-0">
-                        <img class="img-fluid lazy"
-                            data-src="<?php echo get_template_directory_uri(); ?>/assets/images/simple-pest-logo-horizontal-color-expanded.png"
-                            alt="Simple Pest Management">
+                        <img class="img-fluid lazy" data-src="<?php echo esc_url($logo['url']); ?>"
+                            alt="Simple Pest Management Logo">
 
                         <?php echo esc_attr(the_field('address', 'option')) ?>
                     </div>
                     <div class="col-12 col-lg-7 px-0">
-                        <?php wp_nav_menu( array( 'theme_location' => 'footer-primary', 'container' => 'div','container_id' => 'footer-header-menu', 'container_class' => 'px-0 px-lg-4', 'menu_class' => 'nav flex-column', 'add_li_class'  => 'nav-item', 'depth' => 2 ) ); ?>
+                        <?php wp_nav_menu(array('theme_location' => 'footer-primary', 'container' => 'div', 'container_id' => 'footer-header-menu', 'container_class' => 'px-0 px-lg-4', 'menu_class' => 'nav flex-column', 'add_li_class'  => 'nav-item', 'depth' => 2)); ?>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
     </div>
     <div class="copyright bg-primary">
         <div class="container">
-            <p class="text-white m-0 p-2 text-center">&copy; Simple Pest Management <?php echo date( 'Y' ); ?> |
+            <p class="text-white m-0 p-2 text-center">&copy; Simple Pest Management <?php echo date('Y'); ?> |
                 License, Bonded and Insured | PR 8436</p>
         </div>
     </div>
