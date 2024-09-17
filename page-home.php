@@ -15,6 +15,7 @@ $discount_label = get_field('hero_discount_label');
 $discount_subtitle = get_field('hero_discount_subtitle');
 $hero_city = get_field('hero_city');
 $hero_title = get_field('hero_title');
+$phone_number = get_field('hero_phone_number') ? get_field('hero_phone_number') : get_field('phone_number', 'option');
 ?>
 <div class="jumbotron jumbotron-fluid home-hero mb-0 position-relative lazy" style="background-size: cover;"
     data-bg="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-bg.jpg">
@@ -24,12 +25,9 @@ $hero_title = get_field('hero_title');
                 <h1 class="text-white"><?php echo ($hero_title) ? $hero_title : 'Got bugs?' ?><br><span
                         class="text-success">Simple.</span><?php echo ($hero_city) ? '<br>' : '' ?> Call
                     us<?php echo ($hero_city) ? '<br>in ' . $hero_city : '!' ?></h1>
-                <p class="h2 text-white pt-3">
-                    <?php if (get_field('hero_phone_number')) {
-                        echo '<a class="text-white" href="tel:' . preg_replace('/[^0-9]/', '', get_field('hero_phone_number')) . '">' . get_field('hero_phone_number') . '</a>';
-                    } else {
-                        echo get_field('phone_number', 'option');
-                    }
+                <p class="pt-2">
+                    <?php
+                    echo '<a class="text-white btn btn-orange btn-lg hero-phone-btn shadow" href="tel:' . preg_replace('/[^0-9]/', '', $phone_number) . '">' . $phone_number . '</a>';
                     ?>
                 </p>
                 <p class="lead text-white"><?php echo esc_attr(get_field('hero_subtitle')); ?></p>
