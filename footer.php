@@ -10,6 +10,7 @@
  * @package underscores
  */
 $logo = get_field('logo', 'option');
+$phone_number = get_field('phone_number', 'option');
 ?>
 
 <?php if (!is_front_page()) : ?>
@@ -55,10 +56,12 @@ $logo = get_field('logo', 'option');
                 <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left text-center">
                     <p class="text-white text-center h5 font-weight-normal">Simple Pest Management</p>
                     <p class="h1 text-white text-center mb-3">100% Satisfaction Guaranteed</p>
-                    <p class="lead text-white text-center mb-0">Call us now</p>
                     <p class="h2 text-success text-center footer-phone-number">
-                        <a
-                            href="tel:<?php echo preg_replace('/[^0-9]/', '', get_field('phone_number', 'option')); ?>"><?php echo get_field('phone_number', 'option'); ?></a>
+                        <?php
+                        echo '<a class="text-white btn btn-orange btn-lg hero-phone-btn shadow" href="tel:' . preg_replace('/[^0-9]/', '', $phone_number) . '"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg> Call ' . $phone_number . '</a>';
+                        ?>
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">
