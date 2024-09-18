@@ -19,48 +19,30 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="apple-touch-icon" sizes="57x57"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-152x152.png">
+
     <link rel="apple-touch-icon" sizes="180x180"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/android-icon-192x192.png">
+        href="<?php echo get_template_directory_uri(); ?>/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
         href="<?php echo get_template_directory_uri(); ?>/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96"
-        href="<?php echo get_template_directory_uri(); ?>/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16"
         href="<?php echo get_template_directory_uri(); ?>/favicon/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/favicon/manifest.json">
+    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/favicon/safari-pinned-tab.svg"
+        color="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage"
-        content="<?php echo get_template_directory_uri(); ?>/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <?php 
-    wp_head(); 
+
+    <?php
+    wp_head();
     $logo = get_field('logo', 'option');
     $header_cta_text = get_field('header_cta_text');
 
-    if(isset($_COOKIE['global-message'])){
+    if (isset($_COOKIE['global-message'])) {
         $cookie = $_COOKIE['global-message'];
     } else {
         $cookie = '';
     }
-?>
+    ?>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -244,8 +226,8 @@
             </div>
             <div class="container pt-2">
                 <nav class="d-flex align-items-center">
-                    <?php if (get_field('logo', 'option')) : 
-                    $logo = get_field('logo', 'option');
+                    <?php if (get_field('logo', 'option')) :
+                        $logo = get_field('logo', 'option');
                     ?>
                     <a class="navbar-brand" href="<?php echo site_url(); ?>"><img
                             src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>"
@@ -255,7 +237,7 @@
                     <?php endif; ?>
 
                     <div class="d-flex justify-content-end justify-content-lg-between align-items-center w-100">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-primary', 'container' => '', 'menu_class' => 'nav d-none d-lg-flex', 'add_li_class'  => 'nav-item', 'depth' => 2, 'walker' => new WP_Bootstrap_Navwalker() ) ); ?>
+                        <?php wp_nav_menu(array('theme_location' => 'header-primary', 'container' => '', 'menu_class' => 'nav d-none d-lg-flex', 'add_li_class'  => 'nav-item', 'depth' => 2, 'walker' => new WP_Bootstrap_Navwalker())); ?>
 
                         <a class="btn btn-primary btn-orange btn-phone-number d-none d-lg-inline-block"
                             href="tel:<?php echo preg_replace('/[^0-9]/', '', get_field('phone_number', 'option')); ?>"><?php echo ($header_cta_text ? $header_cta_text : get_field('phone_number', 'option')); ?></a>
@@ -270,7 +252,7 @@
                 <!-- mobile menu -->
                 <div class="d-flex d-lg-none">
                     <div class="col px-0">
-                        <?php wp_nav_menu( array( 'theme_location' => 'mobile-primary', 'container' => 'div','container_id' => 'mobile-header-menu', 'container_class' => 'collapse', 'menu_class' => 'nav flex-column', 'add_li_class'  => 'nav-item', 'depth' => 2 ) ); ?>
+                        <?php wp_nav_menu(array('theme_location' => 'mobile-primary', 'container' => 'div', 'container_id' => 'mobile-header-menu', 'container_class' => 'collapse', 'menu_class' => 'nav flex-column', 'add_li_class'  => 'nav-item', 'depth' => 2)); ?>
                     </div>
                     <!-- end mobile menu -->
                 </div>
