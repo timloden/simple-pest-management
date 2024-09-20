@@ -338,21 +338,64 @@
             "maxlength": ""
         },
         {
-            "key": "field_66a27f37229f3",
-            "label": "Careers Title",
-            "name": "careers_title",
+            "key": "field_66ecea4a5acda",
+            "label": "Footer Hero Subtitle",
+            "name": "footer_hero_subtitle",
             "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66ecea5e5acdb",
+            "label": "Footer Hero TItle",
+            "name": "footer_hero_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66eceb0031313",
+            "label": "Footer Form Title",
+            "name": "footer_form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -376,5 +419,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721925446
+    "modified": 1726802716
 }

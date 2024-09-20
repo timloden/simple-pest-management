@@ -11,6 +11,9 @@
  */
 $logo = get_field('logo', 'option');
 $phone_number = get_field('phone_number', 'option');
+$footer_hero_subtitle = get_field('footer_hero_subtitle', 'option') ? get_field('footer_hero_subtitle', 'option') : '';
+$footer_hero_title = get_field('footer_hero_title', 'option') ? get_field('footer_hero_title', 'option') : '100% Pest-Free Guaranteed';
+$footer_form_title = get_field('footer_form_title', 'option') ? get_field('footer_form_title', 'option') : 'Schedule your pest control service';
 ?>
 
 <?php if (!is_front_page()) : ?>
@@ -54,8 +57,8 @@ $phone_number = get_field('phone_number', 'option');
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 hero-text mb-3 text-center text-lg-left text-center">
-                    <p class="text-white text-center h5 font-weight-normal">Simple Pest Management</p>
-                    <p class="h1 text-white text-center mb-3">100% Satisfaction Guaranteed</p>
+                    <p class="text-white text-center h5 font-weight-normal"><?php echo $footer_hero_subtitle; ?></p>
+                    <p class="h1 text-white text-center mb-3"><?php echo $footer_hero_title; ?></p>
                     <p class="h2 text-success text-center footer-phone-number">
                         <?php
                         echo '<a class="text-white btn btn-orange btn-lg hero-phone-btn shadow" href="tel:' . preg_replace('/[^0-9]/', '', $phone_number) . '"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -66,10 +69,10 @@ $phone_number = get_field('phone_number', 'option');
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="py-3 text-center text-primary">
-                        <p class="mb-0 h4 text-white font-weight-normal">Get a FREE estimate today!</p>
+                        <p class="mb-0 h4 text-white font-weight-normal"><?php echo $footer_form_title; ?></p>
                     </div>
                     <div class="hero-form shadow-sm rounded bg-white p-3 border position-relative">
-                        <p class="mb-2 text-center hero-form-title mb-0 d-none">Get a free estimate today!</p>
+                        <p class="mb-2 text-center hero-form-title mb-0 d-none"><?php echo $footer_form_title; ?></p>
                         <?php gravity_form(3, false, false, false, '', true, 12); ?>
                     </div>
                 </div>
